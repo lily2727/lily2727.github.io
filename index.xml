@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Hugo Grapes Theme</title>
+    <title>Home on Semily2727-blog</title>
     <link>https://lily2727.github.io/</link>
-    <description>Recent content in Home on Hugo Grapes Theme</description>
+    <description>Recent content in Home on Semily2727-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Feb 2020 15:38:18 +0800</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 14 Feb 2020 15:38:18 +0800</pubDate>
       
       <guid>https://lily2727.github.io/first/</guid>
-      <description>test blog  成功搭建
- </description>
+      <description>test blog </description>
     </item>
     
     <item>

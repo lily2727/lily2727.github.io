@@ -28,7 +28,268 @@
 
 	    </div>
             <section class="post-content">
-                
+                <h2 id="1超文本标记语言是一种用于创建网页的标准标记语言">1.超文本标记语言，是一种用于创建网页的标准标记语言</h2>
+<h2 id="2常用参考">2.常用参考</h2>
+<pre><code>	2.1&lt;!--...--&gt;
+		定义注释
+			&lt;!--这是一个注释，注释在浏览器中不会显示--&gt;
+</code></pre><pre><code>	2.2&lt;!DOCTYPE&gt;
+		定义文档类型
+			&lt;!DOCTYPE html&gt;
+			&lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置，处于 &lt;html&gt; 标签之前。
+			&lt;!DOCTYPE&gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。
+</code></pre><pre><code>	2.3&lt;a&gt;
+		定义超文本链接
+			&lt;a&gt; 标签定义超链接，用于从一个页面链接到另一个页面。
+			&lt;a&gt; 元素最重要的属性是 href 属性，它指定链接的目标。
+			在所有浏览器中，链接的默认外观如下：
+				未被访问的链接带有下划线而且是蓝色的
+				已被访问的链接带有下划线而且是紫色的
+				活动链接带有下划线而且是红色的
+			例子：
+				&lt;a href=&quot;http://www.runoob.com&quot;&gt;访问菜鸟教程!&lt;/a&gt;
+</code></pre><pre><code>	2.4&lt;body&gt;
+		定义文档主体
+			&lt;body&gt;文档内容......&lt;/body&gt;
+			&lt;body&gt; 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。
+</code></pre><pre><code>	2.5&lt;br&gt;
+		定义换行
+			&lt;p&gt;使用 br 元素&lt;br&gt;在文本中&lt;br&gt;换行。&lt;/p&gt;  →  
+															使用 br 元素
+															在文本中
+															换行。
+			&lt;br&gt; 标签插入一个简单的换行符。
+			&lt;br&gt; 标签是一个空标签，意味着它没有结束标签。
+</code></pre><pre><code>	2.6&lt;button&gt;
+		定义一个点击按钮			
+			&lt;button&gt; 标签定义一个按钮。
+			在 &lt;button&gt; 元素内部，您可以放置内容，比如文本或图像。
+			这是该元素与使用 &lt;input&gt; 元素创建的按钮之间的不同之处。
+			例子：
+				&lt;button type=&quot;button&quot;&gt;点我!&lt;/button&gt;
+</code></pre><pre><code>	2.7&lt;div&gt;
+		定义文档中的节，即盒子
+			&lt;div&gt; 标签定义 HTML 文档中的一个分隔区块或者一个区域部分。
+			&lt;div&gt;标签常用于组合块级元素，以便通过 CSS 来对这些元素进行格式化。
+</code></pre><pre><code>	2.8&lt;form&gt;
+		定义表单
+			&lt;form&gt; 标签用于创建供用户输入的 HTML 表单。
+			&lt;form&gt; 元素包含一个或多个如下的表单元素：
+				&lt;input&gt;  定义输入控件
+				&lt;textarea&gt;	定义多行的文本输入控件
+				&lt;button&gt;	定义一个点击按钮
+				&lt;select&gt;	定义选择列表
+				&lt;option&gt;	定义选择列表中的选项
+				&lt;optgroup&gt;	定义选择列表中相关选项的组合
+				&lt;fieldset&gt;	定义框架集的窗口或框架
+				&lt;label&gt;	定义input元素的标注
+</code></pre><pre><code>	2.9&lt;h1&gt; to &lt;h6&gt;
+		定义HTML标题
+			&lt;h1&gt; - &lt;h6&gt; 标签被用来定义 HTML 标题。
+			&lt;h1&gt; 定义重要等级最高的标题。&lt;h6&gt; 定义重要等级最低的标题。
+</code></pre><pre><code>	2.10&lt;head&gt;
+		定义关于文档的信息
+			&lt;head&gt; 元素是所有头部元素的容器。
+			&lt;head&gt; 元素必须包含文档的标题（title），可以包含脚本、样式、meta 信息 以及其他更多的信息。
+			以下列出的元素能被用在 &lt;head&gt; 元素内部：
+				&lt;title&gt; （在头部中，这个元素是必需的）
+				&lt;style&gt;	定义文档的样式信息
+				&lt;base&gt;	定义页面中所有链接的默认地址或默认目标
+				&lt;link&gt;	定义文档与外部资源的关系
+				&lt;meta&gt;	定义关于HTML文档的元信息
+				&lt;script&gt;	定义客户端脚本
+				&lt;noscript&gt;	定义针对不支持客户端脚本的用户的替代内容。
+</code></pre><pre><code>	2.11&lt;hr&gt;
+		定义水平线
+			&lt;hr&gt; 标签定义 HTML 页面中的主题变化（比如话题的转移），并显示为一条水平线。
+			&lt;hr&gt; 元素被用来分隔 HTML 页面中的内容（或者定义一个变化）。
+</code></pre><pre><code>	2.12&lt;html&gt;
+		定义HTML文档
+			&lt;html&gt; 标签告知浏览器这是一个 HTML 文档。
+			&lt;html&gt; 标签是 HTML 文档中最外层的元素。
+			&lt;html&gt; 标签是所有其他 HTML 元素（除了 &lt;!DOCTYPE&gt; 标签）的容器。
+</code></pre><pre><code>	2.13&lt;iframe&gt;
+		定义内联框架，即内嵌页面			
+			&lt;iframe&gt; 标签规定一个内联框架。
+			一个内联框架被用来在当前 HTML 文档中嵌入另一个文档。
+			例子：
+				&lt;iframe src=&quot;http://www.runoob.com&quot;&gt;&lt;/iframe&gt;
+</code></pre><pre><code>	2.14&lt;img&gt;
+		定义图像
+			&lt;img&gt; 标签定义 HTML 页面中的图像。
+			&lt;img&gt; 标签有两个必需的属性：src 和 alt。
+			例子：
+				&lt;img src=&quot;smiley-2.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot;&gt;
+</code></pre><pre><code>	2.15&lt;input&gt;
+		定义输入控件，即输入框
+			&lt;input&gt; 标签规定了用户可以在其中输入数据的输入字段。
+			&lt;input&gt; 元素在 &lt;form&gt; 元素中使用，用来声明允许用户输入数据的 input 控件。
+			输入字段可通过多种方式改变，取决于 type 属性。
+			例子：
+				&lt;form action=&quot;demo-form.php&quot;&gt;
+				First name: &lt;input type=&quot;text&quot; name=&quot;FirstName&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt;
+				Last name: &lt;input type=&quot;text&quot; name=&quot;LastName&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;
+				&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+				&lt;/form&gt;
+				（以上代码表示，两个文本输入框，默认已输入Firstname和LastName，一个提交按钮，点击后表单数据将被发送到服务器上的“demo-form.php”）
+</code></pre><pre><code>	2.16&lt;label&gt;
+		定义input元素的标注
+			&lt;label&gt; 标签为 input 元素定义标注（标记）。
+			label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+			&lt;label&gt; 标签的 for 属性应当与相关元素的 id 属性相同。
+			例子：
+				&lt;p&gt;点击其中一个文本标签选中选项：&lt;/p&gt;
+				&lt;form action=&quot;demo_form.php&quot;&gt;
+				  &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;
+				  &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;male&quot; value=&quot;male&quot;&gt;&lt;br&gt;
+				  &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;
+				  &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;female&quot; value=&quot;female&quot;&gt;&lt;br&gt;&lt;br&gt;
+				  &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+				&lt;/form&gt;
+				（以上代码表示两个选中框male/female，显示id属性，一个提交按钮，点击后表单数据将被发送到服务器上的“demo-form.php）		
+</code></pre><pre><code>	2.17&lt;li&gt;
+		定义列表的项目
+			&lt;li&gt; 标签定义列表项目。
+			&lt;li&gt; 标签可用在有序列表（&lt;ol&gt;）、无序列表（&lt;ul&gt;）和菜单列表（&lt;menu&gt;）中。
+			例子：
+				有序列表
+					&lt;ol&gt;
+					  &lt;li&gt;Coffee&lt;/li&gt;
+					  &lt;li&gt;Tea&lt;/li&gt;
+					  &lt;li&gt;Milk&lt;/li&gt;
+					&lt;/ol&gt;
+				无序列表
+					&lt;ul&gt;
+					  &lt;li&gt;Coffee&lt;/li&gt;
+					  &lt;li&gt;Tea&lt;/li&gt;
+					  &lt;li&gt;Milk&lt;/li&gt;
+					&lt;/ul&gt;
+</code></pre><pre><code>	2.18&lt;link&gt;
+		定义文档与外部资源的关系
+			&lt;link&gt; 标签定义文档与外部资源的关系。
+			&lt;link&gt; 标签最常见的用途是链接样式表。
+			空元素，仅包含属性，只存在于head部分。
+			例子：
+				&lt;head&gt;
+					&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;theme.css&quot;&gt;
+				&lt;/head&gt;
+</code></pre><pre><code>	2.19&lt;main&gt;
+		定义文档的主体部分
+</code></pre><pre><code>	2.20&lt;map&gt;
+		定义图像映射
+			&lt;map&gt; 标签用于客户端图像映射。图像映射指带有可点击区域的一幅图像。
+			&lt;img&gt;中的 usemap 属性可引用 &lt;map&gt; 中的 id 或 name 属性（取决于浏览器），所以我们应同时向 &lt;map&gt; 添加 id 和 name 属性。
+			area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射中的区域。
+			例子：
+				带有可点击区域的图像映射：
+				&lt;img src=&quot;planets.gif&quot; width=&quot;145&quot; height=&quot;126&quot; alt=&quot;Planets&quot; usemap=&quot;#planetmap&quot;&gt;
+				&lt;map name=&quot;planetmap&quot;&gt;
+				  &lt;area shape=&quot;rect&quot; coords=&quot;0,0,82,126&quot; href=&quot;sun.htm&quot; alt=&quot;Sun&quot;&gt;
+				  &lt;area shape=&quot;circle&quot; coords=&quot;90,58,3&quot; href=&quot;mercur.htm&quot; alt=&quot;Mercury&quot;&gt;
+				  &lt;area shape=&quot;circle&quot; coords=&quot;124,58,8&quot; href=&quot;venus.htm&quot; alt=&quot;Venus&quot;&gt;
+				&lt;/map&gt;
+			（以上代码表示，一张包含太阳，水星，金星的图片，可点击太阳、水星、或者金星跳转页面到具体详细的太阳、水星、或金星的照片图）
+</code></pre><pre><code>	2.21&lt;ol&gt;
+		定义有序列表
+</code></pre><pre><code>	2.22&lt;option&gt;
+		定义选择列表中的选项
+			The &lt;option&gt; 标签定义下拉列表中的一个选项（一个条目）。
+			&lt;option&gt; 标签中的内容作为 &lt;select&gt; 或者&lt;datalist&gt; 一个元素使用。
+			例子：
+				&lt;select&gt;
+				  &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+				  &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+				  &lt;option value=&quot;opel&quot;&gt;Opel&lt;/option&gt;
+				  &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+				&lt;/select&gt;
+			（以上代码表示具有四个选项的下拉列表）
+</code></pre><pre><code>	2.23&lt;p&gt;
+		定义段落
+			&lt;p&gt; 标签定义段落。
+			&lt;p&gt;元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。
+</code></pre><pre><code>	2.24&lt;script&gt;
+		定义客户端脚本
+			&lt;script&gt; 标签用于定义客户端脚本，比如 JavaScript。
+			&lt;script&gt; 元素既可包含脚本语句，也可以通过 &quot;src&quot; 属性指向外部脚本文件。
+			JavaScript 通常用于图像操作、表单验证以及动态内容更改。
+			例子：
+				&lt;script&gt;
+					document.write(&quot;Hello World!&quot;)
+				&lt;/script&gt;
+			（以上代码表示通过js输出文本）
+</code></pre><pre><code>	2.25&lt;select&gt;
+		定义选择列表
+			&lt;select&gt; 元素用来创建下拉列表。
+			&lt;select&gt; 元素中的 &lt;option&gt; 标签定义了列表中的可用选项。
+</code></pre><pre><code>	2.26&lt;span&gt;
+		定义文档中的节
+			&lt;span&gt; 用于对文档中的行内元素进行组合。
+			&lt;span&gt; 标签没有固定的格式表现。当对它应用样式时，它才会产生视觉上的变化。如果不对 &lt;span&gt; 应用样式，那么 &lt;span&gt; 元素中的文本与其他文本不会任何视觉上的差异。
+			&lt;span&gt; 标签提供了一种将文本的一部分或者文档的一部分独立出来的方式。
+			例子：
+				&lt;p&gt;我的母亲有 &lt;span style=&quot;color:blue&quot;&gt;蓝色&lt;/span&gt; 的眼睛。&lt;/p&gt;
+			（以上代码表示使用该元素对文本中的一部分进行着色）
+</code></pre><pre><code>	2.27&lt;style&gt;
+		定义文档的样式信息
+			&lt;style&gt; 标签定义 HTML 文档的样式信息。
+			在 &lt;style&gt; 元素中，您可以规定在浏览器中如何呈现 HTML 文档。
+			每个 HTML 文档能包含多个 &lt;style&gt; 标签。
+</code></pre><pre><code>	2.28&lt;table&gt;
+		定义表格
+			&lt;table&gt; 标签定义 HTML 表格
+			一个 HTML 表格包括 &lt;table&gt; 元素，一个或多个 &lt;tr&gt;、&lt;th&gt; 以及 &lt;td&gt; 元素。
+			&lt;tr&gt; 元素定义表格行，&lt;th&gt; 元素定义表头，&lt;td&gt; 元素定义表格单元。
+			更复杂的 HTML 表格也可能包括 &lt;caption&gt;、&lt;col&gt;、&lt;colgroup&gt;、&lt;thead&gt;、&lt;tfoot&gt; 以及 &lt;tbody&gt; 元素。
+			例子：
+				&lt;table border=&quot;1&quot;&gt;
+				  &lt;tr&gt;
+					&lt;th&gt;Month&lt;/th&gt;
+					&lt;th&gt;Savings&lt;/th&gt;
+				  &lt;/tr&gt;
+				  &lt;tr&gt;
+					&lt;td&gt;January&lt;/td&gt;
+					&lt;td&gt;$100&lt;/td&gt;
+				  &lt;/tr&gt;
+				  &lt;tr&gt;
+					&lt;td&gt;February&lt;/td&gt;
+					&lt;td&gt;$80&lt;/td&gt;
+				  &lt;/tr&gt;
+				&lt;/table&gt;
+			（以上代码展示了两列两行表格）
+</code></pre><pre><code>	2.29&lt;tbody&gt;
+		定义表格中的主体内容
+			&lt;tbody&gt; 标签用于组合 HTML 表格的主体内容。
+			&lt;tbody&gt; 元素应该与 &lt;thead&gt; and &lt;tfoot&gt; 元素结合起来使用，用来规定表格的各个部分（主体、表头、页脚）。
+			通过使用这些元素，使浏览器有能力支持独立于表格表头和表格页脚的表格主体滚动。当包含多个页面的长的表格被打印时，表格的表头和页脚可被打印在包含表格数据的每张页面上。
+			&lt;tbody&gt; 标签必须被用在以下情境中：作为 &lt;table&gt; 元素的子元素，出现在 &lt;caption&gt;、&lt;colgroup&gt; 和 &lt;thead&gt; 元素之后。
+</code></pre><pre><code>	2.30&lt;td&gt;
+		定义表格中的单元
+			&lt;td&gt; 标签定义 HTML 表格中的标准单元格。
+			HTML 表格有两种单元格类型：
+				表头单元格 - 包含头部信息（由 &lt;th&gt; 元素创建）
+				标准单元格 - 包含数据（由 &lt;td&gt; 元素创建）
+			&lt;th&gt; 元素中的文本通常呈现为粗体并且居中。
+			&lt;td&gt; 元素中的文本通常是普通的左对齐文本。
+			如果需要将内容横跨多个行或列，使用 colspan 和 rowspan 属性
+</code></pre><pre><code>	2.31&lt;textarea&gt;
+		定义多行的文本输入控件
+			&lt;textarea&gt; 标签定义一个多行的文本输入控件。
+			文本区域中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。
+			可以通过 cols 和 rows 属性来规定 textarea 的尺寸大小，不过更好的办法是使用 CSS 的 height 和 width 属性。
+</code></pre><pre><code>	2.32&lt;th&gt;
+		定义表格中的表头单元格
+			&lt;th&gt; 标签定义 HTML 表格中的表头单元格。
+</code></pre><pre><code>	2.33&lt;thead&gt;
+		定义表格中的表头内容
+			&lt;thead&gt; 标签用于组合 HTML 表格的表头内容。
+</code></pre><pre><code>	2.34&lt;ul&gt;
+		定义无序列表
+			&lt;ul&gt; 标签定义无序列表。
+			将 &lt;ul&gt; 标签与 &lt;li&gt; 标签一起使用，创建无序列表。
+</code></pre><blockquote>
+<p>该笔记摘抄于菜鸟教程，该文章只是自己的学习记录</p>
+</blockquote>
+
             </section>
 	</div>
     </div>

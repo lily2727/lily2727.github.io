@@ -18,10 +18,7 @@
       
       <guid>https://lily2727.github.io/posts/css/</guid>
       <description>CSS
-1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个
-2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/开始，以/结束 例子： /这是个注释/
-3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;ldquo;#&amp;rdquo; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;rdquo;.&amp;ldquo;号显示：
-4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： 4.1.2.内部样式表 例子： hr {color:sienna;} p {margin-left:20px;} body {background-image:url(&amp;ldquo;images/back40.</description>
+1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个 2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/*开始，以*/结束 例子： /*这是个注释*/ 3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;quot;#&amp;quot; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;quot;.&amp;quot;号显示： 4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;mystyle.</description>
     </item>
     
     <item>

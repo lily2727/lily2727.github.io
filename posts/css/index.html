@@ -29,2244 +29,2268 @@
 	    </div>
             <section class="post-content">
                 <p>CSS</p>
-<p>1.含义
-CSS 指层叠样式表 (Cascading Style Sheets)
-样式定义如何显示 HTML 元素
-样式通常存储在样式表中
-把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题
-外部样式表可以极大提高工作效率
-外部样式表通常存储在 CSS 文件中
-多个样式定义可层叠为一个</p>
-<p>2.语法
-2.1. css由两部分组成：选择器，一条或多条声明
-例子：
-h1 {color：blue;font-size:12px;}
-h1:选择器
-color：属性
-blue：值
-{}：声明以分号为节点，该例子有两条声明
-2.2.选择器通常是需要改变样式的HTML元素。
-2.3.每条声明由一个属性和一个值组成
-2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。
-2.5.声明以分号作为结束。声明以大括号括起来。
-2.6.注释：
-用来解释代码，并可以随意编辑它，浏览器会忽略它。
-以/<em>开始，以</em>/结束
-例子：
-/<em>这是个注释</em>/</p>
-<p>3.选择器
-如果要在HTML元素中设置css样式，需要在元素中设置选择器
-3.1.id选择器
-id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
-HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &ldquo;#&rdquo; 来定义。
-3.2.class选择器
-class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。
-在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&rdquo;.&ldquo;号显示：</p>
-<p>4.css创建
-4.1.插入样式表的三种方法：
-4.1.1.外部样式表
-例子：
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-4.1.2.内部样式表
-例子：
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-hr {color:sienna;}
-p {margin-left:20px;}
-body {background-image:url(&ldquo;images/back40.gif&rdquo;);}
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-4.1.3.内联样式表
-例子：
-<!-- raw HTML omitted -->这是一个段落。<!-- raw HTML omitted -->
-4.2多重样式优先级
-4.2.1.内联样式
-4.2.2.内部样式
-4.2.3.外部样式
-4.2.4.浏览器默认样式
-（如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式，也就是说，样式不仅分为样式与样式之间的优先级，还有先后的优先级之分）</p>
-<p>5.css背景
-5.1.CSS 背景属性用于定义HTML元素的背景。
-5.2.CSS 属性定义背景效果:
-5.2.1.背景颜色：background-color
-定义了元素的背景颜色
-页面的背景颜色使用在body的选择器中
-例子：
-body {background-color:#b0c4de;}
-颜色值的定义方式：
-十六进制
-一个RGB值
-颜色名称
-5.2.2.背景图像：background-image
-描述了元素的背景图像		
-例子：
-body {background-image:url(&lsquo;paper.gif&rsquo;);}
-5.2.2.1.默认情况下，背景图像使用了平铺重复显示，以覆盖整个元素实体
-为了避免平铺造成的不协调，可设置图像只在水平方向平铺
-例子：
-{
-background-image:url(&lsquo;gradient2.png&rsquo;);
-background-repeat:repeat-x;
-}
-5.2.2.2.设置定位与平铺
-为了不让图像平铺可使用background-repeat属性
-例子：
-{
-background-image:url(&lsquo;img_tree.png&rsquo;);
-background-repeat:no-repeat;
-}
-为了改变图像的位置且不平铺，可利用background-position
-例子：
-{
-background-image:url(&lsquo;img_tree.png&rsquo;);
-background-repeat:no-repeat;
-background-position:right top;
-}
-5.2.3.背景图像平铺：background-repeat
-5.2.4.背景图像固定：background-attachment
-例子：
-{
-background-image:url(&lsquo;smiley.gif&rsquo;);
-background-repeat:no-repeat;
-background-attachment:fixed;
-}
-（以上代码表示，一个微笑的图像是不平铺且固定的，不会随着页面的滚动而移动位置。）
-5.2.5.背景图像位置：background-position
-5.2.6.背景简写属性
-例子：
-body {background:#ffffff url(&lsquo;img_tree.png&rsquo;) no-repeat right top;}
-当使用简写属性时，属性值的顺序
-background-color
-background-image
-background-repeat
-background-attachment
-background-position
-（不必全部使用）</p>
-<p>6.css文本格式
-6.1.文本颜色（color）
-颜色属性用来设置文字的颜色。
-通过css经常的指定：
-十六进制
-一个RGB值
-颜色名称
-6.2.文本的对齐方式
-文本排列属性是用来设置文本的水平对齐方式。
-文本可居中或对齐到左或右,两端对齐.
-例子：
-<!-- raw HTML omitted -->
-h1 {text-align:center;}
-p.date {text-align:right;}
-p.main {text-align:justify;}
-<!-- raw HTML omitted -->
-（以上代码表示，h1属性的文本居中显示，p标签date属性的文本向右显示，p标签main属性的文本每一行被展开为宽度相等、左右外边距对齐）
-6.3.文本修饰
-text-decoration 属性用来设置或删除文本的装饰。
-text-decoration:none	主要是删除链接的下划线。
-text-decoration:overline	在文本上方添加一条横线
-text-decoration:line-though	在文本中间添加一条横线
-text-decoration:underline	增加文本下划线
-6.4.文本转换
-text-transform文本转换属性是用来指定在一个文本中的大写和小写字母。
-text-transform:uppercase	转换为大写
-text-transform:lowercase	转换为小写
-text-transform:capitalize	每个单词首字母转换为大写
-6.5.文本缩进
-text-indent属性是用来指定文本的第一行的缩进。
-例子：
-{text-indent:50px;}
-6.6.指定字符空间（汉字的间距也采用这个来设置）
-letter-spacing
-6.7.指定行与行之间的间距
-line-height
-6.8.指定文本书写方向
-默认书写方向为从左到右，反之则使用direction属性，ltl为从左往右、rtl为从右往左。
-6.9.设置单词间距
-word-spacing
-6.10.文本阴影
-text-shadow
-例子：
-{text-shadow:2px 2px red;}</p>
-<p>7.css字体
-7.1.CSS字型
-通用字体系列 - 拥有相似外观的字体系统组合（如 &ldquo;Serif&rdquo; 或 &ldquo;Monospace&rdquo;）
-特定字体系列 - 一个特定的字体系列（如 &ldquo;Times&rdquo; 或 &ldquo;Courier&rdquo;）
-7.2.字体系列
-font-family 属性设置文本的字体系列。
-7.3.字体样式
-font-style，主要是用于指定斜体文字的字体样式属性。
-这个属性有三个值：
-正常 - 正常显示文本
-斜体 - 以斜体字显示的文字
-倾斜的文字 - 文字向一边倾斜（和斜体非常类似，但不太支持）
-例子：
-p.normal {font-style:normal;}
-p.italic {font-style:italic;}
-p.oblique {font-style:oblique;}
-7.4.字体大小
-font-size 属性设置文本的大小。
-字体大小的值可以是绝对或相对的大小。
-绝对大小：
-设置一个指定大小的文本
-不允许用户在所有浏览器中改变文本大小
-确定了输出的物理尺寸时绝对大小很有用
-相对大小：
-相对于周围的元素来设置大小
-允许用户在浏览器中改变文字大小
-（如果你不指定一个字体的大小，默认大小和普通文本段落一样，是16像素（16px=1em）。）
-7.5.字体加粗
-p.normal {font-weight:normal;}	正常
-p.light {font-weight:lighter;}	变细
-p.thick {font-weight:bold;}		加粗
-p.thicker {font-weight:900;}	使用数值改变字体的粗细</p>
-<p>8.css链接
-8.1.链接样式
-链接的样式，可以用任何CSS属性（如颜色，字体，背景等）。
-特别的链接，可以有不同的样式，这取决于他们是什么状态。
-这四个链接状态是：
-a:link - 正常，未访问过的链接
-a:visited - 用户已访问过的链接
-a:hover - 当用户鼠标放在链接上时
-a:active - 链接被点击的那一刻
-（注意： a:hover 必须在 a:link 和 a:visited 之后，需要严格按顺序才能看到效果。
-注意： a:active 必须在 a:hover 之后。）
-例子：
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-a.one:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#ffcc00;}</p>
-<pre><code>                a.two:link {color:#ff0000;}
-                a.two:visited {color:#0000ff;}
-                a.two:hover {font-size:150%;}
+<pre><code>1.含义
+	CSS 指层叠样式表 (Cascading Style Sheets)
+	样式定义如何显示 HTML 元素
+	样式通常存储在样式表中
+	把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题
+	外部样式表可以极大提高工作效率
+	外部样式表通常存储在 CSS 文件中
+	多个样式定义可层叠为一个
+</code></pre><pre><code>2.语法
+	2.1. css由两部分组成：选择器，一条或多条声明
+		例子：
+			h1 {color：blue;font-size:12px;}
+			h1:选择器
+			color：属性
+			blue：值
+			{}：声明以分号为节点，该例子有两条声明
+	2.2.选择器通常是需要改变样式的HTML元素。
+	2.3.每条声明由一个属性和一个值组成
+	2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。
+	2.5.声明以分号作为结束。声明以大括号括起来。
+	2.6.注释：
+			用来解释代码，并可以随意编辑它，浏览器会忽略它。
+			以/*开始，以*/结束
+			例子：
+				/*这是个注释*/
+</code></pre><pre><code>3.选择器
+	如果要在HTML元素中设置css样式，需要在元素中设置选择器
+	3.1.id选择器
+		id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
+		HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &quot;#&quot; 来定义。
+	3.2.class选择器
+		class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。
+		在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&quot;.&quot;号显示：
+	
+</code></pre><pre><code>4.css创建
+	4.1.插入样式表的三种方法：
+		4.1.1.外部样式表
+			例子：
+				&lt;head&gt;
+					&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+				&lt;/head&gt;
+		4.1.2.内部样式表
+			例子：
+				&lt;head&gt;
+					&lt;style&gt;
+						hr {color:sienna;}
+						p {margin-left:20px;}
+						body {background-image:url(&quot;images/back40.gif&quot;);}
+					&lt;/style&gt;
+				&lt;/head&gt;
+		4.1.3.内联样式表
+			例子：
+				&lt;p style=&quot;color:sienna;margin-left:20px&quot;&gt;这是一个段落。&lt;/p&gt;
+	4.2多重样式优先级
+		4.2.1.内联样式
+		4.2.2.内部样式
+		4.2.3.外部样式
+		4.2.4.浏览器默认样式
+	（如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式，也就是说，样式不仅分为样式与样式之间的优先级，还有先后的优先级之分）
 
-                a.three:link {color:#ff0000;}
-                a.three:visited {color:#0000ff;}
-                a.three:hover {background:#66ff66;}
+</code></pre><pre><code>5.css背景
+	5.1.CSS 背景属性用于定义HTML元素的背景。
+	5.2.CSS 属性定义背景效果:
+		5.2.1.背景颜色：background-color
+			定义了元素的背景颜色
+			页面的背景颜色使用在body的选择器中
+			例子：
+				body {background-color:#b0c4de;}
+			颜色值的定义方式：
+				十六进制
+				一个RGB值
+				颜色名称
+		5.2.2.背景图像：background-image
+			描述了元素的背景图像			
+			例子：
+				body {background-image:url('paper.gif');}
+			5.2.2.1.默认情况下，背景图像使用了平铺重复显示，以覆盖整个元素实体
+					为了避免平铺造成的不协调，可设置图像只在水平方向平铺
+					例子：
+						{
+						background-image:url('gradient2.png');
+						background-repeat:repeat-x;
+						}
+			5.2.2.2.设置定位与平铺
+					为了不让图像平铺可使用background-repeat属性
+					例子：
+						{
+						background-image:url('img_tree.png');
+						background-repeat:no-repeat;
+						}
+					为了改变图像的位置且不平铺，可利用background-position
+					例子：
+						{
+						background-image:url('img_tree.png');
+						background-repeat:no-repeat;
+						background-position:right top;
+						}
+		5.2.3.背景图像平铺：background-repeat
+		5.2.4.背景图像固定：background-attachment
+			例子：
+				{
+				background-image:url('smiley.gif');
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				}
+			（以上代码表示，一个微笑的图像是不平铺且固定的，不会随着页面的滚动而移动位置。）
+		5.2.5.背景图像位置：background-position
+		5.2.6.背景简写属性
+			例子：
+				body {background:#ffffff url('img_tree.png') no-repeat right top;}
+			当使用简写属性时，属性值的顺序
+				background-color
+				background-image
+				background-repeat
+				background-attachment
+				background-position
+				（不必全部使用）
 
-                a.four:link {color:#ff0000;}
-                a.four:visited {color:#0000ff;}
-                a.four:hover {font-family:Georgia, serif;}
+</code></pre><pre><code>6.css文本格式
+	6.1.文本颜色（color）
+		颜色属性用来设置文字的颜色。
+		通过css经常的指定：
+			十六进制
+			一个RGB值
+			颜色名称
+	6.2.文本的对齐方式
+		文本排列属性是用来设置文本的水平对齐方式。
+		文本可居中或对齐到左或右,两端对齐.
+		例子：
+			&lt;style&gt;
+			h1 {text-align:center;}
+			p.date {text-align:right;}
+			p.main {text-align:justify;}
+			&lt;/style&gt;
+		（以上代码表示，h1属性的文本居中显示，p标签date属性的文本向右显示，p标签main属性的文本每一行被展开为宽度相等、左右外边距对齐）
+	6.3.文本修饰
+		text-decoration 属性用来设置或删除文本的装饰。
+			text-decoration:none	主要是删除链接的下划线。
+			text-decoration:overline	在文本上方添加一条横线
+			text-decoration:line-though	在文本中间添加一条横线
+			text-decoration:underline	增加文本下划线
+	6.4.文本转换
+		text-transform文本转换属性是用来指定在一个文本中的大写和小写字母。
+			text-transform:uppercase	转换为大写
+			text-transform:lowercase	转换为小写
+			text-transform:capitalize	每个单词首字母转换为大写
+	6.5.文本缩进
+		text-indent属性是用来指定文本的第一行的缩进。
+		例子：	
+			{text-indent:50px;}
+	6.6.指定字符空间（汉字的间距也采用这个来设置）
+		letter-spacing
+	6.7.指定行与行之间的间距
+		line-height
+	6.8.指定文本书写方向
+		默认书写方向为从左到右，反之则使用direction属性，ltl为从左往右、rtl为从右往左。
+	6.9.设置单词间距
+		word-spacing
+	6.10.文本阴影
+		text-shadow
+		例子：
+			{text-shadow:2px 2px red;}
 
-                a.five:link {color:#ff0000;text-decoration:none;}
-                a.five:visited {color:#0000ff;text-decoration:none;}
-                a.five:hover {text-decoration:underline;}
-            &lt;/style&gt;
-        &lt;/head&gt;
+</code></pre><pre><code>7.css字体
+	7.1.CSS字型
+		通用字体系列 - 拥有相似外观的字体系统组合（如 &quot;Serif&quot; 或 &quot;Monospace&quot;）
+		特定字体系列 - 一个特定的字体系列（如 &quot;Times&quot; 或 &quot;Courier&quot;）
+	7.2.字体系列
+		font-family 属性设置文本的字体系列。
+	7.3.字体样式
+		font-style，主要是用于指定斜体文字的字体样式属性。
+		这个属性有三个值：
+			正常 - 正常显示文本
+			斜体 - 以斜体字显示的文字
+			倾斜的文字 - 文字向一边倾斜（和斜体非常类似，但不太支持）
+		例子：
+			p.normal {font-style:normal;}
+			p.italic {font-style:italic;}
+			p.oblique {font-style:oblique;}
+	7.4.字体大小
+		font-size 属性设置文本的大小。
+		字体大小的值可以是绝对或相对的大小。
+		绝对大小：
+			设置一个指定大小的文本
+			不允许用户在所有浏览器中改变文本大小
+			确定了输出的物理尺寸时绝对大小很有用
+		相对大小：
+			相对于周围的元素来设置大小
+			允许用户在浏览器中改变文字大小
+		（如果你不指定一个字体的大小，默认大小和普通文本段落一样，是16像素（16px=1em）。）
+	7.5.字体加粗
+		p.normal {font-weight:normal;}	正常
+		p.light {font-weight:lighter;}	变细
+		p.thick {font-weight:bold;}		加粗
+		p.thicker {font-weight:900;}	使用数值改变字体的粗细
 
-        &lt;body&gt;
-            &lt;p&gt;将鼠标移至链接上改变样式.&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;&lt;a class=&quot;one&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变颜色&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;&lt;a class=&quot;two&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变字体大小&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;&lt;a class=&quot;three&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变背景颜色&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;&lt;a class=&quot;four&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变字体类型&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;&lt;a class=&quot;five&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变文字修饰&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-        &lt;/body&gt;
-</code></pre>
-<p>9.css列表
-9.1.CSS列表属性作用如下：
-设置不同的列表项标记为有序列表
-设置不同的列表项标记为无序列表
-设置列表项标记为图像
-9.2.列表
-无序列表 - 列表项标记用特殊图形（如小黑点、小方框等）
-有序列表 - 列表项的标记有数字或字母
-9.3.不同的列表项标记
-例子：
-无序列表
-ul.a {list-style-type:circle;}	圆点
-ul.b {list-style-type:square;}	方块
-有序列表
-ol.c {list-style-type:upper-roman;}	罗马数字
-ol.d {list-style-type:lower-alpha;}	字母
-作为列表项标记的图像
-{list-style-image: url(&lsquo;sqpurple.gif&rsquo;);}</p>
-<p>10.css表格
-10.1.表格边框
-使用border属性.
-例子：
-table {
-border-collapse: collapse;
-}
-table, td, th {
-border: 1px solid black;
-}
-（以上代码表示一个两行两列的表格，单一边框）
-10.2.表格宽度和高度
-Width和height属性定义表格的宽度和高度。
-例子：设置100％的宽度，50像素的th元素的高度的表格：
-table
-{
-width:100%;
-}
-th
-{
-height:50px;
-}
-10.3.表格文字对齐
-表格中的文本对齐和垂直对齐属性。
-text-align属性设置水平对齐方式，向左，右，或中心：
-vertical-align属性垂直对齐属性设置垂直对齐，比如顶部，底部或中间：
-10.4.表格填充
-如果在表的内容中控制空格之间的边框，应使用td和th元素的填充属性：
-10.5.表格颜色
-可在边框、背景色、文本颜色设置表格各个元素的颜色（border、background-color、color）</p>
-<p>11.盒子模型
-11.1.CSS 盒子模型(Box Model)
-CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
-盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
-部分的说明：
-Margin(外边距) - 清除边框外的区域，外边距是透明的。
-Border(边框) - 围绕在内边距和内容外的边框。
-Padding(内边距) - 清除内容周围的区域，内边距是透明的。
-Content(内容) - 盒子的内容，显示文本和图像
-（当指定一个CSS元素的宽度和高度属性时，你只是设置内容区域的宽度和高度。要知道，完全大小的元素，你还必须添加填充，边框和边距。）</p>
-<p>12.css边框
-12.1.边框属性
-CSS边框属性允许你指定一个元素边框的样式和颜色。
-例子：
-在四边都有边框
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-（起作用的是border: 1px solid #ccc!important）
-红色底部边框
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-（起作用的是border-bottom: 1px solid #ccc!important）
-圆角边框
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-（起作用的是border: 1px solid #ccc!important;（边框大小和颜色）border-radius: 16px!important;（设置边框圆角大小））
-左侧边框带宽度，颜色为蓝色
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-（起作用的是background-color: #ddffff!important;（背景颜色）border-left: 6px solid #ccc!important;（做边框设置宽度）border-color: #2196F3!important;（边框颜色））
-12.2.边框样式（border-style）
-none: 默认无边框
-dotted: 定义一个点线边框
-solid: 定义实线边框
-dashed: 定义一个虚线边框
-double: 定义两个边框。 两个边框的宽度和 border-width 的值相同
-groove: 定义3D沟槽边框。效果取决于边框的颜色值
-ridge: 定义3D脊边框。效果取决于边框的颜色值
-inset:定义一个3D的嵌入边框。效果取决于边框的颜色值
-outset: 定义一个3D突出边框。 效果取决于边框的颜色值
-例子：
-p.none {border-style:none;}
-p.dotted {border-style:dotted;}
-p.dashed {border-style:dashed;}
-p.solid {border-style:solid;}
-p.double {border-style:double;}
-p.groove {border-style:groove;}
-p.ridge {border-style:ridge;}
-p.inset {border-style:inset;}
-p.outset {border-style:outset;}
-p.hidden {border-style:hidden;}（隐藏边框）
-border-style属性可以有1-4个值：
-例子：
-border-style:dotted solid double dashed;
-上边框是 dotted
-右边框是 solid
-底边框是 double
-左边框是 dashed</p>
-<pre><code>            border-style:dotted solid double;
-            上边框是 dotted
-            左、右边框是 solid
-            底边框是 double
-
-            border-style:dotted solid;
-            上、底边框是 dotted
-            右、左边框是 solid
-
-            border-style:dotted;
-            四面边框是 dotted
-</code></pre>
-<p>13.css轮廓
-轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。
-轮廓（outline）属性指定元素轮廓的样式、颜色和宽度。</p>
-<p>14.css margin（外边距）
-CSS margin(外边距)属性定义元素周围的空间。
-例子：
-{
-margin-top:100px;
-margin-bottom:100px;
-margin-right:50px;
-margin-left:50px;
-}</p>
-<p>15.CSS padding（填充）
-CSS padding（填充）是一个简写属性，定义元素边框与元素内容之间的空间，即上下左右的内边距。
-例子：
-{
-padding-top:25px;
-padding-bottom:25px;
-padding-right:50px;
-padding-left:50px;
-}</p>
-<p>16.CSS分组和嵌套选择器
-16.1.分组选择器
-在样式表中有很多具有相同样式的元素。
-为了尽量减少代码，可以使用分组选择器。
-每个选择器用逗号分隔。
-例子：
-h1,h2,p
-{
-color:green;
-}
-16.2.嵌套选择器
-例子：
-p{ }: 为所有 p 元素指定一个样式。
-.marked{ }: 为所有 class=&quot;marked&rdquo; 的元素指定一个样式。
-.marked p{ }: 为所有 class=&quot;marked&rdquo; 元素内的 p 元素指定一个样式。
-p.marked{ }: 为所有 class=&quot;marked&rdquo; 的 p 元素指定一个样式。</p>
-<p>17.css尺寸
-CSS 尺寸 (Dimension) 属性允许你控制元素的高度和宽度。同样，它允许你增加行间距。
-常用的CSS 尺寸 (Dimension) 属性：
-height	设置元素的高度。
-width	设置元素的宽度。</p>
-<p>18.CSS Display(显示) 与 Visibility（可见性）
-display属性设置一个元素应如何显示。
-visibility属性指定一个元素应可见还是隐藏。
-18.1.隐藏元素
-display:none
-可以隐藏某个元素，且隐藏的元素不会占用任何空间。
-也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。		
-visibility:hidden
-可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。
-也就是说，该元素虽然被隐藏了，但仍然会影响布局。
-18.2.块和内联元素
-块级元素（block）是一个元素，占用了全部宽度，在前后都是换行符。
-宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;
-块元素的例子：
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
-<pre><code>    内联元素（inline）只需要必要的宽度，不强制换行。
-    宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变，就是里面文字或图片的大小;
-    内联元素的例子：
-        &lt;span&gt;
-        &lt;a&gt;
-</code></pre>
-<p>19.CSS Position(定位)
-19.1.position 属性指定了元素的定位类型。
-19.2.position 属性的五个值
-static
-relative
-fixed
-absolute
-sticky
-元素可以使用的顶部，底部，左侧和右侧属性定位。然而，这些属性无法工作，除非是先设定position属性。他们也有不同的工作方式，这取决于定位方法。
-19.3.static 定位
-HTML 元素的默认值，即没有定位，遵循正常的文档流对象。
-静态定位的元素不会受到 top, bottom, left, right影响。
-19.4.fixed 定位
-元素的位置相对于浏览器窗口是固定位置。
-即使窗口是滚动的它也不会移动：
-19.5.relative 定位
-相对定位元素的定位是相对其正常位置。
-19.6.absolute 定位
-绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<!-- raw HTML omitted -->:
-absolute 定位使元素的位置与文档流无关，因此不占据空间。
-absolute 定位的元素和其他元素重叠。
-19.7.sticky 定位
-sticky 英文字面意思是粘，粘贴，所以可以把它称之为粘性定位。
-position: sticky; 基于用户的滚动位置来定位。
-粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。
-它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。
-元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。
-这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。
-19.8.重叠的元素
-元素的定位与文档流无关，所以它们可以覆盖页面上的其它元素
-z-index属性指定了一个元素的堆叠顺序（哪个元素应该放在前面，或后面）
-一个元素可以有正数或负数的堆叠顺序：
-具有更高堆叠顺序的元素总是在较低的堆叠顺序元素的前面。</p>
-<p>20.CSS 布局 - Overflow
-CSS overflow 属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。
-overflow属性有以下值：
-visible		默认值。内容不会被修剪，会呈现在元素框之外。
-hidden		内容会被修剪，并且其余内容是不可见的。
-scroll		内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
-auto		如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
-inherit		规定应该从父元素继承 overflow 属性的值。</p>
-<p>21.CSS Float(浮动)
-21.1.CSS 的 Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。
-Float（浮动），往往是用于图像，但它在布局时一样非常有用。
-21.2.元素怎样浮动
-元素的水平方向浮动，意味着元素只能左右移动而不能上下移动。
-一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
-浮动元素之后的元素将围绕它。
-浮动元素之前的元素将不会受到影响。
-22.3.彼此相邻的浮动元素
-如果你把几个浮动的元素放到一起，如果有空间的话，它们将彼此相邻。
-22.4.清除浮动 - 使用 clear</p>
-<p>23.CSS 布局 - 水平 &amp; 垂直对齐
-23.1.元素居中对齐
-要水平居中对齐一个元素(如 <!-- raw HTML omitted -->), 可以使用 margin: auto;
-注意: 如果没有设置 width 属性(或者设置 100%)，居中对齐将不起作用。
-23.2.文本居中对齐
-可以使用 text-align: center;
-23.3.图片居中对齐
-要让图片居中对齐, 可以使用 margin: auto; 并将它放到 块 元素中:
-23.4.左右对齐 - 使用定位方式
-可以使用 position: absolute; 属性来对齐元素:
-注释：绝对定位元素会被从正常流中删除，并且能够交叠元素。
-提示: 当使用 position 来对齐元素时, 通常 <!-- raw HTML omitted --> 元素会设置 margin 和 padding 。 这样可以避免在不同的浏览器中出现可见的差异。
-23.5.左右对齐 - 使用 float 方式
-可以使用 float 属性来对齐元素;
-注意：如果子元素的高度大于父元素，且子元素设置了浮动，那么子元素将溢出，这时候你可以使用 &ldquo;clearfix(清除浮动)&rdquo; 来解决该问题。
-可以在父元素上添加 overflow: auto; 来解决子元素溢出的问题:
-23.6.垂直居中对齐 - 使用 padding
-一个简单的方式就是头部顶部使用 padding:
-如果要水平和垂直都居中，可以使用 padding 和 text-align: center:
-23.7.垂直居中 - 使用 line-height
-23.8.垂直居中 - 使用 position 和 transform</p>
-<p>24.CSS 组合选择符
-24.1.CSS 组合选择符
-组合选择符说明了两个选择器直接的关系。
-CSS组合选择符包括各种简单选择符的组合方式。
-在 CSS3 中包含了四种组合方式:
-后代选择器(以空格分隔)
-子元素选择器(以大于号分隔）
-相邻兄弟选择器（以加号分隔）
-普通兄弟选择器（以破折号分隔）
-24.2.后代选择器
-后代选择器用于选取某元素的后代元素。
-例子：（所有 <!-- raw HTML omitted --> 元素插入到 <!-- raw HTML omitted --> 元素中: ）
-div p
-{
-background-color:yellow;
-}
-24.3.子元素选择器
-与后代选择器相比，子元素选择器（Child selectors）只能选择作为某元素子元素的元素。
-例子：（选择了<!-- raw HTML omitted -->元素中所有直接子元素 <!-- raw HTML omitted --> ）
-div&gt;p
-{
-background-color:yellow;
-}
-24.4.相邻兄弟选择器
-相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。
-如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器（Adjacent sibling selector）。
-例子：（选取了所有位于 <!-- raw HTML omitted --> 元素后的第一个 <!-- raw HTML omitted --> 元素）
-div+p
-{
-background-color:yellow;
-}
-24.5.后续兄弟选择器
-后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。
-例子：（选取了所有 <!-- raw HTML omitted --> 元素之后的所有相邻兄弟元素 <!-- raw HTML omitted -->）
-div~p
-{
-background-color:yellow;
-}</p>
-<p>25.CSS 伪类(Pseudo-classes)
-CSS伪类是用来添加一些选择器的特殊效果。
-25.1.语法
-伪类的语法
-selector:pseudo-class {property:value;}
-css类也可以用伪类
-selector.class:pseudo-class {property:value;}
-25.2.anchor伪类
-例子：（在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示）
-a:link {color:#FF0000;} /* 未访问的链接 */
-a:visited {color:#00FF00;} /* 已访问的链接 */
-a:hover {color:#FF00FF;} /* 鼠标划过链接 */
-a:active {color:#0000FF;} /* 已选中的链接 */
-（注意：在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
-注意：在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
-注意：伪类的名称不区分大小写。）
-25.3.伪类和CSS类
-例子：（如果例子的链接已被访问，它会显示为红色。）
-a.red:visited {color:#FF0000;}
-<!-- raw HTML omitted -->CSS 语法<!-- raw HTML omitted -->
-25.4.CSS :first-child 伪类
-您可以使用 :first-child 伪类来选择父元素的第一个子元素。
-25.4.1.匹配第一个 <!-- raw HTML omitted --> 元素
-例子：（选择器匹配作为任何元素的第一个子元素的 <!-- raw HTML omitted --> 元素：）
-p:first-child
-{
-color:blue;
-}
-25.4.2.匹配所有<!-- raw HTML omitted --> 元素中的第一个 <!-- raw HTML omitted --> 元素
-例子：（选择相匹配的所有<!-- raw HTML omitted -->元素的第一个 <!-- raw HTML omitted --> 元素：）
-p &gt; i:first-child
-{
-color:blue;
-}
-25.4.3.匹配所有作为第一个子元素的 <!-- raw HTML omitted --> 元素中的所有 <!-- raw HTML omitted --> 元素
-例子：
-p:first-child i
-{
-color:blue;
-}
-25.4.4.CSS - :lang 伪类
-:lang 伪类使你有能力为不同的语言定义特殊的规则
-例子：（:lang 类为属性值为 no 的q元素定义引号的类型）
-q:lang(no) {quotes: &ldquo;~&rdquo; &ldquo;~&rdquo;;}
-25.4.5为超链接添加不同样式
-例子：
-（链接改变颜色）
-a.one:link {color:blue;}（链接点击前蓝色）
-a.one:visited {color:red;}（已点击过的链接红色）
-a.one:hover {color:purple;}（鼠标上浮链接变为紫色）</p>
-<pre><code>                （链接改变字体大小）
-                a.two:link {color:blue;}（链接点击前蓝色）
-                a.two:visited {color:red;}（已点击过的链接红色）
-                a.two:hover {font-size:150%;}（鼠标上浮链接字体变大）
-
-                （链接改变字体背景颜色）
-                a.three:link {color:blue;}（链接点击前蓝色）
-                a.three:visited {color:red;}（已点击过的链接红色）
-                a.three:hover {background:#66ff66;}（鼠标上浮链接的文字添加背景色）
-
-                （链接改变字体类型）
-                a.four:link {color:blue;}（链接点击前蓝色）
-                a.four:visited {color:red;}（已点击过的链接红色）
-                a.four:hover {font-family:Georgia, serif;}（鼠标上浮链接的字体发生改变）
-				
-                （链接改变文字修饰）
-                a.five:link {color:blue;text-decoration:none;}（链接点击前蓝色，且链接下方没有下划线）
-                a.five:visited {color:red;text-decoration:none;}（已点击过的链接红色，且链接下方没有下划线）
-                a.five:hover {text-decoration:underline;}（鼠标上浮链接出现下划线）
-25.5.伪类/微元素（部分）		
-    选择器			示例			示例说明	
-    :link			a:link			选择所有未访问链接
-    :visited		a:visited		选择所有访问过的链接
-    :active			a:active		选择正在活动链接
-    :hover			a:hover			把鼠标放在链接上的状态
-    :focus			input:focus		选择元素输入后具有焦点
-    :first-letter	p:first-letter	选择每个&lt;p&gt; 元素的第一个字母
-    :first-line		p:first-line	选择每个&lt;p&gt; 元素的第一行
-    :first-child	p:first-child	选择器匹配属于任意元素的第一个子元素的 &lt;p&gt; 元素
-    :before			p:before		在每个&lt;p&gt;元素之前插入内容
-    :after			p:after			在每个&lt;p&gt;元素之后插入内容
-    :lang(language)	p:lang(it)		为&lt;p&gt;元素的lang属性选择一个开始值
-</code></pre>
-<p>26.导航栏
-26.1.垂直/水平
-26.2.导航栏=链接列表
-作为标准的HTML基础一个导航栏是必须的
-导航条基本上是一个链接列表，所以使用 <!-- raw HTML omitted --> 和 <!-- raw HTML omitted -->元素非常有意义：
-例子：
-建立一个标准的HTML列表导航栏。
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --><!-- raw HTML omitted -->主页<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted --><!-- raw HTML omitted -->新闻<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted --><!-- raw HTML omitted -->联系<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted --><!-- raw HTML omitted -->关于<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-（注意：这里我们用 href=&rdquo;#&ldquo;作为测试连接。但在一个真正的 web 站点上需要真实的 url。）</p>
-<pre><code>        从列表中删除边距和填充（在上述代码的基础上）
-            ul {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                }
-            （list-style-type:none - 移除列表前小标志。一个导航栏并不需要列表标记
-              移除浏览器的默认设置将边距和填充设置为0）
+</code></pre><pre><code>8.css链接
+	8.1.链接样式
+		链接的样式，可以用任何CSS属性（如颜色，字体，背景等）。
+		特别的链接，可以有不同的样式，这取决于他们是什么状态。
+		这四个链接状态是：
+			a:link - 正常，未访问过的链接
+			a:visited - 用户已访问过的链接
+			a:hover - 当用户鼠标放在链接上时
+			a:active - 链接被点击的那一刻
+			（注意： a:hover 必须在 a:link 和 a:visited 之后，需要严格按顺序才能看到效果。
+			  注意： a:active 必须在 a:hover 之后。）
+		例子：
+			&lt;head&gt;
+				&lt;style&gt;
+					a.one:link {color:#ff0000;}
+					a.one:visited {color:#0000ff;}
+					a.one:hover {color:#ffcc00;}
 		
-26.3.垂直导航栏		
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 200px;
-                background-color: #f1f1f1;
-            }			 
-            li a {
-                display: block;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none;
-            }			 
-            /* 鼠标移动到选项上修改背景颜色 */
-            li a:hover {
-                background-color: #555;
-                color: white;
-            }
-        &lt;/style&gt;			
-        &lt;body&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;p&gt;背景颜色添加到链接中显示链接的区域&lt;/p&gt;
-            &lt;p&gt;注意,整个区域是可点击的链接,而不仅仅是文本。&lt;/p&gt;
-        &lt;/body&gt;
-    （示例说明：display:block - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
-                width:60px - 块元素默认情况下是最大宽度。我们要指定一个60像素的宽度）
-	
-    完整的垂直导航例子：
-        &lt;style&gt;
-            ul
-            {
-                list-style-type:none;
-                margin:0;
-                padding:0;
-            }
-            a:link,a:visited
-            {
-                display:block;
-                font-weight:bold;
-                color:#FFFFFF;
-                background-color:#98bf21;
-                width:200px;
-                text-align:center;
-                padding:4px;
-                text-decoration:none;
-                text-transform:uppercase;
-            }
-            a:hover,a:active
-            {
-                background-color:#7A991A;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-	
-    有默认选项的垂直导航：
-    例子：（激活/当前导航条实例）
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 200px;
-                background-color: #f1f1f1;
-            }
-            li a {
-                display: block;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none;
-            }
-            li a.active {
-                background-color: #4CAF50;
-                color: white;
-            }
-            li a:hover:not(.active) {
-                background-color: #555;
-                color: white;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;	
-		
-    创建链接并添加边框
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 200px;
-                background-color: #f1f1f1;
-                border: 1px solid #555;
-            }
+					a.two:link {color:#ff0000;}
+					a.two:visited {color:#0000ff;}
+					a.two:hover {font-size:150%;}
 
-            li a {
-                display: block;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none;
-            }
+					a.three:link {color:#ff0000;}
+					a.three:visited {color:#0000ff;}
+					a.three:hover {background:#66ff66;}
 
-            li {
-                text-align: center;
-                border-bottom: 1px solid #555;
-            }
+					a.four:link {color:#ff0000;}
+					a.four:visited {color:#0000ff;}
+					a.four:hover {font-family:Georgia, serif;}
 
-            li:last-child {
-                border-bottom: none;
-            }
+					a.five:link {color:#ff0000;text-decoration:none;}
+					a.five:visited {color:#0000ff;text-decoration:none;}
+					a.five:hover {text-decoration:underline;}
+				&lt;/style&gt;
+			&lt;/head&gt;
 
-            li a.active {
-                background-color: #4CAF50;
-                color: white;
-            }
+			&lt;body&gt;
+				&lt;p&gt;将鼠标移至链接上改变样式.&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;&lt;a class=&quot;one&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变颜色&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;&lt;a class=&quot;two&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变字体大小&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;&lt;a class=&quot;three&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变背景颜色&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;&lt;a class=&quot;four&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变字体类型&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;&lt;a class=&quot;five&quot; href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这个链接改变文字修饰&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+			&lt;/body&gt;
+</code></pre><pre><code>9.css列表
+	9.1.CSS列表属性作用如下：
+		设置不同的列表项标记为有序列表
+		设置不同的列表项标记为无序列表
+		设置列表项标记为图像
+	9.2.列表
+		无序列表 - 列表项标记用特殊图形（如小黑点、小方框等）
+		有序列表 - 列表项的标记有数字或字母
+	9.3.不同的列表项标记
+		例子：
+			无序列表
+			ul.a {list-style-type:circle;}	圆点
+			ul.b {list-style-type:square;}	方块
+			有序列表
+			ol.c {list-style-type:upper-roman;}	罗马数字
+			ol.d {list-style-type:lower-alpha;}	字母
+		作为列表项标记的图像
+			{list-style-image: url('sqpurple.gif');}
+</code></pre><pre><code>10.css表格
+	10.1.表格边框
+		使用border属性.
+		例子：
+		table {
+			border-collapse: collapse;
+		}
+		table, td, th {
+			border: 1px solid black;
+		}
+	（以上代码表示一个两行两列的表格，单一边框）
+	10.2.表格宽度和高度
+		Width和height属性定义表格的宽度和高度。
+		例子：设置100％的宽度，50像素的th元素的高度的表格：
+			table 
+			{
+				width:100%;
+			}
+			th
+			{
+				height:50px;
+			}
+	10.3.表格文字对齐
+		表格中的文本对齐和垂直对齐属性。
+			text-align属性设置水平对齐方式，向左，右，或中心：
+			vertical-align属性垂直对齐属性设置垂直对齐，比如顶部，底部或中间：
+	10.4.表格填充
+		如果在表的内容中控制空格之间的边框，应使用td和th元素的填充属性：
+	10.5.表格颜色
+		可在边框、背景色、文本颜色设置表格各个元素的颜色（border、background-color、color）
+</code></pre><pre><code>11.盒子模型
+	11.1.CSS 盒子模型(Box Model)
+		CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
+		盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+		部分的说明：
+				Margin(外边距) - 清除边框外的区域，外边距是透明的。
+				Border(边框) - 围绕在内边距和内容外的边框。
+				Padding(内边距) - 清除内容周围的区域，内边距是透明的。
+				Content(内容) - 盒子的内容，显示文本和图像
+		（当指定一个CSS元素的宽度和高度属性时，你只是设置内容区域的宽度和高度。要知道，完全大小的元素，你还必须添加填充，边框和边距。）
+</code></pre><pre><code>12.css边框
+	12.1.边框属性
+		CSS边框属性允许你指定一个元素边框的样式和颜色。
+		例子：
+			在四边都有边框
+				&lt;div style=&quot;border: 1px solid #ccc!important;border-color: #000!important;padding:14px;&quot;&gt;&lt;/div&gt;
+				（起作用的是border: 1px solid #ccc!important）
+			红色底部边框
+				&lt;div style=&quot;border-bottom: 1px solid #ccc!important;padding:14px;border-color: #f44336!important;&quot;&gt;&lt;/div&gt;
+				（起作用的是border-bottom: 1px solid #ccc!important）
+			圆角边框
+				&lt;div style=&quot;border: 1px solid #ccc!important;padding:14px;border-radius: 16px!important;&quot;&gt;&lt;/div&gt;
+				（起作用的是border: 1px solid #ccc!important;（边框大小和颜色）border-radius: 16px!important;（设置边框圆角大小））
+			左侧边框带宽度，颜色为蓝色
+				&lt;div style=&quot;background-color: #ddffff!important;padding: 14px;border-left: 6px solid #ccc!important;border-color: #2196F3!important;&quot;&gt;&lt;/div&gt;
+				（起作用的是background-color: #ddffff!important;（背景颜色）border-left: 6px solid #ccc!important;（做边框设置宽度）border-color: #2196F3!important;（边框颜色））
+	12.2.边框样式（border-style）
+		none: 默认无边框
+		dotted: 定义一个点线边框
+		solid: 定义实线边框
+		dashed: 定义一个虚线边框
+		double: 定义两个边框。 两个边框的宽度和 border-width 的值相同
+		groove: 定义3D沟槽边框。效果取决于边框的颜色值
+		ridge: 定义3D脊边框。效果取决于边框的颜色值
+		inset:定义一个3D的嵌入边框。效果取决于边框的颜色值
+		outset: 定义一个3D突出边框。 效果取决于边框的颜色值
+		例子：
+			p.none {border-style:none;}
+			p.dotted {border-style:dotted;}
+			p.dashed {border-style:dashed;}
+			p.solid {border-style:solid;}
+			p.double {border-style:double;}
+			p.groove {border-style:groove;}
+			p.ridge {border-style:ridge;}
+			p.inset {border-style:inset;}
+			p.outset {border-style:outset;}
+			p.hidden {border-style:hidden;}（隐藏边框）
+		border-style属性可以有1-4个值：
+			例子：
+				border-style:dotted solid double dashed;
+				上边框是 dotted
+				右边框是 solid
+				底边框是 double
+				左边框是 dashed
 
-            li a:hover:not(.active) {
-                background-color: #555;
-                color: white;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;	
+				border-style:dotted solid double;
+				上边框是 dotted
+				左、右边框是 solid
+				底边框是 double
 
-    全屏高度的固定导航条
-    例子：（注意: 该实例可以在移动设备上使用。）
-        &lt;style&gt;
-        body {
-            margin: 0;
-        }
+				border-style:dotted solid;
+				上、底边框是 dotted
+				右、左边框是 solid
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 25%;
-            background-color: #f1f1f1;
-            position: fixed;
-            height: 100%;（全屏高度）
-            overflow: auto;（如果导航栏选项多，允许滚动）
-        }
+				border-style:dotted;
+				四面边框是 dotted
 
-        li a {
-            display: block;
-            color: #000;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
+</code></pre><pre><code>13.css轮廓
+	轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。
+	轮廓（outline）属性指定元素轮廓的样式、颜色和宽度。
+</code></pre><pre><code>14.css margin（外边距）
+	CSS margin(外边距)属性定义元素周围的空间。
+	例子：
+		{
+			margin-top:100px;
+			margin-bottom:100px;
+			margin-right:50px;
+			margin-left:50px;
+		}
 
-        li a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
+</code></pre><pre><code>15.CSS padding（填充）
+	CSS padding（填充）是一个简写属性，定义元素边框与元素内容之间的空间，即上下左右的内边距。
+	例子：
+		{
+			padding-top:25px;
+			padding-bottom:25px;
+			padding-right:50px;
+			padding-left:50px;
+		}	
 
-        li a:hover:not(.active) {
-            background-color: #555;
-            color: white;
-        }
-        &lt;/style&gt;
-        &lt;body&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;div style=&quot;margin-left:25%;padding:1px 16px;height:1000px;&quot;&gt;
-          &lt;h2&gt;Fixed Full-height Side Nav&lt;/h2&gt;
-          &lt;h3&gt;Try to scroll this area, and see how the sidenav sticks to the page&lt;/h3&gt;
-          &lt;p&gt;Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.&lt;/p&gt;
-          &lt;p&gt;Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-          &lt;p&gt;Some text..&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;/body&gt;
+</code></pre><pre><code>16.CSS分组和嵌套选择器
+	16.1.分组选择器
+		在样式表中有很多具有相同样式的元素。
+		为了尽量减少代码，可以使用分组选择器。
+		每个选择器用逗号分隔。
+		例子：
+			h1,h2,p
+			{
+				color:green;
+			}
+	16.2.嵌套选择器
+		例子：	
+			p{ }: 为所有 p 元素指定一个样式。
+			.marked{ }: 为所有 class=&quot;marked&quot; 的元素指定一个样式。
+			.marked p{ }: 为所有 class=&quot;marked&quot; 元素内的 p 元素指定一个样式。
+			p.marked{ }: 为所有 class=&quot;marked&quot; 的 p 元素指定一个样式。
+</code></pre><pre><code>17.css尺寸
+	CSS 尺寸 (Dimension) 属性允许你控制元素的高度和宽度。同样，它允许你增加行间距。
+	常用的CSS 尺寸 (Dimension) 属性：
+		height	设置元素的高度。
+		width	设置元素的宽度。
 
-26.4.水平导航栏
-    有两种方法创建横向导航栏。使用内联(inline)或浮动(float)的列表项。
-    这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法。
-	
-    内联列表项
-    建立一个横向导航栏的方法之一是指定元素
-    例子：
-        &lt;style&gt;
-        ul
-        {
-            list-style-type:none;
-            margin:0;
-            padding:0;
-        }
-        li
-        {
-        display:inline;
-        }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-    （display:inline; -默认情况下，&lt;li&gt;元素是块元素。在这里，我们删除换行符之前和之后每个列表项，以显示一行。）
-	
-    浮动列表项
-    在上面的例子中链接有不同的宽度。
-    例子：
-        &lt;style&gt;
-            ul
-            {
-                list-style-type:none;
-                margin:0;
-                padding:0;
-                overflow:hidden;
-            }
-            li
-            {
-                float:left;
-            }
-            a
-            {
-                display:block;
-                width:60px;
-                background-color:#dddddd;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-        （背景颜色添加到链接中显示链接的区域。整个链接区域是可点击的,不仅仅是文本。
-          float:left - 使用浮动块元素的幻灯片彼此相邻
-          display:block - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
-          width:60px - 块元素默认情况下是最大宽度。我们要指定一个60像素的宽度
-
-    水平导航条实例
-    创建一个水平导航条，在鼠标移动到选项后修改背景颜色。	
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                width:16em;
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            li a:hover {
-                background-color: #111;
-            }（鼠标移到选项上修改颜色）
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-
-    激活/当前导航条实例
-    在点击了选项后，我们可以添加 &quot;active&quot; 类来标准哪个选项被选中：
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover:not(.active) {
-                background-color: #111;
-            }
-
-            .active {
-                background-color: #4CAF50;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-	
-    链接右对齐
-    将导航条最右边的选项设置右对齐
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover:not(.active) {
-                background-color: #111;
-            }
-
-            .active {
-                background-color: #4CAF50;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li style=&quot;float:right&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-
-    添加分割线
-    &lt;li&gt; 通过 border-right 样式来添加分割线
-    例子：
-        &lt;style&gt;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            li {
-                float: left;
-                border-right:1px solid #bbb;
-            }
-            li:last-child {
-                border-right: none;
-            }/* 除了最后一个选项(last-child) 其他的都添加分割线 */
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            li a:hover:not(.active) {
-                background-color: #111;
-            }
-            .active {
-                background-color: #4CAF50;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li style=&quot;float:right&quot;&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-
-    固定导航条
-    可以设置页面的导航条固定在头部或者底部
-    例子：（该实例可以在移动设备上使用。）
-        &lt;style&gt;
-            body {margin:0;}
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                （固定在头部）
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            li a:hover:not(.active) {
-                background-color: #111;
-            }
-            .active {
-                background-color: #4CAF50;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
+</code></pre><pre><code>18.CSS Display(显示) 与 Visibility（可见性）
+	display属性设置一个元素应如何显示。
+	visibility属性指定一个元素应可见还是隐藏。
+	18.1.隐藏元素
+		 display:none
+			可以隐藏某个元素，且隐藏的元素不会占用任何空间。
+			也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。		 
+		 visibility:hidden
+			可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。
+			也就是说，该元素虽然被隐藏了，但仍然会影响布局。
+	18.2.块和内联元素
+		块级元素（block）是一个元素，占用了全部宽度，在前后都是换行符。
+		宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;
+		块元素的例子：
+			&lt;h1&gt;
+			&lt;p&gt;
+			&lt;div&gt;
 			
-            &lt;div style=&quot;padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;&quot;&gt;
-            &lt;h1&gt;Fixed Top Navigation Bar&lt;/h1&gt;
-            &lt;h2&gt;Scroll this page to see the effect&lt;/h2&gt;
-            &lt;h2&gt;The navigation bar will stay at the top of the page while scrolling&lt;/h2&gt;
-            &lt;p&gt;Some text some text some text some text..&lt;/p&gt;
-            &lt;p&gt;Some text some text some text some text..&lt;/p&gt;
-            &lt;p&gt;Some text some text some text some text..&lt;/p&gt;
-            &lt;p&gt;Some text some text some text some text..&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/body&gt;
-</code></pre>
-<p>27.CSS 下拉菜单
-使用 CSS 创建一个鼠标移动上去后显示下拉菜单的效果。
-基本下拉菜单
-例子：
-<!-- raw HTML omitted -->
-.dropdown {
-position: relative;
-display: inline-block;
-}
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-display: block;
-}
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Mouse over me<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Hello World!<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-（
-实例解析
-HTML 部分：
-我们可以使用任何的 HTML 元素来打开下拉菜单，如：<!-- raw HTML omitted -->, 或 a <!-- raw HTML omitted --> 元素。
-使用容器元素 (如： <!-- raw HTML omitted -->) 来创建下拉菜单的内容，并放在任何你想放的位置上。
-使用 <!-- raw HTML omitted --> 元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。
-CSS 部分：
-.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。
-.dropdown-content 类中是实际的下拉菜单。默认是隐藏的，在鼠标移动到指定元素后会显示。 注意 min-width 的值设置为 160px。你可以随意修改它。 注意: 如果你想设置下拉内容与下拉按钮的宽度一致，可设置 width 为 100% ( overflow:auto 设置可以在小尺寸屏幕上滚动)。
-我们使用 box-shadow 属性让下拉菜单看起来像一个&quot;卡片&rdquo;。
-:hover 选择器用于在用户将鼠标移动到下拉按钮上时显示下拉菜单。
-）
-下拉菜单
-创建下拉菜单，并允许用户选取列表中的某一项
-例子：
-<!-- raw HTML omitted -->
-/* 下拉按钮样式 */
-.dropbtn {
-background-color: #4CAF50;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
-/* 容器 <!-- raw HTML omitted --> - 需要定位下拉内容 */
-.dropdown {
-position: relative;
-display: inline-block;
-}
-/* 下拉内容 (默认隐藏) */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-/* 下拉菜单的链接 */
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-/* 鼠标移上去后修改下拉菜单链接颜色 */
-.dropdown-content a:hover {background-color: #f1f1f1}
-/* 在鼠标移上去后显示下拉菜单 */
-.dropdown:hover .dropdown-content {
-display: block;
-}
-/* 当下拉内容显示后修改下拉按钮的背景颜色 */
-.dropdown:hover .dropbtn {
-background-color: #3e8e41;
-}
-<!-- raw HTML omitted --></p>
-<pre><code>    &lt;div class=&quot;dropdown&quot;&gt;
-      &lt;button class=&quot;dropbtn&quot;&gt;下拉菜单&lt;/button&gt;
-      &lt;div class=&quot;dropdown-content&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;菜鸟教程 1&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;菜鸟教程 2&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;菜鸟教程 3&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+		内联元素（inline）只需要必要的宽度，不强制换行。
+		宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变，就是里面文字或图片的大小;
+		内联元素的例子：
+			&lt;span&gt;
+			&lt;a&gt;
+</code></pre><pre><code>19.CSS Position(定位)
+	19.1.position 属性指定了元素的定位类型。
+	19.2.position 属性的五个值
+			static
+			relative
+			fixed
+			absolute
+			sticky
+			元素可以使用的顶部，底部，左侧和右侧属性定位。然而，这些属性无法工作，除非是先设定position属性。他们也有不同的工作方式，这取决于定位方法。
+	19.3.static 定位
+		HTML 元素的默认值，即没有定位，遵循正常的文档流对象。
+		静态定位的元素不会受到 top, bottom, left, right影响。
+	19.4.fixed 定位
+		元素的位置相对于浏览器窗口是固定位置。
+		即使窗口是滚动的它也不会移动：
+	19.5.relative 定位
+		相对定位元素的定位是相对其正常位置。
+	19.6.absolute 定位
+		绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于&lt;html&gt;:
+		absolute 定位使元素的位置与文档流无关，因此不占据空间。
+		absolute 定位的元素和其他元素重叠。
+	19.7.sticky 定位
+		sticky 英文字面意思是粘，粘贴，所以可以把它称之为粘性定位。
+		position: sticky; 基于用户的滚动位置来定位。
+		粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。
+		它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。
+		元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。
+		这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。
+	19.8.重叠的元素
+		元素的定位与文档流无关，所以它们可以覆盖页面上的其它元素
+		z-index属性指定了一个元素的堆叠顺序（哪个元素应该放在前面，或后面）
+		一个元素可以有正数或负数的堆叠顺序：
+		具有更高堆叠顺序的元素总是在较低的堆叠顺序元素的前面。
+</code></pre><pre><code>20.CSS 布局 - Overflow
+	CSS overflow 属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。
+	overflow属性有以下值：
+	visible		默认值。内容不会被修剪，会呈现在元素框之外。
+	hidden		内容会被修剪，并且其余内容是不可见的。
+	scroll		内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+	auto		如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+	inherit		规定应该从父元素继承 overflow 属性的值。
+
+</code></pre><pre><code>21.CSS Float(浮动)
+	21.1.CSS 的 Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。
+		Float（浮动），往往是用于图像，但它在布局时一样非常有用。
+	21.2.元素怎样浮动
+		元素的水平方向浮动，意味着元素只能左右移动而不能上下移动。
+		一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
+		浮动元素之后的元素将围绕它。
+		浮动元素之前的元素将不会受到影响。
+	22.3.彼此相邻的浮动元素
+		如果你把几个浮动的元素放到一起，如果有空间的话，它们将彼此相邻。
+	22.4.清除浮动 - 使用 clear
 	
-下拉内容对齐方法
-例子：
-    右对齐
-    .dropdown-content {
-        right: 0;
-    }
-    左对齐
-    .dropdown-content {
-        left: 0;
-    }
-</code></pre>
-<p>28.CSS 提示工具(Tooltip)
-基础提示框(Tooltip)
-提示框在鼠标移动到指定元素上显示
-例子：
-<!-- raw HTML omitted -->
-/* Tooltip 容器 */
-.tooltip {
-position: relative;
-display: inline-block;
-border-bottom: 1px dotted black; /* 悬停元素上显示点线 */
-}
-/* Tooltip 文本 */
-.tooltip .tooltiptext {
-visibility: hidden;
-width: 120px;
-background-color: black;
-color: #fff;
-text-align: center;
-padding: 5px 0;
-border-radius: 6px;</p>
-<pre><code>            /* 定位 */
-            position: absolute;
-            z-index: 1;
-        }
-        /* 鼠标移动上去后显示提示框 */
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
-    &lt;/style&gt; 
-    &lt;div class=&quot;tooltip&quot;&gt;鼠标移动到这
-        &lt;span class=&quot;tooltiptext&quot;&gt;提示文本&lt;/span&gt;
-    &lt;/div&gt;
-（
-    HTML) 使用容器元素 (like &lt;div&gt;) 并添加 &quot;tooltip&quot; 类。在鼠标移动到 &lt;div&gt; 上时显示提示信息。
-    提示文本放在内联元素上(如 &lt;span&gt;) 并使用class=&quot;tooltiptext&quot;。
-    CSS)tooltip 类使用 position:relative, 提示文本需要设置定位值 position:absolute。 注意: 接下来的实例会显示更多的定位效果。
-    tooltiptext 类用于实际的提示文本。模式是隐藏的，在鼠标移动到元素显示 。设置了一些宽度、背景色、字体色等样式。
-    CSS3 border-radius 属性用于为提示框添加圆角。
-    :hover 选择器用于在鼠标移动到到指定元素 &lt;div&gt; 上时显示的提示。
-）
-显示在右侧
-    .tooltip .tooltiptext {
-        top: -5px;
-        left: 105%; 
-    }
-显示在左侧
-    .tooltip .tooltiptext {
-        top: -5px;
-        right: 105%; 
-    }
-（
-如果你想要提示工具显示在头部和底部。
-我们需要使用 margin-left 属性，并设置为 -60px。 
-这个数字计算来源是使用宽度的一半来居中对齐，
-即： width/2 (120/2 = 60)。
-）
-显示在头部
-    .tooltip .tooltiptext {
-        width: 120px;
-        bottom: 100%;
-        left: 50%; 
-        margin-left: -60px; /* 使用一半宽度 (120/2 = 60) 来居中提示工具 */
-    }
-显示在底部
-    .tooltip .tooltiptext {
-        width: 120px;
-        top: 100%;
-        left: 50%; 
-        margin-left: -60px; /* 使用一半宽度 (120/2 = 60) 来居中提示工具 */
-    }
+</code></pre><pre><code>23.CSS 布局 - 水平 &amp; 垂直对齐
+	23.1.元素居中对齐
+		要水平居中对齐一个元素(如 &lt;div&gt;), 可以使用 margin: auto;
+		注意: 如果没有设置 width 属性(或者设置 100%)，居中对齐将不起作用。
+	23.2.文本居中对齐
+		可以使用 text-align: center;
+	23.3.图片居中对齐
+		要让图片居中对齐, 可以使用 margin: auto; 并将它放到 块 元素中:
+	23.4.左右对齐 - 使用定位方式
+		可以使用 position: absolute; 属性来对齐元素:
+		注释：绝对定位元素会被从正常流中删除，并且能够交叠元素。
+		提示: 当使用 position 来对齐元素时, 通常 &lt;body&gt; 元素会设置 margin 和 padding 。 这样可以避免在不同的浏览器中出现可见的差异。
+	23.5.左右对齐 - 使用 float 方式
+		可以使用 float 属性来对齐元素;
+		注意：如果子元素的高度大于父元素，且子元素设置了浮动，那么子元素将溢出，这时候你可以使用 &quot;clearfix(清除浮动)&quot; 来解决该问题。
+			  可以在父元素上添加 overflow: auto; 来解决子元素溢出的问题:
+	23.6.垂直居中对齐 - 使用 padding
+		一个简单的方式就是头部顶部使用 padding:
+		如果要水平和垂直都居中，可以使用 padding 和 text-align: center:
+	23.7.垂直居中 - 使用 line-height
+	23.8.垂直居中 - 使用 position 和 transform
 
-添加箭头
-    我们可以用CSS 伪元素 ::after 及 content 属性为提示工具创建一个小箭头标志，
-    箭头是由边框组成的，但组合起来后提示工具像个语音信息框。
-例子：
-    显示在顶部的提示工具添加底部箭头
-    .tooltip .tooltiptext::after {
-        content: &quot; &quot;;
-        position: absolute;
-        top: 100%; /* 提示工具底部 */
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: black transparent transparent transparent;
-    }
-    （:after  p:after	在每个&lt;p&gt;元素之后插入内容）
-    （
-    在提示工具内定位箭头: top: 100% , 箭头将显示在提示工具的底部。left: 50% 用于居中对齐箭头。
-    注意：border-width 属性指定了箭头的大小。
-    如果你修改它，也要修改 margin-left 值。
-    这样箭头在能居中显示。
-    border-color 用于将内容转换为箭头。
-    设置顶部边框为黑色，其他是透明的。
-    如果设置了其他的也是黑色则会显示为一个黑色的四边形。
-    ）
+</code></pre><pre><code>24.CSS 组合选择符
+	24.1.CSS 组合选择符
+		组合选择符说明了两个选择器直接的关系。
+		CSS组合选择符包括各种简单选择符的组合方式。
+		在 CSS3 中包含了四种组合方式:
+			后代选择器(以空格分隔)
+			子元素选择器(以大于号分隔）
+			相邻兄弟选择器（以加号分隔）
+			普通兄弟选择器（以破折号分隔）
+	24.2.后代选择器
+		后代选择器用于选取某元素的后代元素。
+		例子：（所有 &lt;p&gt; 元素插入到 &lt;div&gt; 元素中: ）
+			div p
+			{
+			  background-color:yellow;
+			}
+	24.3.子元素选择器
+		与后代选择器相比，子元素选择器（Child selectors）只能选择作为某元素子元素的元素。
+		例子：（选择了&lt;div&gt;元素中所有直接子元素 &lt;p&gt; ）
+			div&gt;p
+			{
+			  background-color:yellow;
+			}
+	24.4.相邻兄弟选择器
+		相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。
+		如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器（Adjacent sibling selector）。
+		例子：（选取了所有位于 &lt;div&gt; 元素后的第一个 &lt;p&gt; 元素）
+			div+p
+			{
+			  background-color:yellow;
+			}
+	24.5.后续兄弟选择器
+		后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。
+		例子：（选取了所有 &lt;div&gt; 元素之后的所有相邻兄弟元素 &lt;p&gt;）
+			div~p
+			{
+			  background-color:yellow;
+			}
+
+</code></pre><pre><code>25.CSS 伪类(Pseudo-classes)
+	CSS伪类是用来添加一些选择器的特殊效果。
+	25.1.语法
+		伪类的语法
+			selector:pseudo-class {property:value;}
+		css类也可以用伪类
+			selector.class:pseudo-class {property:value;}
+	25.2.anchor伪类
+		例子：（在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示）
+			a:link {color:#FF0000;} /* 未访问的链接 */
+			a:visited {color:#00FF00;} /* 已访问的链接 */
+			a:hover {color:#FF00FF;} /* 鼠标划过链接 */
+			a:active {color:#0000FF;} /* 已选中的链接 */
+			（注意：在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+			  注意：在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
+			  注意：伪类的名称不区分大小写。）
+	25.3.伪类和CSS类
+		例子：（如果例子的链接已被访问，它会显示为红色。）
+			a.red:visited {color:#FF0000;}
+			&lt;a class=&quot;red&quot; href=&quot;css-syntax.html&quot;&gt;CSS 语法&lt;/a&gt;
+	25.4.CSS :first-child 伪类	
+		您可以使用 :first-child 伪类来选择父元素的第一个子元素。
+		25.4.1.匹配第一个 &lt;p&gt; 元素
+			例子：（选择器匹配作为任何元素的第一个子元素的 &lt;p&gt; 元素：）
+				p:first-child
+				{
+					color:blue;
+				}
+		25.4.2.匹配所有&lt;p&gt; 元素中的第一个 &lt;i&gt; 元素
+			例子：（选择相匹配的所有&lt;p&gt;元素的第一个 &lt;i&gt; 元素：）
+				p &gt; i:first-child
+				{
+					color:blue;
+				}
+		25.4.3.匹配所有作为第一个子元素的 &lt;p&gt; 元素中的所有 &lt;i&gt; 元素
+			例子：
+				p:first-child i
+				{
+					color:blue;
+				}
+		25.4.4.CSS - :lang 伪类
+			:lang 伪类使你有能力为不同的语言定义特殊的规则
+			例子：（:lang 类为属性值为 no 的q元素定义引号的类型）
+				q:lang(no) {quotes: &quot;~&quot; &quot;~&quot;;}
+		25.4.5为超链接添加不同样式
+			例子：
+					（链接改变颜色）
+					a.one:link {color:blue;}（链接点击前蓝色）
+					a.one:visited {color:red;}（已点击过的链接红色）
+					a.one:hover {color:purple;}（鼠标上浮链接变为紫色）
+
+					（链接改变字体大小）
+					a.two:link {color:blue;}（链接点击前蓝色）
+					a.two:visited {color:red;}（已点击过的链接红色）
+					a.two:hover {font-size:150%;}（鼠标上浮链接字体变大）
+
+					（链接改变字体背景颜色）
+					a.three:link {color:blue;}（链接点击前蓝色）
+					a.three:visited {color:red;}（已点击过的链接红色）
+					a.three:hover {background:#66ff66;}（鼠标上浮链接的文字添加背景色）
+
+					（链接改变字体类型）
+					a.four:link {color:blue;}（链接点击前蓝色）
+					a.four:visited {color:red;}（已点击过的链接红色）
+					a.four:hover {font-family:Georgia, serif;}（鼠标上浮链接的字体发生改变）
+					
+					（链接改变文字修饰）
+					a.five:link {color:blue;text-decoration:none;}（链接点击前蓝色，且链接下方没有下划线）
+					a.five:visited {color:red;text-decoration:none;}（已点击过的链接红色，且链接下方没有下划线）
+					a.five:hover {text-decoration:underline;}（鼠标上浮链接出现下划线）
+	25.5.伪类/微元素（部分）		
+		选择器			示例			示例说明	
+		:link			a:link			选择所有未访问链接
+		:visited		a:visited		选择所有访问过的链接
+		:active			a:active		选择正在活动链接
+		:hover			a:hover			把鼠标放在链接上的状态
+		:focus			input:focus		选择元素输入后具有焦点
+		:first-letter	p:first-letter	选择每个&lt;p&gt; 元素的第一个字母
+		:first-line		p:first-line	选择每个&lt;p&gt; 元素的第一行
+		:first-child	p:first-child	选择器匹配属于任意元素的第一个子元素的 &lt;p&gt; 元素
+		:before			p:before		在每个&lt;p&gt;元素之前插入内容
+		:after			p:after			在每个&lt;p&gt;元素之后插入内容
+		:lang(language)	p:lang(it)		为&lt;p&gt;元素的lang属性选择一个开始值
+
+</code></pre><pre><code>26.导航栏
+	26.1.垂直/水平	
+	26.2.导航栏=链接列表
+		作为标准的HTML基础一个导航栏是必须的
+		导航条基本上是一个链接列表，所以使用 &lt;ul&gt; 和 &lt;li&gt;元素非常有意义：	
+		例子：
+			建立一个标准的HTML列表导航栏。
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				（注意：这里我们用 href=&quot;#&quot;作为测试连接。但在一个真正的 web 站点上需要真实的 url。）
+
+			从列表中删除边距和填充（在上述代码的基础上）
+				ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+					}
+				（list-style-type:none - 移除列表前小标志。一个导航栏并不需要列表标记
+				  移除浏览器的默认设置将边距和填充设置为0）
+
+</code></pre><pre><code>	26.3.垂直导航栏		
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					width: 200px;
+					background-color: #f1f1f1;
+				}			 
+				li a {
+					display: block;
+					color: #000;
+					padding: 8px 16px;
+					text-decoration: none;
+				}			 
+				/* 鼠标移动到选项上修改背景颜色 */
+				li a:hover {
+					background-color: #555;
+					color: white;
+				}
+			&lt;/style&gt;			
+			&lt;body&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;p&gt;背景颜色添加到链接中显示链接的区域&lt;/p&gt;
+				&lt;p&gt;注意,整个区域是可点击的链接,而不仅仅是文本。&lt;/p&gt;
+			&lt;/body&gt;
+		（示例说明：display:block - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
+					width:60px - 块元素默认情况下是最大宽度。我们要指定一个60像素的宽度）
+		
+		完整的垂直导航例子：
+			&lt;style&gt;
+				ul
+				{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+				}
+				a:link,a:visited
+				{
+					display:block;
+					font-weight:bold;
+					color:#FFFFFF;
+					background-color:#98bf21;
+					width:200px;
+					text-align:center;
+					padding:4px;
+					text-decoration:none;
+					text-transform:uppercase;
+				}
+				a:hover,a:active
+				{
+					background-color:#7A991A;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+		
+		有默认选项的垂直导航：
+		例子：（激活/当前导航条实例）
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					width: 200px;
+					background-color: #f1f1f1;
+				}
+				li a {
+					display: block;
+					color: #000;
+					padding: 8px 16px;
+					text-decoration: none;
+				}
+				li a.active {
+					background-color: #4CAF50;
+					color: white;
+				}
+				li a:hover:not(.active) {
+					background-color: #555;
+					color: white;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;	
+			
+		创建链接并添加边框
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					width: 200px;
+					background-color: #f1f1f1;
+					border: 1px solid #555;
+				}
+
+				li a {
+					display: block;
+					color: #000;
+					padding: 8px 16px;
+					text-decoration: none;
+				}
+
+				li {
+					text-align: center;
+					border-bottom: 1px solid #555;
+				}
+
+				li:last-child {
+					border-bottom: none;
+				}
+
+				li a.active {
+					background-color: #4CAF50;
+					color: white;
+				}
+
+				li a:hover:not(.active) {
+					background-color: #555;
+					color: white;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;	
+
+		全屏高度的固定导航条
+		例子：（注意: 该实例可以在移动设备上使用。）
+			&lt;style&gt;
+			body {
+				margin: 0;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 25%;
+				background-color: #f1f1f1;
+				position: fixed;
+				height: 100%;（全屏高度）
+				overflow: auto;（如果导航栏选项多，允许滚动）
+			}
+
+			li a {
+				display: block;
+				color: #000;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+
+			li a.active {
+				background-color: #4CAF50;
+				color: white;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #555;
+				color: white;
+			}
+			&lt;/style&gt;
+			&lt;body&gt;
+			&lt;ul&gt;
+			  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+			  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+			  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+			  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div style=&quot;margin-left:25%;padding:1px 16px;height:1000px;&quot;&gt;
+			  &lt;h2&gt;Fixed Full-height Side Nav&lt;/h2&gt;
+			  &lt;h3&gt;Try to scroll this area, and see how the sidenav sticks to the page&lt;/h3&gt;
+			  &lt;p&gt;Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.&lt;/p&gt;
+			  &lt;p&gt;Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			  &lt;p&gt;Some text..&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;/body&gt;
+
+	26.4.水平导航栏
+		有两种方法创建横向导航栏。使用内联(inline)或浮动(float)的列表项。
+		这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法。
+		
+		内联列表项
+		建立一个横向导航栏的方法之一是指定元素
+		例子：
+			&lt;style&gt;
+			ul
+			{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+			}
+			li
+			{
+			display:inline;
+			}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+		（display:inline; -默认情况下，&lt;li&gt;元素是块元素。在这里，我们删除换行符之前和之后每个列表项，以显示一行。）
+		
+		浮动列表项
+		在上面的例子中链接有不同的宽度。
+		例子：
+			&lt;style&gt;
+				ul
+				{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					overflow:hidden;
+				}
+				li
+				{
+					float:left;
+				}
+				a
+				{
+					display:block;
+					width:60px;
+					background-color:#dddddd;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+			（背景颜色添加到链接中显示链接的区域。整个链接区域是可点击的,不仅仅是文本。
+			  float:left - 使用浮动块元素的幻灯片彼此相邻
+			  display:block - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
+			  width:60px - 块元素默认情况下是最大宽度。我们要指定一个60像素的宽度
+
+		水平导航条实例
+		创建一个水平导航条，在鼠标移动到选项后修改背景颜色。	
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+					width:16em;
+				}
+				li {
+					float: left;
+				}
+				li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				li a:hover {
+					background-color: #111;
+				}（鼠标移到选项上修改颜色）
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+
+		激活/当前导航条实例
+		在点击了选项后，我们可以添加 &quot;active&quot; 类来标准哪个选项被选中：
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+				}
+
+				li {
+					float: left;
+				}
+
+				li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+
+				li a:hover:not(.active) {
+					background-color: #111;
+				}
+
+				.active {
+					background-color: #4CAF50;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+		
+		链接右对齐
+		将导航条最右边的选项设置右对齐
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+				}
+				li {
+					float: left;
+				}
+
+				li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+
+				li a:hover:not(.active) {
+					background-color: #111;
+				}
+
+				.active {
+					background-color: #4CAF50;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li style=&quot;float:right&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+
+		添加分割线
+		&lt;li&gt; 通过 border-right 样式来添加分割线
+		例子：
+			&lt;style&gt;
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+				}
+				li {
+					float: left;
+					border-right:1px solid #bbb;
+				}
+				li:last-child {
+					border-right: none;
+				}/* 除了最后一个选项(last-child) 其他的都添加分割线 */
+				li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				li a:hover:not(.active) {
+					background-color: #111;
+				}
+				.active {
+					background-color: #4CAF50;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li style=&quot;float:right&quot;&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/body&gt;
+
+		固定导航条
+		可以设置页面的导航条固定在头部或者底部
+		例子：（该实例可以在移动设备上使用。）
+			&lt;style&gt;
+				body {margin:0;}
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+					（固定在头部）
+					position: fixed;
+					top: 0;
+					width: 100%;
+				}
+				li {
+					float: left;
+				}
+				li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				li a:hover:not(.active) {
+					background-color: #111;
+				}
+				.active {
+					background-color: #4CAF50;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#home&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;
+				  &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				
+				&lt;div style=&quot;padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;&quot;&gt;
+				&lt;h1&gt;Fixed Top Navigation Bar&lt;/h1&gt;
+				&lt;h2&gt;Scroll this page to see the effect&lt;/h2&gt;
+				&lt;h2&gt;The navigation bar will stay at the top of the page while scrolling&lt;/h2&gt;
+				&lt;p&gt;Some text some text some text some text..&lt;/p&gt;
+				&lt;p&gt;Some text some text some text some text..&lt;/p&gt;
+				&lt;p&gt;Some text some text some text some text..&lt;/p&gt;
+				&lt;p&gt;Some text some text some text some text..&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/body&gt;
+
+</code></pre><pre><code>27.CSS 下拉菜单
+	使用 CSS 创建一个鼠标移动上去后显示下拉菜单的效果。
+	基本下拉菜单
+	例子：
+		&lt;style&gt;
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				padding: 12px 16px;
+				z-index: 1;
+			}
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		&lt;/style&gt;
+		&lt;div class=&quot;dropdown&quot;&gt;
+		  &lt;span&gt;Mouse over me&lt;/span&gt;
+		  &lt;div class=&quot;dropdown-content&quot;&gt;
+			&lt;p&gt;Hello World!&lt;/p&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+	（
+		实例解析
+		HTML 部分：
+		我们可以使用任何的 HTML 元素来打开下拉菜单，如：&lt;span&gt;, 或 a &lt;button&gt; 元素。
+		使用容器元素 (如： &lt;div&gt;) 来创建下拉菜单的内容，并放在任何你想放的位置上。
+		使用 &lt;div&gt; 元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。
+		CSS 部分：
+		.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。
+		.dropdown-content 类中是实际的下拉菜单。默认是隐藏的，在鼠标移动到指定元素后会显示。 注意 min-width 的值设置为 160px。你可以随意修改它。 注意: 如果你想设置下拉内容与下拉按钮的宽度一致，可设置 width 为 100% ( overflow:auto 设置可以在小尺寸屏幕上滚动)。
+		我们使用 box-shadow 属性让下拉菜单看起来像一个&quot;卡片&quot;。
+		:hover 选择器用于在用户将鼠标移动到下拉按钮上时显示下拉菜单。
+	）
+	下拉菜单
+	创建下拉菜单，并允许用户选取列表中的某一项
+	例子：
+		&lt;style&gt;
+			/* 下拉按钮样式 */
+			.dropbtn {
+				background-color: #4CAF50;
+				color: white;
+				padding: 16px;
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+			}
+			/* 容器 &lt;div&gt; - 需要定位下拉内容 */
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			/* 下拉内容 (默认隐藏) */
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+			/* 下拉菜单的链接 */
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			/* 鼠标移上去后修改下拉菜单链接颜色 */
+			.dropdown-content a:hover {background-color: #f1f1f1}
+			/* 在鼠标移上去后显示下拉菜单 */
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+			.dropdown:hover .dropbtn {
+				background-color: #3e8e41;
+			}
+		&lt;/style&gt;
+
+		&lt;div class=&quot;dropdown&quot;&gt;
+		  &lt;button class=&quot;dropbtn&quot;&gt;下拉菜单&lt;/button&gt;
+		  &lt;div class=&quot;dropdown-content&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;菜鸟教程 1&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;菜鸟教程 2&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;菜鸟教程 3&lt;/a&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+		
+	下拉内容对齐方法
+	例子：
+		右对齐
+		.dropdown-content {
+			right: 0;
+		}
+		左对齐
+		.dropdown-content {
+			left: 0;
+		}
+
+
+</code></pre><pre><code>28.CSS 提示工具(Tooltip)
+	基础提示框(Tooltip)
+	提示框在鼠标移动到指定元素上显示
+	例子：
+		&lt;style&gt;
+			/* Tooltip 容器 */
+			.tooltip {
+				position: relative;
+				display: inline-block;
+				border-bottom: 1px dotted black; /* 悬停元素上显示点线 */
+			}
+			/* Tooltip 文本 */
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				padding: 5px 0;
+				border-radius: 6px;
+			 
+				/* 定位 */
+				position: absolute;
+				z-index: 1;
+			}
+			/* 鼠标移动上去后显示提示框 */
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+			}
+		&lt;/style&gt; 
+		&lt;div class=&quot;tooltip&quot;&gt;鼠标移动到这
+			&lt;span class=&quot;tooltiptext&quot;&gt;提示文本&lt;/span&gt;
+		&lt;/div&gt;
+	（
+		HTML) 使用容器元素 (like &lt;div&gt;) 并添加 &quot;tooltip&quot; 类。在鼠标移动到 &lt;div&gt; 上时显示提示信息。
+		提示文本放在内联元素上(如 &lt;span&gt;) 并使用class=&quot;tooltiptext&quot;。
+		CSS)tooltip 类使用 position:relative, 提示文本需要设置定位值 position:absolute。 注意: 接下来的实例会显示更多的定位效果。
+		tooltiptext 类用于实际的提示文本。模式是隐藏的，在鼠标移动到元素显示 。设置了一些宽度、背景色、字体色等样式。
+		CSS3 border-radius 属性用于为提示框添加圆角。
+		:hover 选择器用于在鼠标移动到到指定元素 &lt;div&gt; 上时显示的提示。
+	）
+	显示在右侧
+		.tooltip .tooltiptext {
+			top: -5px;
+			left: 105%; 
+		}
+	显示在左侧
+		.tooltip .tooltiptext {
+			top: -5px;
+			right: 105%; 
+		}
+	（
+	如果你想要提示工具显示在头部和底部。
+	我们需要使用 margin-left 属性，并设置为 -60px。 
+	这个数字计算来源是使用宽度的一半来居中对齐，
+	即： width/2 (120/2 = 60)。
+	）
+	显示在头部
+		.tooltip .tooltiptext {
+			width: 120px;
+			bottom: 100%;
+			left: 50%; 
+			margin-left: -60px; /* 使用一半宽度 (120/2 = 60) 来居中提示工具 */
+		}
+	显示在底部
+		.tooltip .tooltiptext {
+			width: 120px;
+			top: 100%;
+			left: 50%; 
+			margin-left: -60px; /* 使用一半宽度 (120/2 = 60) 来居中提示工具 */
+		}
+
+	添加箭头
+		我们可以用CSS 伪元素 ::after 及 content 属性为提示工具创建一个小箭头标志，
+		箭头是由边框组成的，但组合起来后提示工具像个语音信息框。
+	例子：
+		显示在顶部的提示工具添加底部箭头
+		.tooltip .tooltiptext::after {
+			content: &quot; &quot;;
+			position: absolute;
+			top: 100%; /* 提示工具底部 */
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: black transparent transparent transparent;
+		}
+		（:after  p:after	在每个&lt;p&gt;元素之后插入内容）
+		（
+		在提示工具内定位箭头: top: 100% , 箭头将显示在提示工具的底部。left: 50% 用于居中对齐箭头。
+		注意：border-width 属性指定了箭头的大小。
+		如果你修改它，也要修改 margin-left 值。
+		这样箭头在能居中显示。
+		border-color 用于将内容转换为箭头。
+		设置顶部边框为黑色，其他是透明的。
+		如果设置了其他的也是黑色则会显示为一个黑色的四边形。
+		）
+		
+		底部提示框/顶部箭头
+		.tooltip .tooltiptext::after {
+			content: &quot; &quot;;
+			position: absolute;
+			bottom: 100%;  /* 提示工具头部 */
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent black transparent;
+		}
+
+		右侧提示框/左侧箭头
+		.tooltip .tooltiptext::after {
+			content: &quot; &quot;;
+			position: absolute;
+			top: 50%;
+			right: 100%; /* 提示工具左侧 */
+			margin-top: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent black transparent transparent;
+		}
+
+		左侧提示框/右侧箭头
+		.tooltip .tooltiptext::after {
+			content: &quot; &quot;;
+			position: absolute;
+			top: 50%;
+			left: 100%; /* 提示工具右侧 */
+			margin-top: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent transparent black;
+		}
+
+	淡入效果
+		 /* 淡入 - 1秒内从 0% 到 100% 显示: */
+		.tooltip .tooltiptext {
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		 
+		.tooltip:hover .tooltiptext {
+			opacity: 1;
+		}
+
+</code></pre><pre><code>29.CSS 图片廊
+	例子：
+		&lt;style&gt;
+			div.img {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 180px;
+			}
+			div.img:hover {
+				border: 1px solid #777;
+			}
+			div.img img {
+				width: 100%;
+				height: auto;
+			}
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+		&lt;/style&gt;
+		&lt;div class=&quot;responsive&quot;&gt;
+		  &lt;div class=&quot;img&quot;&gt;
+			&lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo1.jpg&quot;&gt;
+			  &lt;img src=&quot;http://static.runoob.com/images/demo/demo1.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+		 
+		&lt;div class=&quot;responsive&quot;&gt;
+		  &lt;div class=&quot;img&quot;&gt;
+			&lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo2.jpg&quot;&gt;
+			  &lt;img src=&quot;http://static.runoob.com/images/demo/demo2.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+		 
+		&lt;div class=&quot;responsive&quot;&gt;
+		  &lt;div class=&quot;img&quot;&gt;
+			&lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo3.jpg&quot;&gt;
+			  &lt;img src=&quot;http://static.runoob.com/images/demo/demo3.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+		 
+		&lt;div class=&quot;responsive&quot;&gt;
+		  &lt;div class=&quot;img&quot;&gt;
+			&lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo4.jpg&quot;&gt;
+			  &lt;img src=&quot;http://static.runoob.com/images/demo/demo4.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+
+</code></pre><pre><code>30.CSS 图像拼合技术
+	图像拼合就是单个图像的集合。
+	有许多图像的网页可能需要很长的时间来加载和生成多个服务器的请求。
+	使用图像拼合会降低服务器的请求数量，并节省带宽。
+	例子：
+		图像拼合 - 简单实例
+		&lt;style&gt;
+			img.home {
+				width: 46px;
+				height: 44px;
+				background: url(/images/img_navsprites.gif) 0 0;
+			}
+			img.next {
+				width: 43px;
+				height: 44px;
+				background: url(/images/img_navsprites.gif) -91px 0;
+			}
+		&lt;/style&gt;
+		&lt;body&gt;
+			&lt;img class=&quot;home&quot; src=&quot;/images/img_trans.gif&quot;&gt;&lt;br&gt;&lt;br&gt;
+			&lt;img class=&quot;next&quot; src=&quot;/images/img_trans.gif&quot;&gt;
+		&lt;/body&gt;
+		（
+			&lt;img class=&quot;home&quot; src=&quot;img_trans.gif&quot; /&gt; -因为不能为空,src属性只定义了一个小的透明图像。显示的图像将是我们在CSS中指定的背景图像
+			宽度：46px;高度：44px; - 定义我们使用的那部分图像
+			background:url(img_navsprites.gif) 0 0; - 定义背景图像和它的位置（左0px，顶部0px）
+		）
+		
+		图像拼合-创建一个导航列表
+		&lt;style&gt;
+			#navlist{
+				position:relative;
+			}
+			#navlist li{
+				margin:0;
+				padding:0;
+				list-style:none;
+				position:absolute;
+				top:0;
+			}
+			#navlist li, #navlist a{
+				height:44px;
+				display:block;
+			}
+
+			#home{
+				left:0px;
+				width:46px;
+			}
+			#home{
+				background:url('/images/img_navsprites.gif') 0 0;
+			}
+
+			#prev{
+				left:63px;
+				width:43px;
+			}
+			#prev{
+				background:url('/images/img_navsprites.gif') -47px 0;
+			}
+
+			#next{
+				left:129px;
+				width:43px;
+			}
+			#next{
+				background:url('/images/img_navsprites.gif') -91px 0;
+			}
+		&lt;/style&gt;
+		&lt;body&gt;
+			&lt;ul id=&quot;navlist&quot;&gt;
+			  &lt;li id=&quot;home&quot;&gt;&lt;a href=&quot;/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			  &lt;li id=&quot;prev&quot;&gt;&lt;a href=&quot;/css/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			  &lt;li id=&quot;next&quot;&gt;&lt;a href=&quot;/css/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/body&gt;
+		（
+			#navlist{position:relative;} - 位置设置相对定位，让里面的绝对定位
+			#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;} - margin和padding设置为0，列表样式被删除，所有列表项是绝对定位
+			#navlist li, #navlist a{height:44px;display:block;} - 所有图像的高度是44px
+			现在开始每个具体部分的定位和样式：
+			#home{left:0px;width:46px;} - 定位到最左边的方式，以及图像的宽度是46px
+			#home{background:url(img_navsprites.gif) 0 0;} - 定义背景图像和它的位置（左0px，顶部0px）
+			#prev{left:63px;width:43px;} - 右侧定位63px（＃home宽46px+项目之间的一些多余的空间），宽度为43px。
+			#prev{background:url('img_navsprites.gif') -47px 0;} - 定义背景图像右侧47px（＃home宽46px+分隔线的1px）
+			#next{left:129px;width:43px;}- 右边定位129px(#prev 63px + #prev宽是43px + 剩余的空间), 宽度是43px.
+			#next{background:url('img_navsprites.gif') no-repeat -91px 0;} - 定义背景图像右边91px（＃home 46px+1px的分割线+＃prev宽43px+1px的分隔线）
+		）
+		添加悬停效果
+			#home a:hover{background: url('img_navsprites_hover.gif') 0 -45px;}
+			#prev a:hover{background: url('img_navsprites_hover.gif') -47px -45px;}
+			#next a:hover{background: url('img_navsprites_hover.gif') -91px -45px;}
+		（
+			由于该列表项包含一个链接，我们可以使用：hover伪类
+			#home a:hover{background: transparent url(img_navsprites_hover.gif) 0 -45px;} 
+			- 对于所有三个悬停图像，我们指定相同的背景位置，只是每个再向下45px
+		）
+
+</code></pre><pre><code>31.CSS 媒体类型
+	媒体类型允许你指定文件将如何在不同媒体呈现。
+	该文件可以以不同的方式显示在屏幕上，在纸张上，或听觉浏览器等等。 
+	31.1.媒体类型
+		一些 CSS 属性只设计了某些媒体。
+		例如 voice-family 属性是专为听觉用户代理。
+		例如， font-size 属性可用于屏幕和印刷媒体，但有不同的值。
+		屏幕和纸上的文件不同，通常需要一个更大的字体，sans-serif 字体比较适合在屏幕上阅读，而 serif 字体更容易在纸上阅读。
+	31.2.@media 规则
+		@media 规则允许在相同样式表为不同媒体设置不同的样式。
+		例子：
+			@media screen
+			{
+				p.test {font-family:verdana,sans-serif;font-size:14px;}
+			}
+			@media print
+			{
+				p.test {font-family:times,serif;font-size:10px;}
+			}
+			@media screen,print
+			{
+				p.test {font-weight:bold;}
+			}
+		（
+			例子告诉我们浏览器屏幕上显示一个 14 像素的 Verdana 字体样式。
+			但是如果页面打印，将是 10 个像素的 Times 字体。
+			请注意，font-weight 在屏幕上和纸上设置为粗体：
+		）
+
+</code></pre><pre><code>32.CSS 属性 选择器
+	具有特定属性的HTML元素样式
+	具有特定属性的HTML元素样式不仅仅是class和id。
+	32.1.属性选择器
+		把包含标题（title）的所有元素变为蓝色
+		例子：
+			[title]
+			{
+				color:blue;
+			}
+	32.2.属性和值选择器	
+		改变了标题title='runoob'元素的边框样式
+		例子
+			[title=runoob]
+			{
+				border:5px solid green;
+			}
+	32.3.属性和值的选择器 - 多值
+		包含指定值的title属性的元素样式的例子，使用（~）分隔属性和值
+		例子：
+			[title~=hello] { color:blue; }
+		包含指定值的lang属性的元素样式的例子，使用（|）分隔属性和值
+		例子：
+			[lang|=en] { color:blue; }
+	32.4.表单样式
+		input[type=&quot;text&quot;]
+		{
+			width:150px;
+			display:block;
+			margin-bottom:10px;
+			background-color:yellow;
+		}
+		input[type=&quot;button&quot;]
+		{
+			width:120px;
+			margin-left:35px;
+			display:block;
+		}
+
+</code></pre><pre><code>33.CSS 表单
+	33.1.一个表单案例，我们使用 CSS 来渲染 HTML 的表单元素
+		例子：
+			&lt;style&gt;
+				input[type=text], select {
+				  width: 100%;
+				  padding: 12px 20px;
+				  margin: 8px 0;
+				  display: inline-block;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  box-sizing: border-box;
+				}
+
+				input[type=submit] {
+				  width: 100%;
+				  background-color: #4CAF50;
+				  color: white;
+				  padding: 14px 20px;
+				  margin: 8px 0;
+				  border: none;
+				  border-radius: 4px;
+				  cursor: pointer;
+				}
+
+				input[type=submit]:hover {
+				  background-color: #45a049;
+				}
+
+				div {
+				  border-radius: 5px;
+				  background-color: #f2f2f2;
+				  padding: 20px;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;h3&gt;使用 CSS 来渲染 HTML 的表单元素&lt;/h3&gt;
+				&lt;div&gt;
+				  &lt;form action=&quot;/action_page.php&quot;&gt;
+					&lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
+					&lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your name..&quot;&gt;
+
+					&lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
+					&lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; placeholder=&quot;Your last name..&quot;&gt;
+
+					&lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
+					&lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
+					  &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;
+					  &lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt;
+					  &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;
+					&lt;/select&gt;
+				  
+					&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+				  &lt;/form&gt;
+				&lt;/div&gt;
+
+			&lt;/body&gt;
+	33.2.输入框(input) 样式		
+		使用 width 属性来设置输入框的宽度
+		例子：
+			input {
+			  width: 100%;
+			}
+		（
+			以上实例中设置了所有 &lt;input&gt; 元素的宽度为 100%，
+			如果你只想设置指定类型的输入框可以使用以下属性选择器：
+			input[type=text] - 选取文本输入框
+			input[type=password] - 选择密码的输入框
+			input[type=number] - 选择数字的输入框
+		）
 	
-    底部提示框/顶部箭头
-    .tooltip .tooltiptext::after {
-        content: &quot; &quot;;
-        position: absolute;
-        bottom: 100%;  /* 提示工具头部 */
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent black transparent;
-    }
+	33.3.输入框填充
+		使用 padding 属性可以在输入框中添加内边距。
+		例子：
+			&lt;style&gt; 
+				input[type=text] {
+				  width: 100%;
+				  padding: 12px 20px;
+				  margin: 8px 0;
+				  box-sizing: border-box;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;p&gt;设置文本框的内边距:&lt;/p&gt;
+				&lt;form&gt;
+				  &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
+				  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;
+				  &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
+				  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot;&gt;
+				&lt;/form&gt;
+			&lt;/body&gt;
+			（
+			注意我们设置了 box-sizing 属性为 border-box。
+			这样可以确保浏览器呈现出带有指定宽度和高度的输入框是把边框和内边距一起计算进去的。
+			）
+		
+	33.4.输入框(input) 边框
+		使用 border 属性可以修改 input 边框的大小或颜色，
+		使用 border-radius 属性可以给 input 添加圆角。
+		例子：
+			input[type=text] {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  box-sizing: border-box;
+			  border: 2px solid red;/*红色边框*/
+			  border-radius: 4px;/*圆角*/
+			}
+		如果你只想添加底部边框可以使用 border-bottom 属性
+			input[type=text] {
+			  border: none;
+			  border-bottom: 2px solid red;
+			}
+	33.5.输入框(input) 颜色
+		可以使用 background-color 属性来设置输入框的背景颜色，
+		color 属性用于修改文本颜色
+		例子：
+			input[type=text] {
+			  background-color: #3CBC8D;
+			  color: white;
+			}
+	33.6.输入框(input) 聚焦
+		默认情况下，一些浏览器在输入框获取焦点时（点击输入框）会有一个蓝色轮廓。
+		我们可以设置 input 样式为 outline: none; 来忽略该效果。
+		例子：（使用 :focus 选择器可以设置输入框在获取焦点时的样式）
+			输入框获取焦点时，输入框背景颜色变成高亮蓝色
+			input[type=text]:focus {
+			  background-color: lightblue;
+			}
+			输入框获取焦点时，输入框颜色变成黑色
+			input[type=text]:focus {
+			  border: 3px solid #555;
+			}
+	33.7.输入框(input) 图标
+		如果你想在输入框中添加图标，可以使用 background-image 属性和用于定位的background-position 属性。
+		注意设置图标的左边距，让图标有一定的空间
+		例子：
+			input[type=text] {
+			  background-color: white;
+			  background-image: url('searchicon.png');
+			  background-position: 10px 10px; 
+			  background-repeat: no-repeat;
+			  padding-left: 40px;
+			}
+	33.8.带动画的搜索框	
+		使用了 CSS transition 属性，该属性设置了输入框在获取焦点时会向右延展。
+		例子：
+			input[type=text] {
+			  -webkit-transition: width 0.4s ease-in-out;
+			  transition: width 0.4s ease-in-out;
+			}
+			 
+			input[type=text]:focus {
+			  width: 100%;
+			}
+	33.9.文本框（textarea）样式
+		使用 resize 属性来禁用文本框可以重置大小的功能（一般拖动右下角可以重置大小）。
+		例子：
+			textarea {
+			  width: 100%;
+			  height: 150px;
+			  padding: 12px 20px;
+			  box-sizing: border-box;
+			  border: 2px solid #ccc;
+			  border-radius: 4px;
+			  background-color: #f8f8f8;
+			  resize: none;
+			}
+	33.10.下拉菜单（select）样式
+		例子：
+			select {
+			  width: 100%;
+			  padding: 16px 20px;
+			  border: none;
+			  border-radius: 4px;
+			  background-color: #f1f1f1;
+			}
+	33.11.按钮样式
+		例子：
+			input[type=button], input[type=submit], input[type=reset] {
+			  background-color: #4CAF50;
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-decoration: none;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			/* 提示: 使用 width: 100% 设置全宽按钮 */
 
-    右侧提示框/左侧箭头
-    .tooltip .tooltiptext::after {
-        content: &quot; &quot;;
-        position: absolute;
-        top: 50%;
-        right: 100%; /* 提示工具左侧 */
-        margin-top: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent black transparent transparent;
-    }
-
-    左侧提示框/右侧箭头
-    .tooltip .tooltiptext::after {
-        content: &quot; &quot;;
-        position: absolute;
-        top: 50%;
-        left: 100%; /* 提示工具右侧 */
-        margin-top: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent transparent black;
-    }
-
-淡入效果
-     /* 淡入 - 1秒内从 0% 到 100% 显示: */
-    .tooltip .tooltiptext {
-        opacity: 0;
-        transition: opacity 1s;
-    }
-	 
-    .tooltip:hover .tooltiptext {
-        opacity: 1;
-    }
-</code></pre>
-<p>29.CSS 图片廊
-例子：
-<!-- raw HTML omitted -->
-div.img {
-margin: 5px;
-border: 1px solid #ccc;
-float: left;
-width: 180px;
-}
-div.img:hover {
-border: 1px solid #777;
-}
-div.img img {
-width: 100%;
-height: auto;
-}
-div.desc {
-padding: 15px;
-text-align: center;
-}
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->这里添加图片文本描述<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
-<pre><code>    &lt;div class=&quot;responsive&quot;&gt;
-      &lt;div class=&quot;img&quot;&gt;
-        &lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo2.jpg&quot;&gt;
-          &lt;img src=&quot;http://static.runoob.com/images/demo/demo2.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
-        &lt;/a&gt;
-        &lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-	 
-    &lt;div class=&quot;responsive&quot;&gt;
-      &lt;div class=&quot;img&quot;&gt;
-        &lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo3.jpg&quot;&gt;
-          &lt;img src=&quot;http://static.runoob.com/images/demo/demo3.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
-        &lt;/a&gt;
-        &lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-	 
-    &lt;div class=&quot;responsive&quot;&gt;
-      &lt;div class=&quot;img&quot;&gt;
-        &lt;a target=&quot;_blank&quot; href=&quot;http://static.runoob.com/images/demo/demo4.jpg&quot;&gt;
-          &lt;img src=&quot;http://static.runoob.com/images/demo/demo4.jpg&quot; alt=&quot;图片文本描述&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
-        &lt;/a&gt;
-        &lt;div class=&quot;desc&quot;&gt;这里添加图片文本描述&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-</code></pre>
-<p>30.CSS 图像拼合技术
-图像拼合就是单个图像的集合。
-有许多图像的网页可能需要很长的时间来加载和生成多个服务器的请求。
-使用图像拼合会降低服务器的请求数量，并节省带宽。
-例子：
-图像拼合 - 简单实例
-<!-- raw HTML omitted -->
-img.home {
-width: 46px;
-height: 44px;
-background: url(/images/img_navsprites.gif) 0 0;
-}
-img.next {
-width: 43px;
-height: 44px;
-background: url(/images/img_navsprites.gif) -91px 0;
-}
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-（
-<!-- raw HTML omitted --> -因为不能为空,src属性只定义了一个小的透明图像。显示的图像将是我们在CSS中指定的背景图像
-宽度：46px;高度：44px; - 定义我们使用的那部分图像
-background:url(img_navsprites.gif) 0 0; - 定义背景图像和它的位置（左0px，顶部0px）
-）</p>
-<pre><code>    图像拼合-创建一个导航列表
-    &lt;style&gt;
-        #navlist{
-            position:relative;
-        }
-        #navlist li{
-            margin:0;
-            padding:0;
-            list-style:none;
-            position:absolute;
-            top:0;
-        }
-        #navlist li, #navlist a{
-            height:44px;
-            display:block;
-        }
-
-        #home{
-            left:0px;
-            width:46px;
-        }
-        #home{
-            background:url('/images/img_navsprites.gif') 0 0;
-        }
-
-        #prev{
-            left:63px;
-            width:43px;
-        }
-        #prev{
-            background:url('/images/img_navsprites.gif') -47px 0;
-        }
-
-        #next{
-            left:129px;
-            width:43px;
-        }
-        #next{
-            background:url('/images/img_navsprites.gif') -91px 0;
-        }
-    &lt;/style&gt;
-    &lt;body&gt;
-        &lt;ul id=&quot;navlist&quot;&gt;
-          &lt;li id=&quot;home&quot;&gt;&lt;a href=&quot;/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-          &lt;li id=&quot;prev&quot;&gt;&lt;a href=&quot;/css/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-          &lt;li id=&quot;next&quot;&gt;&lt;a href=&quot;/css/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/body&gt;
-    （
-        #navlist{position:relative;} - 位置设置相对定位，让里面的绝对定位
-        #navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;} - margin和padding设置为0，列表样式被删除，所有列表项是绝对定位
-        #navlist li, #navlist a{height:44px;display:block;} - 所有图像的高度是44px
-        现在开始每个具体部分的定位和样式：
-        #home{left:0px;width:46px;} - 定位到最左边的方式，以及图像的宽度是46px
-        #home{background:url(img_navsprites.gif) 0 0;} - 定义背景图像和它的位置（左0px，顶部0px）
-        #prev{left:63px;width:43px;} - 右侧定位63px（＃home宽46px+项目之间的一些多余的空间），宽度为43px。
-        #prev{background:url('img_navsprites.gif') -47px 0;} - 定义背景图像右侧47px（＃home宽46px+分隔线的1px）
-        #next{left:129px;width:43px;}- 右边定位129px(#prev 63px + #prev宽是43px + 剩余的空间), 宽度是43px.
-        #next{background:url('img_navsprites.gif') no-repeat -91px 0;} - 定义背景图像右边91px（＃home 46px+1px的分割线+＃prev宽43px+1px的分隔线）
-    ）
-    添加悬停效果
-        #home a:hover{background: url('img_navsprites_hover.gif') 0 -45px;}
-        #prev a:hover{background: url('img_navsprites_hover.gif') -47px -45px;}
-        #next a:hover{background: url('img_navsprites_hover.gif') -91px -45px;}
-    （
-        由于该列表项包含一个链接，我们可以使用：hover伪类
-        #home a:hover{background: transparent url(img_navsprites_hover.gif) 0 -45px;} 
-        - 对于所有三个悬停图像，我们指定相同的背景位置，只是每个再向下45px
-    ）
-</code></pre>
-<p>31.CSS 媒体类型
-媒体类型允许你指定文件将如何在不同媒体呈现。
-该文件可以以不同的方式显示在屏幕上，在纸张上，或听觉浏览器等等。
-31.1.媒体类型
-一些 CSS 属性只设计了某些媒体。
-例如 voice-family 属性是专为听觉用户代理。
-例如， font-size 属性可用于屏幕和印刷媒体，但有不同的值。
-屏幕和纸上的文件不同，通常需要一个更大的字体，sans-serif 字体比较适合在屏幕上阅读，而 serif 字体更容易在纸上阅读。
-31.2.@media 规则
-@media 规则允许在相同样式表为不同媒体设置不同的样式。
-例子：
-@media screen
-{
-p.test {font-family:verdana,sans-serif;font-size:14px;}
-}
-@media print
-{
-p.test {font-family:times,serif;font-size:10px;}
-}
-@media screen,print
-{
-p.test {font-weight:bold;}
-}
-（
-例子告诉我们浏览器屏幕上显示一个 14 像素的 Verdana 字体样式。
-但是如果页面打印，将是 10 个像素的 Times 字体。
-请注意，font-weight 在屏幕上和纸上设置为粗体：
-）</p>
-<p>32.CSS 属性 选择器
-具有特定属性的HTML元素样式
-具有特定属性的HTML元素样式不仅仅是class和id。
-32.1.属性选择器
-把包含标题（title）的所有元素变为蓝色
-例子：
-[title]
-{
-color:blue;
-}
-32.2.属性和值选择器
-改变了标题title='runoob'元素的边框样式
-例子
-[title=runoob]
-{
-border:5px solid green;
-}
-32.3.属性和值的选择器 - 多值
-包含指定值的title属性的元素样式的例子，使用（~）分隔属性和值
-例子：
-[title~=hello] { color:blue; }
-包含指定值的lang属性的元素样式的例子，使用（|）分隔属性和值
-例子：
-[lang|=en] { color:blue; }
-32.4.表单样式
-input[type=&quot;text&rdquo;]
-{
-width:150px;
-display:block;
-margin-bottom:10px;
-background-color:yellow;
-}
-input[type=&quot;button&rdquo;]
-{
-width:120px;
-margin-left:35px;
-display:block;
-}</p>
-<p>33.CSS 表单
-33.1.一个表单案例，我们使用 CSS 来渲染 HTML 的表单元素
-例子：
-<!-- raw HTML omitted -->
-input[type=text], select {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-}</p>
-<pre><code>            input[type=submit] {
-              width: 100%;
-              background-color: #4CAF50;
-              color: white;
-              padding: 14px 20px;
-              margin: 8px 0;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-              background-color: #45a049;
-            }
-
-            div {
-              border-radius: 5px;
-              background-color: #f2f2f2;
-              padding: 20px;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;h3&gt;使用 CSS 来渲染 HTML 的表单元素&lt;/h3&gt;
-            &lt;div&gt;
-              &lt;form action=&quot;/action_page.php&quot;&gt;
-                &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
-                &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your name..&quot;&gt;
-
-                &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
-                &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; placeholder=&quot;Your last name..&quot;&gt;
-
-                &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
-                &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
-                  &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;
-                  &lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt;
-                  &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;
-                &lt;/select&gt;
-			  
-                &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-              &lt;/form&gt;
-            &lt;/div&gt;
-
-        &lt;/body&gt;
-33.2.输入框(input) 样式		
-    使用 width 属性来设置输入框的宽度
-    例子：
-        input {
-          width: 100%;
-        }
-    （
-        以上实例中设置了所有 &lt;input&gt; 元素的宽度为 100%，
-        如果你只想设置指定类型的输入框可以使用以下属性选择器：
-        input[type=text] - 选取文本输入框
-        input[type=password] - 选择密码的输入框
-        input[type=number] - 选择数字的输入框
-    ）
-
-33.3.输入框填充
-    使用 padding 属性可以在输入框中添加内边距。
-    例子：
-        &lt;style&gt; 
-            input[type=text] {
-              width: 100%;
-              padding: 12px 20px;
-              margin: 8px 0;
-              box-sizing: border-box;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;p&gt;设置文本框的内边距:&lt;/p&gt;
-            &lt;form&gt;
-              &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
-              &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;
-              &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
-              &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot;&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-        （
-        注意我们设置了 box-sizing 属性为 border-box。
-        这样可以确保浏览器呈现出带有指定宽度和高度的输入框是把边框和内边距一起计算进去的。
-        ）
+	33.12.响应式表单
+		响应式表单可以根据浏览器窗口的大小重新布局各个元素，
+		我们可以通过重置浏览器窗口大小来查看效果
+		例子：
+			&lt;style&gt;
+				* {
+				  box-sizing: border-box;
+				}
+				input[type=text], select, textarea {
+				  width: 100%;
+				  padding: 12px;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  resize: vertical;
+				}
+				label {
+				  padding: 12px 12px 12px 0;
+				  display: inline-block;
+				}
+				input[type=submit] {
+				  background-color: #4CAF50;
+				  color: white;
+				  padding: 12px 20px;
+				  border: none;
+				  border-radius: 4px;
+				  cursor: pointer;
+				  float: right;
+				}
+				input[type=submit]:hover {
+				  background-color: #45a049;
+				}
+				.container {
+				  border-radius: 5px;
+				  background-color: #f2f2f2;
+				  padding: 20px;
+				}
+				.col-25 {
+				  float: left;
+				  width: 25%;
+				  margin-top: 6px;
+				}
+				.col-75 {
+				  float: left;
+				  width: 75%;
+				  margin-top: 6px;
+				}
+				/* 清除浮动 */
+				.row:after {
+				  content: &quot;&quot;;
+				  display: table;
+				  clear: both;
+				}
+				/* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
+				@media screen and (max-width: 600px) {
+				  .col-25, .col-75, input[type=submit] {
+					width: 100%;
+					margin-top: 0;
+				  }
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;h2&gt;响应式表单&lt;/h2&gt;
+				&lt;p&gt;响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果：&lt;/p&gt;
+				&lt;div class=&quot;container&quot;&gt;
+				  &lt;form action=&quot;/action_page.php&quot;&gt;
+				  &lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-25&quot;&gt;
+					  &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-75&quot;&gt;
+					  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your name..&quot;&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				  &lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-25&quot;&gt;
+					  &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-75&quot;&gt;
+					  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; placeholder=&quot;Your last name..&quot;&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				  &lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-25&quot;&gt;
+					  &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-75&quot;&gt;
+					  &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
+						&lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;
+						&lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt;
+						&lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;
+					  &lt;/select&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				  &lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-25&quot;&gt;
+					  &lt;label for=&quot;subject&quot;&gt;Subject&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-75&quot;&gt;
+					  &lt;textarea id=&quot;subject&quot; name=&quot;subject&quot; placeholder=&quot;Write something..&quot; style=&quot;height:200px&quot;&gt;&lt;/textarea&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				  &lt;div class=&quot;row&quot;&gt;
+					&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+				  &lt;/div&gt;
+				  &lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/body&gt;
 	
-33.4.输入框(input) 边框
-    使用 border 属性可以修改 input 边框的大小或颜色，
-    使用 border-radius 属性可以给 input 添加圆角。
-    例子：
-        input[type=text] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          box-sizing: border-box;
-          border: 2px solid red;/*红色边框*/
-          border-radius: 4px;/*圆角*/
-        }
-    如果你只想添加底部边框可以使用 border-bottom 属性
-        input[type=text] {
-          border: none;
-          border-bottom: 2px solid red;
-        }
-33.5.输入框(input) 颜色
-    可以使用 background-color 属性来设置输入框的背景颜色，
-    color 属性用于修改文本颜色
-    例子：
-        input[type=text] {
-          background-color: #3CBC8D;
-          color: white;
-        }
-33.6.输入框(input) 聚焦
-    默认情况下，一些浏览器在输入框获取焦点时（点击输入框）会有一个蓝色轮廓。
-    我们可以设置 input 样式为 outline: none; 来忽略该效果。
-    例子：（使用 :focus 选择器可以设置输入框在获取焦点时的样式）
-        输入框获取焦点时，输入框背景颜色变成高亮蓝色
-        input[type=text]:focus {
-          background-color: lightblue;
-        }
-        输入框获取焦点时，输入框颜色变成黑色
-        input[type=text]:focus {
-          border: 3px solid #555;
-        }
-33.7.输入框(input) 图标
-    如果你想在输入框中添加图标，可以使用 background-image 属性和用于定位的background-position 属性。
-    注意设置图标的左边距，让图标有一定的空间
-    例子：
-        input[type=text] {
-          background-color: white;
-          background-image: url('searchicon.png');
-          background-position: 10px 10px; 
-          background-repeat: no-repeat;
-          padding-left: 40px;
-        }
-33.8.带动画的搜索框	
-    使用了 CSS transition 属性，该属性设置了输入框在获取焦点时会向右延展。
-    例子：
-        input[type=text] {
-          -webkit-transition: width 0.4s ease-in-out;
-          transition: width 0.4s ease-in-out;
-        }
-		 
-        input[type=text]:focus {
-          width: 100%;
-        }
-33.9.文本框（textarea）样式
-    使用 resize 属性来禁用文本框可以重置大小的功能（一般拖动右下角可以重置大小）。
-    例子：
-        textarea {
-          width: 100%;
-          height: 150px;
-          padding: 12px 20px;
-          box-sizing: border-box;
-          border: 2px solid #ccc;
-          border-radius: 4px;
-          background-color: #f8f8f8;
-          resize: none;
-        }
-33.10.下拉菜单（select）样式
-    例子：
-        select {
-          width: 100%;
-          padding: 16px 20px;
-          border: none;
-          border-radius: 4px;
-          background-color: #f1f1f1;
-        }
-33.11.按钮样式
-    例子：
-        input[type=button], input[type=submit], input[type=reset] {
-          background-color: #4CAF50;
-          border: none;
-          color: white;
-          padding: 16px 32px;
-          text-decoration: none;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-        /* 提示: 使用 width: 100% 设置全宽按钮 */
+</code></pre><pre><code>34.CSS 计数器
+	CSS 计数器通过一个变量来设置，根据规则递增变量。
+	34.1.使用计数器自动编号
+		CSS 计数器根据规则来递增变量。
+		CSS 计数器使用到以下几个属性：
+			counter-reset - 创建或者重置计数器
+			counter-increment - 递增变量
+			content - 插入生成的内容
+			counter() 或 counters() 函数 - 将计数器的值添加到元素
+		例子：
+			要使用 CSS 计数器，得先用 counter-reset 创建：
+			以下实例在页面创建一个计数器 (在 body 选择器中)，
+			每个 &lt;h2&gt; 元素的计数值都会递增，
+			并在每个 &lt;h2&gt; 元素前添加 &quot;Section &lt;计数值&gt;:&quot;
+			&lt;style&gt;
+				body {
+				  counter-reset: section;
+				}
 
-33.12.响应式表单
-    响应式表单可以根据浏览器窗口的大小重新布局各个元素，
-    我们可以通过重置浏览器窗口大小来查看效果
-    例子：
-        &lt;style&gt;
-            * {
-              box-sizing: border-box;
-            }
-            input[type=text], select, textarea {
-              width: 100%;
-              padding: 12px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              resize: vertical;
-            }
-            label {
-              padding: 12px 12px 12px 0;
-              display: inline-block;
-            }
-            input[type=submit] {
-              background-color: #4CAF50;
-              color: white;
-              padding: 12px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              float: right;
-            }
-            input[type=submit]:hover {
-              background-color: #45a049;
-            }
-            .container {
-              border-radius: 5px;
-              background-color: #f2f2f2;
-              padding: 20px;
-            }
-            .col-25 {
-              float: left;
-              width: 25%;
-              margin-top: 6px;
-            }
-            .col-75 {
-              float: left;
-              width: 75%;
-              margin-top: 6px;
-            }
-            /* 清除浮动 */
-            .row:after {
-              content: &quot;&quot;;
-              display: table;
-              clear: both;
-            }
-            /* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
-            @media screen and (max-width: 600px) {
-              .col-25, .col-75, input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-              }
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;h2&gt;响应式表单&lt;/h2&gt;
-            &lt;p&gt;响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果：&lt;/p&gt;
-            &lt;div class=&quot;container&quot;&gt;
-              &lt;form action=&quot;/action_page.php&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-25&quot;&gt;
-                  &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-75&quot;&gt;
-                  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your name..&quot;&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-25&quot;&gt;
-                  &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-75&quot;&gt;
-                  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; placeholder=&quot;Your last name..&quot;&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-25&quot;&gt;
-                  &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-75&quot;&gt;
-                  &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
-                    &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;
-                    &lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt;
-                    &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;
-                  &lt;/select&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-25&quot;&gt;
-                  &lt;label for=&quot;subject&quot;&gt;Subject&lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-75&quot;&gt;
-                  &lt;textarea id=&quot;subject&quot; name=&quot;subject&quot; placeholder=&quot;Write something..&quot; style=&quot;height:200px&quot;&gt;&lt;/textarea&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-              &lt;/div&gt;
-              &lt;/form&gt;
-            &lt;/div&gt;
-        &lt;/body&gt;
+				h2::before {
+				  counter-increment: section;
+				  content: &quot;No.&quot; counter(section) &quot;: &quot;;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;h1&gt;使用 CSS 计数器:&lt;/h1&gt;
+				&lt;h2&gt;HTML 教程&lt;/h2&gt;
+				&lt;h2&gt;CSS 教程&lt;/h2&gt;
+				&lt;h2&gt;JavaScript 教程&lt;/h2&gt;
+			&lt;/body&gt;
+	34.2.嵌套计数器
+		在页面创建一个计数器，
+		在每一个 &lt;h1&gt; 元素前添加计数值 &quot;Section &lt;主标题计数值&gt;.&quot;,
+		嵌套的计数值则放在 &lt;h2&gt; 元素的前面，
+		内容为 &quot;&lt;主标题计数值&gt;.&lt;副标题计数值&gt;&quot;
+		例子：
+			&lt;style&gt;
+				body {
+				  counter-reset: section;
+				}
+				h1 {
+				  counter-reset: subsection;
+				}
+				h1::before {
+				  counter-increment: section;
+				  content: &quot;Section &quot; counter(section) &quot;. &quot;;
+				}
+				h2::before {
+				  counter-increment: subsection;
+				  content: counter(section) &quot;.&quot; counter(subsection) &quot; &quot;;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;h1&gt;HTML 教程:&lt;/h1&gt;
+				&lt;h2&gt;HTML 教程&lt;/h2&gt;
+				&lt;h2&gt;CSS 教程&lt;/h2&gt;
+
+				&lt;h1&gt;Scripting 教程:&lt;/h1&gt;
+				&lt;h2&gt;JavaScript&lt;/h2&gt;
+				&lt;h2&gt;VBScript&lt;/h2&gt;
+
+				&lt;h1&gt;XML 教程:&lt;/h1&gt;
+				&lt;h2&gt;XML&lt;/h2&gt;
+				&lt;h2&gt;XSL&lt;/h2&gt;
+			&lt;/body&gt;
+		计数器也可用于列表中，列表的子元素会自动创建。
+		这里我们使用了 counters() 函数在不同的嵌套层级中插入字符串
+		例子：
+			ol {
+			  counter-reset: section;
+			  list-style-type: none;
+			}
+			 
+			li::before {
+			  counter-increment: section;
+			  content: counters(section,&quot;.&quot;) &quot; &quot;;
+			}
+
+</code></pre><pre><code>35.CSS 网页布局
+	35.1.网页布局
+		网页布局有很多种方式，
+		一般分为以下几个部分：头部区域、菜单导航区域、内容区域、底部区域。
+	35.2.头部区域
+		头部区域位于整个网页的顶部，一般用于设置网页的标题或者网页的 logo
+		例子：
+			.header {
+			  background-color: #F1F1F1;
+			  text-align: center;
+			  padding: 20px;
+			}
+	35.3.菜单导航区域
+		菜单导航条包含了一些链接，可以引导用户浏览其他页面
+		例子：
+			&lt;style&gt;
+				* {
+				  box-sizing: border-box;
+				}
+
+				body {
+				  margin: 0;
+				}
+
+				/* 头部样式 */
+				.header {
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  text-align: center;
+				}
+
+				/* 导航条 */
+				.topnav {
+				  overflow: hidden;
+				  background-color: #333;
+				}
+				 
+				/* 导航链接 */
+				.topnav a {
+				  float: left;
+				  display: block;
+				  color: #f2f2f2;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+				 
+				/* 链接 - 修改颜色 */
+				.topnav a:hover {
+				  background-color: #ddd;
+				  color: black;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;div class=&quot;header&quot;&gt;
+				  &lt;h1&gt;头部区域&lt;/h1&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;topnav&quot;&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/body&gt;
+	35.4.内容区域
+		内容区域一般有三种形式:
+			1 列：一般用于移动端（上中下三个板块）
+			2 列：一般用于平板设备（上中（左右）下板块）
+			3 列：一般用于 PC 桌面设备（上中（左中右）下板块）
+		我们将创建一个 3 列布局，在小的屏幕上将会变成 1 列布局（响应式）
+		例子：
+			/* 创建三个相等的列 */
+			.column {
+			  float: left;
+			  width: 33.33%;
+			}
+			 
+			/* 列后清除浮动 */
+			.row:after {
+			  content: &quot;&quot;;
+			  display: table;
+			  clear: both;
+			}
+			 
+			/* 响应式布局 - 小于 600 px 时改为上下布局 */
+			@media screen and (max-width: 600px) {
+			  .column {
+				width: 100%;
+			  }
+			}
+			（
+				提示:要设置两列可以设置 width 为 50%。创建 4 列可以设置为 25%。
+			）
+		不相等的列
+			不相等的列一般是在中间部分设置内容区域，这块也是最大最主要的，
+			左右两次侧可以作为一些导航等相关内容，这三列加起来的宽度是 100％。
+			例子：
+				.column {
+				  float: left;
+				}
+				 
+				/* 左右侧栏的宽度 */
+				.column.side {
+				  width: 25%;
+				}
+				 
+				/* 中间列宽度 */
+				.column.middle {
+				  width: 50%;
+				}
+				 
+				/* 响应式布局 - 宽度小于600px时设置上下布局 */
+				@media screen and (max-width: 600px) {
+				  .column.side, .column.middle {
+					width: 100%;
+				  }
+				}
+	35.5.底部区域
+		底部区域在网页的最下方，一般包含版权信息和联系方式等。
+		例子：	
+			.footer {
+			  background-color: #F1F1F1;
+			  text-align: center;
+			  padding: 10px;
+			}
+	35.6.响应式网页布局
+		响应式等页面，页面的布局会根据屏幕的大小来调整
+		例子：	
+			&lt;style&gt;
+				* {
+				  box-sizing: border-box;
+				}
+				 
+				body {
+				  font-family: Arial;
+				  padding: 10px;
+				  background: #f1f1f1;
+				}
+				 
+				/* 头部标题 */
+				.header {
+				  padding: 30px;
+				  text-align: center;
+				  background: white;
+				}
+				 
+				.header h1 {
+				  font-size: 50px;
+				}
+				 
+				/* 导航条 */
+				.topnav {
+				  overflow: hidden;
+				  background-color: #333;
+				}
+				 
+				/* 导航条链接 */
+				.topnav a {
+				  float: left;
+				  display: block;
+				  color: #f2f2f2;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+				 
+				/* 链接颜色修改 */
+				.topnav a:hover {
+				  background-color: #ddd;
+				  color: black;
+				}
+				 
+				/* 创建两列 */
+				/* Left column */
+				.leftcolumn {   
+				  float: left;
+				  width: 75%;
+				}
+				 
+				/* 右侧栏 */
+				.rightcolumn {
+				  float: left;
+				  width: 25%;
+				  background-color: #f1f1f1;
+				  padding-left: 20px;
+				}
+				 
+				/* 图像部分 */
+				.fakeimg {
+				  background-color: #aaa;
+				  width: 100%;
+				  padding: 20px;
+				}
+				 
+				/* 文章卡片效果 */
+				.card {
+				  background-color: white;
+				  padding: 20px;
+				  margin-top: 20px;
+				}
+				 
+				/* 列后面清除浮动 */
+				.row:after {
+				  content: &quot;&quot;;
+				  display: table;
+				  clear: both;
+				}
+				 
+				/* 底部 */
+				.footer {
+				  padding: 20px;
+				  text-align: center;
+				  background: #ddd;
+				  margin-top: 20px;
+				}
+				 
+				/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+				@media screen and (max-width: 800px) {
+				  .leftcolumn, .rightcolumn {   
+					width: 100%;
+					padding: 0;
+				  }
+				}
+				 
+				/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+				@media screen and (max-width: 400px) {
+				  .topnav a {
+					float: none;
+					width: 100%;
+				  }
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;div class=&quot;header&quot;&gt;
+				  &lt;h1&gt;我的网页&lt;/h1&gt;
+				  &lt;p&gt;重置浏览器大小查看效果。&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;topnav&quot;&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				  &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
+				  &lt;a href=&quot;#&quot; style=&quot;float:right&quot;&gt;链接&lt;/a&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;row&quot;&gt;
+				  &lt;div class=&quot;leftcolumn&quot;&gt;
+					&lt;div class=&quot;card&quot;&gt;
+					  &lt;h2&gt;文章标题&lt;/h2&gt;
+					  &lt;h5&gt;2019 年 4 月 17日&lt;/h5&gt;
+					  &lt;div class=&quot;fakeimg&quot; style=&quot;height:200px;&quot;&gt;图片&lt;/div&gt;
+					  &lt;p&gt;一些文本...&lt;/p&gt;
+					  &lt;p&gt;菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card&quot;&gt;
+					  &lt;h2&gt;文章标题&lt;/h2&gt;
+					  &lt;h5&gt;2019 年 4 月 17日&lt;/h5&gt;
+					  &lt;div class=&quot;fakeimg&quot; style=&quot;height:200px;&quot;&gt;图片&lt;/div&gt;
+					  &lt;p&gt;一些文本...&lt;/p&gt;
+					  &lt;p&gt;菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！&lt;/p&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				  &lt;div class=&quot;rightcolumn&quot;&gt;
+					&lt;div class=&quot;card&quot;&gt;
+					  &lt;h2&gt;关于我&lt;/h2&gt;
+					  &lt;div class=&quot;fakeimg&quot; style=&quot;height:100px;&quot;&gt;图片&lt;/div&gt;
+					  &lt;p&gt;关于我的一些信息..&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card&quot;&gt;
+					  &lt;h3&gt;热门文章&lt;/h3&gt;
+					  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
+					  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
+					  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card&quot;&gt;
+					  &lt;h3&gt;关注我&lt;/h3&gt;
+					  &lt;p&gt;一些文本...&lt;/p&gt;
+					&lt;/div&gt;
+				  &lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;footer&quot;&gt;
+				  &lt;h2&gt;底部区域&lt;/h2&gt;
+				&lt;/div&gt;
+			&lt;/body&gt;
 </code></pre>
-<p>34.CSS 计数器
-CSS 计数器通过一个变量来设置，根据规则递增变量。
-34.1.使用计数器自动编号
-CSS 计数器根据规则来递增变量。
-CSS 计数器使用到以下几个属性：
-counter-reset - 创建或者重置计数器
-counter-increment - 递增变量
-content - 插入生成的内容
-counter() 或 counters() 函数 - 将计数器的值添加到元素
-例子：
-要使用 CSS 计数器，得先用 counter-reset 创建：
-以下实例在页面创建一个计数器 (在 body 选择器中)，
-每个 <!-- raw HTML omitted --> 元素的计数值都会递增，
-并在每个 <!-- raw HTML omitted --> 元素前添加 &ldquo;Section &lt;计数值&gt;:&rdquo;
-<!-- raw HTML omitted -->
-body {
-counter-reset: section;
-}</p>
-<pre><code>            h2::before {
-              counter-increment: section;
-              content: &quot;No.&quot; counter(section) &quot;: &quot;;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;h1&gt;使用 CSS 计数器:&lt;/h1&gt;
-            &lt;h2&gt;HTML 教程&lt;/h2&gt;
-            &lt;h2&gt;CSS 教程&lt;/h2&gt;
-            &lt;h2&gt;JavaScript 教程&lt;/h2&gt;
-        &lt;/body&gt;
-34.2.嵌套计数器
-    在页面创建一个计数器，
-    在每一个 &lt;h1&gt; 元素前添加计数值 &quot;Section &lt;主标题计数值&gt;.&quot;,
-    嵌套的计数值则放在 &lt;h2&gt; 元素的前面，
-    内容为 &quot;&lt;主标题计数值&gt;.&lt;副标题计数值&gt;&quot;
-    例子：
-        &lt;style&gt;
-            body {
-              counter-reset: section;
-            }
-            h1 {
-              counter-reset: subsection;
-            }
-            h1::before {
-              counter-increment: section;
-              content: &quot;Section &quot; counter(section) &quot;. &quot;;
-            }
-            h2::before {
-              counter-increment: subsection;
-              content: counter(section) &quot;.&quot; counter(subsection) &quot; &quot;;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;h1&gt;HTML 教程:&lt;/h1&gt;
-            &lt;h2&gt;HTML 教程&lt;/h2&gt;
-            &lt;h2&gt;CSS 教程&lt;/h2&gt;
-
-            &lt;h1&gt;Scripting 教程:&lt;/h1&gt;
-            &lt;h2&gt;JavaScript&lt;/h2&gt;
-            &lt;h2&gt;VBScript&lt;/h2&gt;
-
-            &lt;h1&gt;XML 教程:&lt;/h1&gt;
-            &lt;h2&gt;XML&lt;/h2&gt;
-            &lt;h2&gt;XSL&lt;/h2&gt;
-        &lt;/body&gt;
-    计数器也可用于列表中，列表的子元素会自动创建。
-    这里我们使用了 counters() 函数在不同的嵌套层级中插入字符串
-    例子：
-        ol {
-          counter-reset: section;
-          list-style-type: none;
-        }
-		 
-        li::before {
-          counter-increment: section;
-          content: counters(section,&quot;.&quot;) &quot; &quot;;
-        }
-</code></pre>
-<p>35.CSS 网页布局
-35.1.网页布局
-网页布局有很多种方式，
-一般分为以下几个部分：头部区域、菜单导航区域、内容区域、底部区域。
-35.2.头部区域
-头部区域位于整个网页的顶部，一般用于设置网页的标题或者网页的 logo
-例子：
-.header {
-background-color: #F1F1F1;
-text-align: center;
-padding: 20px;
-}
-35.3.菜单导航区域
-菜单导航条包含了一些链接，可以引导用户浏览其他页面
-例子：
-<!-- raw HTML omitted -->
-* {
-box-sizing: border-box;
-}</p>
-<pre><code>            body {
-              margin: 0;
-            }
-
-            /* 头部样式 */
-            .header {
-              background-color: #f1f1f1;
-              padding: 20px;
-              text-align: center;
-            }
-
-            /* 导航条 */
-            .topnav {
-              overflow: hidden;
-              background-color: #333;
-            }
-			 
-            /* 导航链接 */
-            .topnav a {
-              float: left;
-              display: block;
-              color: #f2f2f2;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
-			 
-            /* 链接 - 修改颜色 */
-            .topnav a:hover {
-              background-color: #ddd;
-              color: black;
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;div class=&quot;header&quot;&gt;
-              &lt;h1&gt;头部区域&lt;/h1&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;topnav&quot;&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-            &lt;/div&gt;
-        &lt;/body&gt;
-35.4.内容区域
-    内容区域一般有三种形式:
-        1 列：一般用于移动端（上中下三个板块）
-        2 列：一般用于平板设备（上中（左右）下板块）
-        3 列：一般用于 PC 桌面设备（上中（左中右）下板块）
-    我们将创建一个 3 列布局，在小的屏幕上将会变成 1 列布局（响应式）
-    例子：
-        /* 创建三个相等的列 */
-        .column {
-          float: left;
-          width: 33.33%;
-        }
-		 
-        /* 列后清除浮动 */
-        .row:after {
-          content: &quot;&quot;;
-          display: table;
-          clear: both;
-        }
-		 
-        /* 响应式布局 - 小于 600 px 时改为上下布局 */
-        @media screen and (max-width: 600px) {
-          .column {
-            width: 100%;
-          }
-        }
-        （
-            提示:要设置两列可以设置 width 为 50%。创建 4 列可以设置为 25%。
-        ）
-    不相等的列
-        不相等的列一般是在中间部分设置内容区域，这块也是最大最主要的，
-        左右两次侧可以作为一些导航等相关内容，这三列加起来的宽度是 100％。
-        例子：
-            .column {
-              float: left;
-            }
-			 
-            /* 左右侧栏的宽度 */
-            .column.side {
-              width: 25%;
-            }
-			 
-            /* 中间列宽度 */
-            .column.middle {
-              width: 50%;
-            }
-			 
-            /* 响应式布局 - 宽度小于600px时设置上下布局 */
-            @media screen and (max-width: 600px) {
-              .column.side, .column.middle {
-                width: 100%;
-              }
-            }
-35.5.底部区域
-    底部区域在网页的最下方，一般包含版权信息和联系方式等。
-    例子：	
-        .footer {
-          background-color: #F1F1F1;
-          text-align: center;
-          padding: 10px;
-        }
-35.6.响应式网页布局
-    响应式等页面，页面的布局会根据屏幕的大小来调整
-    例子：	
-        &lt;style&gt;
-            * {
-              box-sizing: border-box;
-            }
-			 
-            body {
-              font-family: Arial;
-              padding: 10px;
-              background: #f1f1f1;
-            }
-			 
-            /* 头部标题 */
-            .header {
-              padding: 30px;
-              text-align: center;
-              background: white;
-            }
-			 
-            .header h1 {
-              font-size: 50px;
-            }
-			 
-            /* 导航条 */
-            .topnav {
-              overflow: hidden;
-              background-color: #333;
-            }
-			 
-            /* 导航条链接 */
-            .topnav a {
-              float: left;
-              display: block;
-              color: #f2f2f2;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
-			 
-            /* 链接颜色修改 */
-            .topnav a:hover {
-              background-color: #ddd;
-              color: black;
-            }
-			 
-            /* 创建两列 */
-            /* Left column */
-            .leftcolumn {   
-              float: left;
-              width: 75%;
-            }
-			 
-            /* 右侧栏 */
-            .rightcolumn {
-              float: left;
-              width: 25%;
-              background-color: #f1f1f1;
-              padding-left: 20px;
-            }
-			 
-            /* 图像部分 */
-            .fakeimg {
-              background-color: #aaa;
-              width: 100%;
-              padding: 20px;
-            }
-			 
-            /* 文章卡片效果 */
-            .card {
-              background-color: white;
-              padding: 20px;
-              margin-top: 20px;
-            }
-			 
-            /* 列后面清除浮动 */
-            .row:after {
-              content: &quot;&quot;;
-              display: table;
-              clear: both;
-            }
-			 
-            /* 底部 */
-            .footer {
-              padding: 20px;
-              text-align: center;
-              background: #ddd;
-              margin-top: 20px;
-            }
-			 
-            /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
-            @media screen and (max-width: 800px) {
-              .leftcolumn, .rightcolumn {   
-                width: 100%;
-                padding: 0;
-              }
-            }
-			 
-            /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
-            @media screen and (max-width: 400px) {
-              .topnav a {
-                float: none;
-                width: 100%;
-              }
-            }
-        &lt;/style&gt;
-        &lt;body&gt;
-            &lt;div class=&quot;header&quot;&gt;
-              &lt;h1&gt;我的网页&lt;/h1&gt;
-              &lt;p&gt;重置浏览器大小查看效果。&lt;/p&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;topnav&quot;&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-              &lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;
-              &lt;a href=&quot;#&quot; style=&quot;float:right&quot;&gt;链接&lt;/a&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;row&quot;&gt;
-              &lt;div class=&quot;leftcolumn&quot;&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                  &lt;h2&gt;文章标题&lt;/h2&gt;
-                  &lt;h5&gt;2019 年 4 月 17日&lt;/h5&gt;
-                  &lt;div class=&quot;fakeimg&quot; style=&quot;height:200px;&quot;&gt;图片&lt;/div&gt;
-                  &lt;p&gt;一些文本...&lt;/p&gt;
-                  &lt;p&gt;菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                  &lt;h2&gt;文章标题&lt;/h2&gt;
-                  &lt;h5&gt;2019 年 4 月 17日&lt;/h5&gt;
-                  &lt;div class=&quot;fakeimg&quot; style=&quot;height:200px;&quot;&gt;图片&lt;/div&gt;
-                  &lt;p&gt;一些文本...&lt;/p&gt;
-                  &lt;p&gt;菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;rightcolumn&quot;&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                  &lt;h2&gt;关于我&lt;/h2&gt;
-                  &lt;div class=&quot;fakeimg&quot; style=&quot;height:100px;&quot;&gt;图片&lt;/div&gt;
-                  &lt;p&gt;关于我的一些信息..&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                  &lt;h3&gt;热门文章&lt;/h3&gt;
-                  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
-                  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
-                  &lt;div class=&quot;fakeimg&quot;&gt;&lt;p&gt;图片&lt;/p&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                  &lt;h3&gt;关注我&lt;/h3&gt;
-                  &lt;p&gt;一些文本...&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;footer&quot;&gt;
-              &lt;h2&gt;底部区域&lt;/h2&gt;
-            &lt;/div&gt;
-        &lt;/body&gt;
-</code></pre>
-
             </section>
 	</div>
     </div>

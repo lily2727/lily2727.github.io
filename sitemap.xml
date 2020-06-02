@@ -63,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/categories/ayurvedha/</loc>
+    <loc>https://lily2727.github.io/tags/ayurvedha/</loc>
     <lastmod>2018-10-19T19:43:49+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/tags/ayurvedha/</loc>
+    <loc>https://lily2727.github.io/categories/ayurvedha/</loc>
     <lastmod>2018-10-19T19:43:49+05:30</lastmod>
   </url>
   
@@ -119,6 +119,11 @@
   
   <url>
     <loc>https://lily2727.github.io/posts/linux%E5%91%BD%E4%BB%A4/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lily2727.github.io/posts/show/</loc>
     <priority>0</priority>
   </url>
   

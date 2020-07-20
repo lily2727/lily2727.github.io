@@ -225,56 +225,9 @@ PS：还有功能图法、正交试验法、场景法，实际应用的并不多
     </item>
     
     <item>
-      <title>CSS</title>
-      <link>https://lily2727.github.io/posts/css/</link>
-      <pubDate>Thu, 19 Mar 2020 02:13:17 +0800</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/css/</guid>
-      <description>CSS
-1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个 2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/*开始，以*/结束 例子： /*这是个注释*/ 3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;quot;#&amp;quot; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;quot;.&amp;quot;号显示： 4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;mystyle.</description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://lily2727.github.io/posts/html/</link>
-      <pubDate>Sun, 15 Mar 2020 18:08:38 +0800</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/html/</guid>
-      <description>1.超文本标记语言，是一种用于创建网页的标准标记语言 2.常用参考 	2.1&amp;lt;!--...--&amp;gt; 定义注释 &amp;lt;!--这是一个注释，注释在浏览器中不会显示--&amp;gt; 	2.2&amp;lt;!DOCTYPE&amp;gt; 定义文档类型 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面的位置，处于 &amp;lt;html&amp;gt; 标签之前。 &amp;lt;!DOCTYPE&amp;gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。 	2.3&amp;lt;a&amp;gt; 定义超文本链接 &amp;lt;a&amp;gt; 标签定义超链接，用于从一个页面链接到另一个页面。 &amp;lt;a&amp;gt; 元素最重要的属性是 href 属性，它指定链接的目标。 在所有浏览器中，链接的默认外观如下： 未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的 例子： &amp;lt;a href=&amp;quot;http://www.runoob.com&amp;quot;&amp;gt;访问菜鸟教程!&amp;lt;/a&amp;gt; 	2.4&amp;lt;body&amp;gt; 定义文档主体 &amp;lt;body&amp;gt;文档内容......&amp;lt;/body&amp;gt; &amp;lt;body&amp;gt; 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。 	2.5&amp;lt;br&amp;gt; 定义换行 &amp;lt;p&amp;gt;使用 br 元素&amp;lt;br&amp;gt;在文本中&amp;lt;br&amp;gt;换行。&amp;lt;/p&amp;gt; → 使用 br 元素 在文本中 换行。 &amp;lt;br&amp;gt; 标签插入一个简单的换行符。 &amp;lt;br&amp;gt; 标签是一个空标签，意味着它没有结束标签。 	2.6&amp;lt;button&amp;gt; 定义一个点击按钮	&amp;lt;button&amp;gt; 标签定义一个按钮。 在 &amp;lt;button&amp;gt; 元素内部，您可以放置内容，比如文本或图像。 这是该元素与使用 &amp;lt;input&amp;gt; 元素创建的按钮之间的不同之处。 例子： &amp;lt;button type=&amp;quot;button&amp;quot;&amp;gt;点我!</description>
-    </item>
-    
-    <item>
-      <title>The Fox and the Grapes</title>
-      <link>https://lily2727.github.io/posts/the-fox-and-the-grapes/</link>
-      <pubDate>Fri, 19 Oct 2018 20:08:42 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/the-fox-and-the-grapes/</guid>
-      <description>A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox&amp;rsquo;s mouth watered as he gazed longingly at them.
-The bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more.</description>
-    </item>
-    
-    <item>
-      <title>Drakshasava</title>
-      <link>https://lily2727.github.io/posts/drakshasava/</link>
-      <pubDate>Fri, 19 Oct 2018 19:43:49 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/drakshasava/</guid>
-      <description>Drakshasava (Sanskrit: द्राक्षासव) is a traditional Ayurvedic tonic made from grapes. Drakshasava is a weak wine because the grape juice is usually only partially fermented. It is also sometimes prepared by using raisin concentrate. The tonic is claimed to be beneficial for maladies such as lethargy, weakness and heat exhaustion. Drakshasava is believed to address health imbalances arising from an excess of the Vata-Vayu Dosha and is said to be useful in curing cardiac disorders and hemorrhoids in the Ayurvedic system.</description>
-    </item>
-    
-    <item>
-      <title>Code Demo</title>
-      <link>https://lily2727.github.io/posts/code-demo/</link>
-      <pubDate>Thu, 18 Oct 2018 18:43:49 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/code-demo/</guid>
-      <description>Bash #!/bin/bash###### CONFIGACCEPTED_HOSTS=&amp;#34;/root/.hag_accepted.conf&amp;#34;BE_VERBOSE=falseif [ &amp;#34;$UID&amp;#34; -ne 0 ]thenecho &amp;#34;Superuser rights required&amp;#34;exit 2figenApacheConf(){echo -e &amp;#34;# Host ${HOME_DIR}$1/$2:&amp;#34;}JSON [{&amp;#34;title&amp;#34;: &amp;#34;apples&amp;#34;,&amp;#34;count&amp;#34;: [12000, 20000],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}},{&amp;#34;title&amp;#34;: &amp;#34;oranges&amp;#34;,&amp;#34;count&amp;#34;: [17500, null],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}}]Rust fn main() {let greetings = [&amp;#34;Hello&amp;#34;, &amp;#34;Hola&amp;#34;, &amp;#34;Bonjour&amp;#34;,&amp;#34;Ciao&amp;#34;, &amp;#34;こんにちは&amp;#34;, &amp;#34;안녕하세요&amp;#34;,&amp;#34;Cześć&amp;#34;, &amp;#34;Olá&amp;#34;, &amp;#34;Здравствуйте&amp;#34;,&amp;#34;Chào bạn&amp;#34;, &amp;#34;您好&amp;#34;, &amp;#34;Hallo&amp;#34;,&amp;#34;Hej&amp;#34;, &amp;#34;Ahoj&amp;#34;, &amp;#34;سلام&amp;#34;,&amp;#34;สวัสดี&amp;#34;];for (num, greeting) in greetings.</description>
-    </item>
-    
-    <item>
       <title>Software test interview question 3</title>
       <link>https://lily2727.github.io/posts/software-test-interview-question-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 May 2020 02:13:17 +0800</pubDate>
       
       <guid>https://lily2727.github.io/posts/software-test-interview-question-3/</guid>
       <description>软件的概念？ 软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。
@@ -322,6 +275,53 @@ V模型？ W模型？ 瀑布模型？ 需求评审内容？ ①对需求的描�
 ④术语和定义
 ⑤测试参考文档
 ⑥测试提交文档</description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://lily2727.github.io/posts/css/</link>
+      <pubDate>Thu, 19 Mar 2020 02:13:17 +0800</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/css/</guid>
+      <description>CSS
+1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个 2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/*开始，以*/结束 例子： /*这是个注释*/ 3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;quot;#&amp;quot; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;quot;.&amp;quot;号显示： 4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;mystyle.</description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>https://lily2727.github.io/posts/html/</link>
+      <pubDate>Sun, 15 Mar 2020 18:08:38 +0800</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/html/</guid>
+      <description>1.超文本标记语言，是一种用于创建网页的标准标记语言 2.常用参考 	2.1&amp;lt;!--...--&amp;gt; 定义注释 &amp;lt;!--这是一个注释，注释在浏览器中不会显示--&amp;gt; 	2.2&amp;lt;!DOCTYPE&amp;gt; 定义文档类型 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面的位置，处于 &amp;lt;html&amp;gt; 标签之前。 &amp;lt;!DOCTYPE&amp;gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。 	2.3&amp;lt;a&amp;gt; 定义超文本链接 &amp;lt;a&amp;gt; 标签定义超链接，用于从一个页面链接到另一个页面。 &amp;lt;a&amp;gt; 元素最重要的属性是 href 属性，它指定链接的目标。 在所有浏览器中，链接的默认外观如下： 未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的 例子： &amp;lt;a href=&amp;quot;http://www.runoob.com&amp;quot;&amp;gt;访问菜鸟教程!&amp;lt;/a&amp;gt; 	2.4&amp;lt;body&amp;gt; 定义文档主体 &amp;lt;body&amp;gt;文档内容......&amp;lt;/body&amp;gt; &amp;lt;body&amp;gt; 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。 	2.5&amp;lt;br&amp;gt; 定义换行 &amp;lt;p&amp;gt;使用 br 元素&amp;lt;br&amp;gt;在文本中&amp;lt;br&amp;gt;换行。&amp;lt;/p&amp;gt; → 使用 br 元素 在文本中 换行。 &amp;lt;br&amp;gt; 标签插入一个简单的换行符。 &amp;lt;br&amp;gt; 标签是一个空标签，意味着它没有结束标签。 	2.6&amp;lt;button&amp;gt; 定义一个点击按钮	&amp;lt;button&amp;gt; 标签定义一个按钮。 在 &amp;lt;button&amp;gt; 元素内部，您可以放置内容，比如文本或图像。 这是该元素与使用 &amp;lt;input&amp;gt; 元素创建的按钮之间的不同之处。 例子： &amp;lt;button type=&amp;quot;button&amp;quot;&amp;gt;点我!</description>
+    </item>
+    
+    <item>
+      <title>The Fox and the Grapes</title>
+      <link>https://lily2727.github.io/posts/the-fox-and-the-grapes/</link>
+      <pubDate>Fri, 19 Oct 2018 20:08:42 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/the-fox-and-the-grapes/</guid>
+      <description>A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox&amp;rsquo;s mouth watered as he gazed longingly at them.
+The bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more.</description>
+    </item>
+    
+    <item>
+      <title>Drakshasava</title>
+      <link>https://lily2727.github.io/posts/drakshasava/</link>
+      <pubDate>Fri, 19 Oct 2018 19:43:49 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/drakshasava/</guid>
+      <description>Drakshasava (Sanskrit: द्राक्षासव) is a traditional Ayurvedic tonic made from grapes. Drakshasava is a weak wine because the grape juice is usually only partially fermented. It is also sometimes prepared by using raisin concentrate. The tonic is claimed to be beneficial for maladies such as lethargy, weakness and heat exhaustion. Drakshasava is believed to address health imbalances arising from an excess of the Vata-Vayu Dosha and is said to be useful in curing cardiac disorders and hemorrhoids in the Ayurvedic system.</description>
+    </item>
+    
+    <item>
+      <title>Code Demo</title>
+      <link>https://lily2727.github.io/posts/code-demo/</link>
+      <pubDate>Thu, 18 Oct 2018 18:43:49 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/code-demo/</guid>
+      <description>Bash #!/bin/bash###### CONFIGACCEPTED_HOSTS=&amp;#34;/root/.hag_accepted.conf&amp;#34;BE_VERBOSE=falseif [ &amp;#34;$UID&amp;#34; -ne 0 ]thenecho &amp;#34;Superuser rights required&amp;#34;exit 2figenApacheConf(){echo -e &amp;#34;# Host ${HOME_DIR}$1/$2:&amp;#34;}JSON [{&amp;#34;title&amp;#34;: &amp;#34;apples&amp;#34;,&amp;#34;count&amp;#34;: [12000, 20000],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}},{&amp;#34;title&amp;#34;: &amp;#34;oranges&amp;#34;,&amp;#34;count&amp;#34;: [17500, null],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}}]Rust fn main() {let greetings = [&amp;#34;Hello&amp;#34;, &amp;#34;Hola&amp;#34;, &amp;#34;Bonjour&amp;#34;,&amp;#34;Ciao&amp;#34;, &amp;#34;こんにちは&amp;#34;, &amp;#34;안녕하세요&amp;#34;,&amp;#34;Cześć&amp;#34;, &amp;#34;Olá&amp;#34;, &amp;#34;Здравствуйте&amp;#34;,&amp;#34;Chào bạn&amp;#34;, &amp;#34;您好&amp;#34;, &amp;#34;Hallo&amp;#34;,&amp;#34;Hej&amp;#34;, &amp;#34;Ahoj&amp;#34;, &amp;#34;سلام&amp;#34;,&amp;#34;สวัสดี&amp;#34;];for (num, greeting) in greetings.</description>
     </item>
     
   </channel>

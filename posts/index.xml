@@ -6,62 +6,15 @@
     <description>Recent content in Posts on Semily2727-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2020 02:13:17 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 02:13:17 +0800</lastBuildDate>
     
 	<atom:link href="https://lily2727.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CSS</title>
-      <link>https://lily2727.github.io/posts/css/</link>
-      <pubDate>Thu, 19 Mar 2020 02:13:17 +0800</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/css/</guid>
-      <description>CSS
-1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个 2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/*开始，以*/结束 例子： /*这是个注释*/ 3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;quot;#&amp;quot; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;quot;.&amp;quot;号显示： 4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;mystyle.</description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://lily2727.github.io/posts/html/</link>
-      <pubDate>Sun, 15 Mar 2020 18:08:38 +0800</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/html/</guid>
-      <description>1.超文本标记语言，是一种用于创建网页的标准标记语言 2.常用参考 	2.1&amp;lt;!--...--&amp;gt; 定义注释 &amp;lt;!--这是一个注释，注释在浏览器中不会显示--&amp;gt; 	2.2&amp;lt;!DOCTYPE&amp;gt; 定义文档类型 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面的位置，处于 &amp;lt;html&amp;gt; 标签之前。 &amp;lt;!DOCTYPE&amp;gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。 	2.3&amp;lt;a&amp;gt; 定义超文本链接 &amp;lt;a&amp;gt; 标签定义超链接，用于从一个页面链接到另一个页面。 &amp;lt;a&amp;gt; 元素最重要的属性是 href 属性，它指定链接的目标。 在所有浏览器中，链接的默认外观如下： 未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的 例子： &amp;lt;a href=&amp;quot;http://www.runoob.com&amp;quot;&amp;gt;访问菜鸟教程!&amp;lt;/a&amp;gt; 	2.4&amp;lt;body&amp;gt; 定义文档主体 &amp;lt;body&amp;gt;文档内容......&amp;lt;/body&amp;gt; &amp;lt;body&amp;gt; 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。 	2.5&amp;lt;br&amp;gt; 定义换行 &amp;lt;p&amp;gt;使用 br 元素&amp;lt;br&amp;gt;在文本中&amp;lt;br&amp;gt;换行。&amp;lt;/p&amp;gt; → 使用 br 元素 在文本中 换行。 &amp;lt;br&amp;gt; 标签插入一个简单的换行符。 &amp;lt;br&amp;gt; 标签是一个空标签，意味着它没有结束标签。 	2.6&amp;lt;button&amp;gt; 定义一个点击按钮	&amp;lt;button&amp;gt; 标签定义一个按钮。 在 &amp;lt;button&amp;gt; 元素内部，您可以放置内容，比如文本或图像。 这是该元素与使用 &amp;lt;input&amp;gt; 元素创建的按钮之间的不同之处。 例子： &amp;lt;button type=&amp;quot;button&amp;quot;&amp;gt;点我!</description>
-    </item>
-    
-    <item>
-      <title>The Fox and the Grapes</title>
-      <link>https://lily2727.github.io/posts/the-fox-and-the-grapes/</link>
-      <pubDate>Fri, 19 Oct 2018 20:08:42 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/the-fox-and-the-grapes/</guid>
-      <description>A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox&amp;rsquo;s mouth watered as he gazed longingly at them.
-The bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more.</description>
-    </item>
-    
-    <item>
-      <title>Drakshasava</title>
-      <link>https://lily2727.github.io/posts/drakshasava/</link>
-      <pubDate>Fri, 19 Oct 2018 19:43:49 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/drakshasava/</guid>
-      <description>Drakshasava (Sanskrit: द्राक्षासव) is a traditional Ayurvedic tonic made from grapes. Drakshasava is a weak wine because the grape juice is usually only partially fermented. It is also sometimes prepared by using raisin concentrate. The tonic is claimed to be beneficial for maladies such as lethargy, weakness and heat exhaustion. Drakshasava is believed to address health imbalances arising from an excess of the Vata-Vayu Dosha and is said to be useful in curing cardiac disorders and hemorrhoids in the Ayurvedic system.</description>
-    </item>
-    
-    <item>
-      <title>Code Demo</title>
-      <link>https://lily2727.github.io/posts/code-demo/</link>
-      <pubDate>Thu, 18 Oct 2018 18:43:49 +0530</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/code-demo/</guid>
-      <description>Bash #!/bin/bash###### CONFIGACCEPTED_HOSTS=&amp;#34;/root/.hag_accepted.conf&amp;#34;BE_VERBOSE=falseif [ &amp;#34;$UID&amp;#34; -ne 0 ]thenecho &amp;#34;Superuser rights required&amp;#34;exit 2figenApacheConf(){echo -e &amp;#34;# Host ${HOME_DIR}$1/$2:&amp;#34;}JSON [{&amp;#34;title&amp;#34;: &amp;#34;apples&amp;#34;,&amp;#34;count&amp;#34;: [12000, 20000],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}},{&amp;#34;title&amp;#34;: &amp;#34;oranges&amp;#34;,&amp;#34;count&amp;#34;: [17500, null],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}}]Rust fn main() {let greetings = [&amp;#34;Hello&amp;#34;, &amp;#34;Hola&amp;#34;, &amp;#34;Bonjour&amp;#34;,&amp;#34;Ciao&amp;#34;, &amp;#34;こんにちは&amp;#34;, &amp;#34;안녕하세요&amp;#34;,&amp;#34;Cześć&amp;#34;, &amp;#34;Olá&amp;#34;, &amp;#34;Здравствуйте&amp;#34;,&amp;#34;Chào bạn&amp;#34;, &amp;#34;您好&amp;#34;, &amp;#34;Hallo&amp;#34;,&amp;#34;Hej&amp;#34;, &amp;#34;Ahoj&amp;#34;, &amp;#34;سلام&amp;#34;,&amp;#34;สวัสดี&amp;#34;];for (num, greeting) in greetings.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Knowledge accumulation</title>
       <link>https://lily2727.github.io/posts/knowledge-accumulation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2020 02:13:17 +0800</pubDate>
       
       <guid>https://lily2727.github.io/posts/knowledge-accumulation/</guid>
       <description>Red Hat组织 ​	Red Hat（红帽）公司（NYSE：RHT）是一家开源解决方案供应商，也是标准普尔500指数成员。 ​	红帽公司为诸多重要IT技术如操作系统、存储、中间件、虚拟化和云计算提供关键任务的软件与服务。 ​	红帽的开放源码模式提供跨物理、虚拟和云端环境的企业运算解决方案，以帮助企业降低成本并提升效能、稳定性与安全性。 ​	红帽公司同时也为全球客户或通过领先合作伙伴为客户提供技术支持、培训和咨询服务。 ​	2018年10月29日，IBM宣布以340亿美元的价格收购Red Hat。
@@ -74,38 +27,9 @@ log4j的学习 笔记来源网站</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://lily2727.github.io/posts/linux-command/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/linux-command/</guid>
-      <description>测试工程师需要掌握linux系统的必要性？ 由于Linux在服务器领域应用非常广泛，有很多开源和成熟的软件，目前大多数的应用后台都是部署在linux上的，熟悉Linux操作系统和相关命令，可以加深我们对软件的架构和运行机制的了解，也可以增加自己核心竞争力、拓宽自己的技能栈，从而获得更高的薪水。
-不同岗位职级，对于linux能力要求也不相同，如果你是初级测试工程师，那么有可能只需要命令查看日志，分析bug原因。如果你是中级工程师，则需要在linux环境搭建各种测试环境，包括各种应用程序，应用依赖的中间件，以及测试工具软件等。如果你是高级工程师，则需要优化系统架构，编写shell脚本，提升测试效率。
-软件测试工程师linux十大场景命令使用 日志查看 实时查看tomcat日志文件查看： cd /home/tomcat/logs #也可用相对目录``tail –f catalina.out #实时打印日志文件``ctrl+c #退出查看查看日志命令： tail -f log.txt：循环查看tai -500f log.txt:查看最后500行cat file：查看短文件less file：查看长文件head example.txt ：显示文件 example.txt 的前十行内容` `head -n 20 example.txt：显示文件 example.txt 的前二十行内容修改配置文件内容 最常见的就是修改环境变量
-vim /etc/profile输入字母i，进入编辑模式（INSERT）输入内容，按esc，进入命令模式 。执行:wq，保持修改。输入 soucre /etc/profile 使环境变量生效。可以通过 cat /etc/profile查看文件是否修改成功。vi/vim编辑器 vi/vim编辑器：linux系统提供的文本编辑工具，用来编辑文本文件。
-vim是vi的增强版本，增加了部分命令。
-如何进入？
-新建：直接输入vi
-打开文件进行查看或者编辑：vi 文件名
-三种模式：
-插入模式:底部有“&amp;ndash;INSERT&amp;ndash;”标记，完成文本的编辑功能。
-i：在当前光标前插入文本；a：在当前光标后添加文本；o：在当前光标下一行插入文本；命令模式:刚进入的状态，可以实现光标的移动以及字符的删除、复制、粘贴等。
-x：删除字符dw/dd：删除词/删除行yw/yy:复制词，复制行P：粘贴kjhl：上下左右ctrl+f/b:翻页底线模式：命令模式下输入冒号进入，可设置行号、查找、替换字符、保存退出等。</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://lily2727.github.io/posts/show/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lily2727.github.io/posts/show/</guid>
-      <description>show something</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Software test interview question 1</title>
       <link>https://lily2727.github.io/posts/software-test-interview-question-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 May 2020 02:13:17 +0800</pubDate>
       
       <guid>https://lily2727.github.io/posts/software-test-interview-question-1/</guid>
       <description>在搜索引擎中输入汉字就可以解析到对应的域名，请问如何用LoadRunner进行测试？   建立测试计划，确定测试标准和测试范围
@@ -135,112 +59,51 @@ x：删除字符dw/dd：删除词/删除行yw/yy:复制词，复制行P：粘
     </item>
     
     <item>
-      <title></title>
-      <link>https://lily2727.github.io/posts/software-test-interview-question-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Software testing concept</title>
+      <link>https://lily2727.github.io/posts/software-testing-concept/</link>
+      <pubDate>Sat, 30 May 2020 02:13:17 +0800</pubDate>
       
-      <guid>https://lily2727.github.io/posts/software-test-interview-question-2/</guid>
-      <description>面试题1：软件产品质量特性是什么？
-答：软件产品的质量属性有8个，分别为：
-1、功能性：功能完备性、功能正确性、功能适合性、功能性的依从性。
-2、性能效率：时间特性、资源利用率、容量、性能效率的依从性。
-3、兼容性：共存性、互操作性、兼容性的依从性。
-4、易用性：可辨识性、易学性、易操作性、用户差错防御性、用户界面舒适性、易访问性、易用性的依从性。
-5、可靠性：成熟性、可用性、容错性、易恢复性、可靠性的依从性。
-6、信息安全性：保密性、完整性、抗抵赖性、可核查性、真实性、信息安全性的依从性。
-7、维护性：模块化、可重用性、易分析性、易修改性、易测试性、维护性的依从性。
-8、可移植性：适应性、易安装性、易替换性、可移植性的依从性。
-PS：每个质量特性的详细介绍如果记不住也没关系，能说出来一两个就ok。
- 面试题2：软件测试有哪些分类？
-答：按照不同的划分方式，有不同的分类。
-1、按照开发阶段划分
-软件测试可分为：单元测试、集成测试、系统测试、确认测试和验收测试。
-2、按照测试实施组织划分
-软件测试可分为开发方测试、用户测试、第三方测试。
-3、按照测试技术划分
-软件测试可分为：白盒测试、黑盒测试、灰盒测试。也可划分为静态测试和动态测试。
- 面试题3：请简述黑盒测试和白盒测试的优缺点。
-答：下面将分别简述。
-1、黑盒测试优缺点
-优点：
- 对测试人员要求不高； 执行起来较简单，不需要了解程序内部的代码及实现； 能够遍历说明书中全部的功能； 可以方便的测试复杂逻辑的程序功能。  缺点：
- 不可能进行穷举测试； 不可能进行覆盖所有代码的测试； 测试的正确率依赖于需求文档说明书，但是该文档也是人为编写的，存在一定的风险，黑盒测试对这种风险无能为力。  2、白盒测试优缺点
-优点：
- 迫使测试人员去仔细思考软件的实现； 可以检测代码中的每条分支和路径； 揭示隐藏在代码中的错误； 对代码的测试比较彻底； 让软件最优化。  缺点：
- 昂贵； 无法检测代码中遗漏的路径和数据敏感性错误； 不验证规格的正确性。   面试题4：请简述黑盒测试的测试用例常见的设计方法。
-答：下面将分别简述。
-1、等价类划分法
-2、边界值分析法
-3、错误推测法、因果图法、判定表驱动法
-PS：还有功能图法、正交试验法、场景法，实际应用的并不多，这里就不做过多的介绍，我相信，你如果把前面5个测试方法讲的明明白白，面试官也不会一直打破砂锅问到底，问你后面这几个不常用的测试方法。
- 面试题5：什么是软件测试？软件测试的目的和原则是什么？
-答：下面将分别简述。
-1、什么是软件测试
-软件测试：经典定义是，在规定的条件下对程序进行操作，以发现错误，对软件质量进行评估。
-需要注意的是，软件是由文档、数据以及程序组成的，所以对软件测试应该包括：软件形成过程的文档、数据以及程序，而不仅仅是对程序进行的测试。
-2、软件测试的目的
-测试的目的，是想以最少的人力、物力和时间找出软件中潜在的各种错误和缺陷，通过修正各种错误和缺陷提高软件质量，回避软件发布后由于潜在的软件缺陷和错误造成的隐患所带来的商业风险。
-3、软件测试的原则
- 所有的软件测试都应追溯到用户需求。 应当把“尽早地和不断地进行软件测试”作为软件测试者的座右铭。 完全测试是不可能的，测试需要终止。 测试无法显示软件潜在的缺陷。 充分注意测试中的群集现象。 程序员应当避免检查自己的程序。 尽量避免测试的随意性。   第二讲&amp;ndash;实战操作篇  面试题1：你认为好的测试用例应该包括哪些要素？给你一个“用户登录”页面，你会设计哪些测试用例？</description>
+      <guid>https://lily2727.github.io/posts/software-testing-concept/</guid>
+      <description>软件测试概念 定义 软件测试(Software Testing)，在规定的条件下对程序进行操作，以发现程序错误，衡量软件质量，并对其是否能满足设计要求进行评估的过程。
+标准定义 软件测试是使用人工或自动的手段来运行或测定某个软件系统的过程，其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别。
+测试目的 软件测试的目的是发现问题，发现至今未发现的问题。检查系统是否满足需求。
+Grenford J.Myers观点 （1）测试是程序的执行过程，目的在于发现错误； （2）一个好的测试用例在于能发现至今未发现的错误； （3）一个成功的测试是发现了至今未发现的错误的测试；
+测试对象 程序、数据、文档。
+软件错误占比 据业界著名的统计公司的统计表明，属于需求分析和软件设计错误的约占64%，属于程序编写错误的仅占36％。
+其他基础知识 V模型 RAD（Rap Application Development，快速应用开发）模型是软件开发过程中的一个重要模型，由于其模型构图形似字母V，所以又称软件测试的V模型，V模型大体可以划分为以下几个不同的阶段步骤：需求分析、概要设计、详细设计、软件编码、单元测试、集成测试、系统测试、验收测试。
+软件测试分类 按阶段划分 单元测试 单元测试是对软件组成单元进行测试。其目的是检验软件基本组成单位的正确性。测试的对象是软件设计的最小单位：模块。
+ 测试阶段：编码后 测试对象：最小模块 测试人员：白盒测试工程师或开发工程师 测试依据：代码和注释+详细设计文档 测试方法：白盒测试 测试内容：模块接口测试、局部数据结构测试、路径测试、错误处理测试、边界测试  集成测试 集成测试也称联合测试、组装测试，将程序模块采用适当的集成策略组装起来，对系统的接口及集成后的功能进行正确性检测的测试工作。主要目的是检查软件单位之间的接口是否正确。
+ 测试阶段：一般单元测试之后进行 测试对象：模块间的接口 测试人员：白盒测试工程师或开发工程师 测试依据：单元测试的模块+概要设计文档 测试方法：黑盒测试与白盒测试相结合 测试内容：模块之间数据传输、模块之间功能冲突、模块组装功能正确性、全局数据结构、单模块缺陷对系统的影响  系统测试 将软件系统看成是一个系统的测试。包括对功能、性能以及软件所运行的软硬件环境进行测试。时间大部分在系统测试执行阶段
+ 测试阶段：集成测试通过之后 测试对象：整个系统（软、硬件） 测试人员：黑盒测试工程师 测试依据：需求规格说明文档 测试方法：黑盒测试 测试内容：功能、界面、可靠性、易用性、性能、兼容性、安全性等  验收测试 验收测试是部署软件之前的最后一个测试操作。它是技术测试的最后一个阶段，也称为交付测试。总结验收测试的目的是确保软件准备就绪，按照项目合同、任务书、双方约定的验收依据文档，向软件购买都展示该软件系统满足原始需求。
+ 测试阶段：系统测试通过之后 测试对象：整个系统（包括软硬件）。 测试人员：主要是最终用户或者需求方。 测试依据：用户需求、验收标准 测试方法：黑盒测试 测试内容：同系统测试(功能&amp;hellip;各类文档等)  是否按查看代码划分 黑盒测试 黑盒测试也称功能测试，测试中把被测的软件当成一个黑盒子，不关心盒子的内部结构是什么，只关心软件的输入数据与输出数据。
+白盒测试 白盒测试又称结构测试、透明盒测试、逻辑驱动测试或基于代码的测试。白盒指的打开盒子，去研究里面的源代码和程序结果。
+灰盒测试 灰盒测试，是介于白盒测试与黑盒测试之间的一种测试，灰盒测试多用于集成测试阶段，不仅关注输出、输入的正确性，同时也关注程序内部的情况。</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://lily2727.github.io/posts/software-test-interview-question-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Linux command</title>
+      <link>https://lily2727.github.io/posts/linux-command/</link>
+      <pubDate>Tue, 26 May 2020 02:13:17 +0800</pubDate>
       
-      <guid>https://lily2727.github.io/posts/software-test-interview-question-3/</guid>
-      <description>软件的概念？ 软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。
-软件测试的概念？ 使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别
-测试人员和开发人员区别?** ①人员不同 测试：开发人员和测试人员
-开发：只有开发人员
-②所处阶段不同 测试：贯穿整个软件开发生命周期
-调试：在软件开发编码阶段以及测试过程中对BUG进行调试
-③对bug处理结果不同 测试：只找出错误，不解决
-调试：找出错误并解决
-什么是需求？ ①用户解决问题或达到目标所需的条件或权能，
-②系统或系统部件要满足合同、标准、规范或其它正式规定文档所需具有的条件或权能
-测试生命周期模型？ V模型、W模型、瀑布模型、 螺旋模型、敏捷H模型
-软件测试流程 1、需求分析，需求评审
-2、制定测试计划、计划评审
-3、编写测试用例、用例评审
-4、测试实施阶段、执行测试用例
-​	按照设计好的用例、准备好的数据和制定的测试策略，实施进行具体的测试过程
-5、测试评估阶段
-​	测试总结、缺陷分析、过程评估
-V模型？ W模型？ 瀑布模型？ 需求评审内容？ ①对需求的描述是否易于理解？
-②受否存在有二义性的需求？
-③是否定义了术语表，对特定含义的术语给予了定义？
-④最终产品的每个特征是用唯一的术语描述的吗？
-⑤需求是中的条件和结果是不是合理，有没有遗漏一些异常因果关系？
-⑥需求中有没有包含不确定行描述，如：大约、可能、等
-⑦每个规格是不是都有明确说明？
-⑧环境搭建是否可能或有困难？
-需求分类？ ①业务需求
-②用户需求
-③系统需求
-什么是测试用例？ 为实施测试而向被测试系统提供的输入数据、操作或各种环境设置以及期望结果的一个特定的集合。
-也就是解决要测什么、怎么测和如何衡量的问题
-什么是测试计划? 软件测试计划就是在软件测试工作正式实施之前明确测试的对象，并且通过对资源、时间、风险、测试范围和预算等方面的综合分析和规划，保证有效的实施软件测试。
-用例优先级？ 高：最常执行以保证功能性是稳定的，目标的行为和能力可以正常的工作，和重要的错误和边界被测试的测试用例的集合。
-中：这是使给出的功能区域或功能变得更详细，检查功能的多数方面包括边界，错误和配置测试的测试用例。 低：这是通常最少被执行的测试用例。但这并不意味着这些测试都不重要，只是说他们在项目的生命期间里不是常常被运行，例如GUI，错误信息，可用性
-用例内容？ 主要分为三大部分：基本信息、用例主体、执行记录
-基本信息：项目名称、功能模块名、用例设计人、测试执行人、功能特性、测试目的、预置条件、参考信息
-用例主体：用例编号、测试对象、检查点、预置条件、用例说明、优先级、预期结果
-执行记录：测试结果、缺陷编号、备注
-用例执行结果？ 通过，不通过，未运行，无法运行
-测试计划内容？ ①测试目的
-②测试背景
-③文件受众
-④术语和定义
-⑤测试参考文档
-⑥测试提交文档</description>
+      <guid>https://lily2727.github.io/posts/linux-command/</guid>
+      <description>测试工程师需要掌握linux系统的必要性？ 由于Linux在服务器领域应用非常广泛，有很多开源和成熟的软件，目前大多数的应用后台都是部署在linux上的，熟悉Linux操作系统和相关命令，可以加深我们对软件的架构和运行机制的了解，也可以增加自己核心竞争力、拓宽自己的技能栈，从而获得更高的薪水。
+不同岗位职级，对于linux能力要求也不相同，如果你是初级测试工程师，那么有可能只需要命令查看日志，分析bug原因。如果你是中级工程师，则需要在linux环境搭建各种测试环境，包括各种应用程序，应用依赖的中间件，以及测试工具软件等。如果你是高级工程师，则需要优化系统架构，编写shell脚本，提升测试效率。
+软件测试工程师linux十大场景命令使用 日志查看 实时查看tomcat日志文件查看： cd /home/tomcat/logs #也可用相对目录``tail –f catalina.out #实时打印日志文件``ctrl+c #退出查看查看日志命令： tail -f log.txt：循环查看tai -500f log.txt:查看最后500行cat file：查看短文件less file：查看长文件head example.txt ：显示文件 example.txt 的前十行内容` `head -n 20 example.txt：显示文件 example.txt 的前二十行内容修改配置文件内容 最常见的就是修改环境变量
+vim /etc/profile输入字母i，进入编辑模式（INSERT）输入内容，按esc，进入命令模式 。执行:wq，保持修改。输入 soucre /etc/profile 使环境变量生效。可以通过 cat /etc/profile查看文件是否修改成功。vi/vim编辑器 vi/vim编辑器：linux系统提供的文本编辑工具，用来编辑文本文件。
+vim是vi的增强版本，增加了部分命令。
+如何进入？
+新建：直接输入vi
+打开文件进行查看或者编辑：vi 文件名
+三种模式：
+插入模式:底部有“&amp;ndash;INSERT&amp;ndash;”标记，完成文本的编辑功能。
+i：在当前光标前插入文本；a：在当前光标后添加文本；o：在当前光标下一行插入文本；命令模式:刚进入的状态，可以实现光标的移动以及字符的删除、复制、粘贴等。
+x：删除字符dw/dd：删除词/删除行yw/yy:复制词，复制行P：粘贴kjhl：上下左右ctrl+f/b:翻页底线模式：命令模式下输入冒号进入，可设置行号、查找、替换字符、保存退出等。</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Software test interview question 4</title>
       <link>https://lily2727.github.io/posts/software-test-interview-question-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 May 2020 02:13:17 +0800</pubDate>
       
       <guid>https://lily2727.github.io/posts/software-test-interview-question-4/</guid>
       <description>软件测试方法有哪些分类？各有什么特点？设计测试用例的主要方法有哪些？
@@ -312,25 +175,153 @@ CQ，也可以使用BugFree等免费工具。
     </item>
     
     <item>
-      <title></title>
-      <link>https://lily2727.github.io/posts/software-testing-concept/</link>
+      <title>Software test interview question 2</title>
+      <link>https://lily2727.github.io/posts/software-test-interview-question-2/</link>
+      <pubDate>Mon, 25 May 2020 02:13:17 +0800</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/software-test-interview-question-2/</guid>
+      <description>面试题1：软件产品质量特性是什么？
+答：软件产品的质量属性有8个，分别为：
+1、功能性：功能完备性、功能正确性、功能适合性、功能性的依从性。
+2、性能效率：时间特性、资源利用率、容量、性能效率的依从性。
+3、兼容性：共存性、互操作性、兼容性的依从性。
+4、易用性：可辨识性、易学性、易操作性、用户差错防御性、用户界面舒适性、易访问性、易用性的依从性。
+5、可靠性：成熟性、可用性、容错性、易恢复性、可靠性的依从性。
+6、信息安全性：保密性、完整性、抗抵赖性、可核查性、真实性、信息安全性的依从性。
+7、维护性：模块化、可重用性、易分析性、易修改性、易测试性、维护性的依从性。
+8、可移植性：适应性、易安装性、易替换性、可移植性的依从性。
+PS：每个质量特性的详细介绍如果记不住也没关系，能说出来一两个就ok。
+ 面试题2：软件测试有哪些分类？
+答：按照不同的划分方式，有不同的分类。
+1、按照开发阶段划分
+软件测试可分为：单元测试、集成测试、系统测试、确认测试和验收测试。
+2、按照测试实施组织划分
+软件测试可分为开发方测试、用户测试、第三方测试。
+3、按照测试技术划分
+软件测试可分为：白盒测试、黑盒测试、灰盒测试。也可划分为静态测试和动态测试。
+ 面试题3：请简述黑盒测试和白盒测试的优缺点。
+答：下面将分别简述。
+1、黑盒测试优缺点
+优点：
+ 对测试人员要求不高； 执行起来较简单，不需要了解程序内部的代码及实现； 能够遍历说明书中全部的功能； 可以方便的测试复杂逻辑的程序功能。  缺点：
+ 不可能进行穷举测试； 不可能进行覆盖所有代码的测试； 测试的正确率依赖于需求文档说明书，但是该文档也是人为编写的，存在一定的风险，黑盒测试对这种风险无能为力。  2、白盒测试优缺点
+优点：
+ 迫使测试人员去仔细思考软件的实现； 可以检测代码中的每条分支和路径； 揭示隐藏在代码中的错误； 对代码的测试比较彻底； 让软件最优化。  缺点：
+ 昂贵； 无法检测代码中遗漏的路径和数据敏感性错误； 不验证规格的正确性。   面试题4：请简述黑盒测试的测试用例常见的设计方法。
+答：下面将分别简述。
+1、等价类划分法
+2、边界值分析法
+3、错误推测法、因果图法、判定表驱动法
+PS：还有功能图法、正交试验法、场景法，实际应用的并不多，这里就不做过多的介绍，我相信，你如果把前面5个测试方法讲的明明白白，面试官也不会一直打破砂锅问到底，问你后面这几个不常用的测试方法。
+ 面试题5：什么是软件测试？软件测试的目的和原则是什么？
+答：下面将分别简述。
+1、什么是软件测试
+软件测试：经典定义是，在规定的条件下对程序进行操作，以发现错误，对软件质量进行评估。
+需要注意的是，软件是由文档、数据以及程序组成的，所以对软件测试应该包括：软件形成过程的文档、数据以及程序，而不仅仅是对程序进行的测试。
+2、软件测试的目的
+测试的目的，是想以最少的人力、物力和时间找出软件中潜在的各种错误和缺陷，通过修正各种错误和缺陷提高软件质量，回避软件发布后由于潜在的软件缺陷和错误造成的隐患所带来的商业风险。
+3、软件测试的原则
+ 所有的软件测试都应追溯到用户需求。 应当把“尽早地和不断地进行软件测试”作为软件测试者的座右铭。 完全测试是不可能的，测试需要终止。 测试无法显示软件潜在的缺陷。 充分注意测试中的群集现象。 程序员应当避免检查自己的程序。 尽量避免测试的随意性。   第二讲&amp;ndash;实战操作篇  面试题1：你认为好的测试用例应该包括哪些要素？给你一个“用户登录”页面，你会设计哪些测试用例？</description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://lily2727.github.io/posts/css/</link>
+      <pubDate>Thu, 19 Mar 2020 02:13:17 +0800</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/css/</guid>
+      <description>CSS
+1.含义 CSS 指层叠样式表 (Cascading Style Sheets) 样式定义如何显示 HTML 元素 样式通常存储在样式表中 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题 外部样式表可以极大提高工作效率 外部样式表通常存储在 CSS 文件中 多个样式定义可层叠为一个 2.语法 2.1. css由两部分组成：选择器，一条或多条声明 例子： h1 {color：blue;font-size:12px;} h1:选择器 color：属性 blue：值 {}：声明以分号为节点，该例子有两条声明 2.2.选择器通常是需要改变样式的HTML元素。 2.3.每条声明由一个属性和一个值组成 2.4.属性是希望设置的样式属性。每个属性有一个值。属性和值被冒号分开。 2.5.声明以分号作为结束。声明以大括号括起来。 2.6.注释： 用来解释代码，并可以随意编辑它，浏览器会忽略它。 以/*开始，以*/结束 例子： /*这是个注释*/ 3.选择器 如果要在HTML元素中设置css样式，需要在元素中设置选择器 3.1.id选择器 id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &amp;quot;#&amp;quot; 来定义。 3.2.class选择器 class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&amp;quot;.&amp;quot;号显示： 4.css创建 4.1.插入样式表的三种方法： 4.1.1.外部样式表 例子： &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;mystyle.</description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>https://lily2727.github.io/posts/html/</link>
+      <pubDate>Sun, 15 Mar 2020 18:08:38 +0800</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/html/</guid>
+      <description>1.超文本标记语言，是一种用于创建网页的标准标记语言 2.常用参考 	2.1&amp;lt;!--...--&amp;gt; 定义注释 &amp;lt;!--这是一个注释，注释在浏览器中不会显示--&amp;gt; 	2.2&amp;lt;!DOCTYPE&amp;gt; 定义文档类型 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面的位置，处于 &amp;lt;html&amp;gt; 标签之前。 &amp;lt;!DOCTYPE&amp;gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。 	2.3&amp;lt;a&amp;gt; 定义超文本链接 &amp;lt;a&amp;gt; 标签定义超链接，用于从一个页面链接到另一个页面。 &amp;lt;a&amp;gt; 元素最重要的属性是 href 属性，它指定链接的目标。 在所有浏览器中，链接的默认外观如下： 未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的 例子： &amp;lt;a href=&amp;quot;http://www.runoob.com&amp;quot;&amp;gt;访问菜鸟教程!&amp;lt;/a&amp;gt; 	2.4&amp;lt;body&amp;gt; 定义文档主体 &amp;lt;body&amp;gt;文档内容......&amp;lt;/body&amp;gt; &amp;lt;body&amp;gt; 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。 	2.5&amp;lt;br&amp;gt; 定义换行 &amp;lt;p&amp;gt;使用 br 元素&amp;lt;br&amp;gt;在文本中&amp;lt;br&amp;gt;换行。&amp;lt;/p&amp;gt; → 使用 br 元素 在文本中 换行。 &amp;lt;br&amp;gt; 标签插入一个简单的换行符。 &amp;lt;br&amp;gt; 标签是一个空标签，意味着它没有结束标签。 	2.6&amp;lt;button&amp;gt; 定义一个点击按钮	&amp;lt;button&amp;gt; 标签定义一个按钮。 在 &amp;lt;button&amp;gt; 元素内部，您可以放置内容，比如文本或图像。 这是该元素与使用 &amp;lt;input&amp;gt; 元素创建的按钮之间的不同之处。 例子： &amp;lt;button type=&amp;quot;button&amp;quot;&amp;gt;点我!</description>
+    </item>
+    
+    <item>
+      <title>The Fox and the Grapes</title>
+      <link>https://lily2727.github.io/posts/the-fox-and-the-grapes/</link>
+      <pubDate>Fri, 19 Oct 2018 20:08:42 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/the-fox-and-the-grapes/</guid>
+      <description>A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox&amp;rsquo;s mouth watered as he gazed longingly at them.
+The bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more.</description>
+    </item>
+    
+    <item>
+      <title>Drakshasava</title>
+      <link>https://lily2727.github.io/posts/drakshasava/</link>
+      <pubDate>Fri, 19 Oct 2018 19:43:49 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/drakshasava/</guid>
+      <description>Drakshasava (Sanskrit: द्राक्षासव) is a traditional Ayurvedic tonic made from grapes. Drakshasava is a weak wine because the grape juice is usually only partially fermented. It is also sometimes prepared by using raisin concentrate. The tonic is claimed to be beneficial for maladies such as lethargy, weakness and heat exhaustion. Drakshasava is believed to address health imbalances arising from an excess of the Vata-Vayu Dosha and is said to be useful in curing cardiac disorders and hemorrhoids in the Ayurvedic system.</description>
+    </item>
+    
+    <item>
+      <title>Code Demo</title>
+      <link>https://lily2727.github.io/posts/code-demo/</link>
+      <pubDate>Thu, 18 Oct 2018 18:43:49 +0530</pubDate>
+      
+      <guid>https://lily2727.github.io/posts/code-demo/</guid>
+      <description>Bash #!/bin/bash###### CONFIGACCEPTED_HOSTS=&amp;#34;/root/.hag_accepted.conf&amp;#34;BE_VERBOSE=falseif [ &amp;#34;$UID&amp;#34; -ne 0 ]thenecho &amp;#34;Superuser rights required&amp;#34;exit 2figenApacheConf(){echo -e &amp;#34;# Host ${HOME_DIR}$1/$2:&amp;#34;}JSON [{&amp;#34;title&amp;#34;: &amp;#34;apples&amp;#34;,&amp;#34;count&amp;#34;: [12000, 20000],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}},{&amp;#34;title&amp;#34;: &amp;#34;oranges&amp;#34;,&amp;#34;count&amp;#34;: [17500, null],&amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}}]Rust fn main() {let greetings = [&amp;#34;Hello&amp;#34;, &amp;#34;Hola&amp;#34;, &amp;#34;Bonjour&amp;#34;,&amp;#34;Ciao&amp;#34;, &amp;#34;こんにちは&amp;#34;, &amp;#34;안녕하세요&amp;#34;,&amp;#34;Cześć&amp;#34;, &amp;#34;Olá&amp;#34;, &amp;#34;Здравствуйте&amp;#34;,&amp;#34;Chào bạn&amp;#34;, &amp;#34;您好&amp;#34;, &amp;#34;Hallo&amp;#34;,&amp;#34;Hej&amp;#34;, &amp;#34;Ahoj&amp;#34;, &amp;#34;سلام&amp;#34;,&amp;#34;สวัสดี&amp;#34;];for (num, greeting) in greetings.</description>
+    </item>
+    
+    <item>
+      <title>Software test interview question 3</title>
+      <link>https://lily2727.github.io/posts/software-test-interview-question-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lily2727.github.io/posts/software-testing-concept/</guid>
-      <description>软件测试概念 定义 软件测试(Software Testing)，在规定的条件下对程序进行操作，以发现程序错误，衡量软件质量，并对其是否能满足设计要求进行评估的过程。
-标准定义 软件测试是使用人工或自动的手段来运行或测定某个软件系统的过程，其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别。
-测试目的 软件测试的目的是发现问题，发现至今未发现的问题。检查系统是否满足需求。
-Grenford J.Myers观点 （1）测试是程序的执行过程，目的在于发现错误； （2）一个好的测试用例在于能发现至今未发现的错误； （3）一个成功的测试是发现了至今未发现的错误的测试；
-测试对象 程序、数据、文档。
-软件错误占比 据业界著名的统计公司的统计表明，属于需求分析和软件设计错误的约占64%，属于程序编写错误的仅占36％。
-其他基础知识 V模型 RAD（Rap Application Development，快速应用开发）模型是软件开发过程中的一个重要模型，由于其模型构图形似字母V，所以又称软件测试的V模型，V模型大体可以划分为以下几个不同的阶段步骤：需求分析、概要设计、详细设计、软件编码、单元测试、集成测试、系统测试、验收测试。
-软件测试分类 按阶段划分 单元测试 单元测试是对软件组成单元进行测试。其目的是检验软件基本组成单位的正确性。测试的对象是软件设计的最小单位：模块。
- 测试阶段：编码后 测试对象：最小模块 测试人员：白盒测试工程师或开发工程师 测试依据：代码和注释+详细设计文档 测试方法：白盒测试 测试内容：模块接口测试、局部数据结构测试、路径测试、错误处理测试、边界测试  集成测试 集成测试也称联合测试、组装测试，将程序模块采用适当的集成策略组装起来，对系统的接口及集成后的功能进行正确性检测的测试工作。主要目的是检查软件单位之间的接口是否正确。
- 测试阶段：一般单元测试之后进行 测试对象：模块间的接口 测试人员：白盒测试工程师或开发工程师 测试依据：单元测试的模块+概要设计文档 测试方法：黑盒测试与白盒测试相结合 测试内容：模块之间数据传输、模块之间功能冲突、模块组装功能正确性、全局数据结构、单模块缺陷对系统的影响  系统测试 将软件系统看成是一个系统的测试。包括对功能、性能以及软件所运行的软硬件环境进行测试。时间大部分在系统测试执行阶段
- 测试阶段：集成测试通过之后 测试对象：整个系统（软、硬件） 测试人员：黑盒测试工程师 测试依据：需求规格说明文档 测试方法：黑盒测试 测试内容：功能、界面、可靠性、易用性、性能、兼容性、安全性等  验收测试 验收测试是部署软件之前的最后一个测试操作。它是技术测试的最后一个阶段，也称为交付测试。总结验收测试的目的是确保软件准备就绪，按照项目合同、任务书、双方约定的验收依据文档，向软件购买都展示该软件系统满足原始需求。
- 测试阶段：系统测试通过之后 测试对象：整个系统（包括软硬件）。 测试人员：主要是最终用户或者需求方。 测试依据：用户需求、验收标准 测试方法：黑盒测试 测试内容：同系统测试(功能&amp;hellip;各类文档等)  是否按查看代码划分 黑盒测试 黑盒测试也称功能测试，测试中把被测的软件当成一个黑盒子，不关心盒子的内部结构是什么，只关心软件的输入数据与输出数据。
-白盒测试 白盒测试又称结构测试、透明盒测试、逻辑驱动测试或基于代码的测试。白盒指的打开盒子，去研究里面的源代码和程序结果。
-灰盒测试 灰盒测试，是介于白盒测试与黑盒测试之间的一种测试，灰盒测试多用于集成测试阶段，不仅关注输出、输入的正确性，同时也关注程序内部的情况。</description>
+      <guid>https://lily2727.github.io/posts/software-test-interview-question-3/</guid>
+      <description>软件的概念？ 软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。
+软件测试的概念？ 使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别
+测试人员和开发人员区别?** ①人员不同 测试：开发人员和测试人员
+开发：只有开发人员
+②所处阶段不同 测试：贯穿整个软件开发生命周期
+调试：在软件开发编码阶段以及测试过程中对BUG进行调试
+③对bug处理结果不同 测试：只找出错误，不解决
+调试：找出错误并解决
+什么是需求？ ①用户解决问题或达到目标所需的条件或权能，
+②系统或系统部件要满足合同、标准、规范或其它正式规定文档所需具有的条件或权能
+测试生命周期模型？ V模型、W模型、瀑布模型、 螺旋模型、敏捷H模型
+软件测试流程 1、需求分析，需求评审
+2、制定测试计划、计划评审
+3、编写测试用例、用例评审
+4、测试实施阶段、执行测试用例
+​	按照设计好的用例、准备好的数据和制定的测试策略，实施进行具体的测试过程
+5、测试评估阶段
+​	测试总结、缺陷分析、过程评估
+V模型？ W模型？ 瀑布模型？ 需求评审内容？ ①对需求的描述是否易于理解？
+②受否存在有二义性的需求？
+③是否定义了术语表，对特定含义的术语给予了定义？
+④最终产品的每个特征是用唯一的术语描述的吗？
+⑤需求是中的条件和结果是不是合理，有没有遗漏一些异常因果关系？
+⑥需求中有没有包含不确定行描述，如：大约、可能、等
+⑦每个规格是不是都有明确说明？
+⑧环境搭建是否可能或有困难？
+需求分类？ ①业务需求
+②用户需求
+③系统需求
+什么是测试用例？ 为实施测试而向被测试系统提供的输入数据、操作或各种环境设置以及期望结果的一个特定的集合。
+也就是解决要测什么、怎么测和如何衡量的问题
+什么是测试计划? 软件测试计划就是在软件测试工作正式实施之前明确测试的对象，并且通过对资源、时间、风险、测试范围和预算等方面的综合分析和规划，保证有效的实施软件测试。
+用例优先级？ 高：最常执行以保证功能性是稳定的，目标的行为和能力可以正常的工作，和重要的错误和边界被测试的测试用例的集合。
+中：这是使给出的功能区域或功能变得更详细，检查功能的多数方面包括边界，错误和配置测试的测试用例。 低：这是通常最少被执行的测试用例。但这并不意味着这些测试都不重要，只是说他们在项目的生命期间里不是常常被运行，例如GUI，错误信息，可用性
+用例内容？ 主要分为三大部分：基本信息、用例主体、执行记录
+基本信息：项目名称、功能模块名、用例设计人、测试执行人、功能特性、测试目的、预置条件、参考信息
+用例主体：用例编号、测试对象、检查点、预置条件、用例说明、优先级、预期结果
+执行记录：测试结果、缺陷编号、备注
+用例执行结果？ 通过，不通过，未运行，无法运行
+测试计划内容？ ①测试目的
+②测试背景
+③文件受众
+④术语和定义
+⑤测试参考文档
+⑥测试提交文档</description>
     </item>
     
   </channel>

@@ -63,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/tags/ayurvedha/</loc>
+    <loc>https://lily2727.github.io/categories/ayurvedha/</loc>
     <lastmod>2018-10-19T19:43:49+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/categories/ayurvedha/</loc>
+    <loc>https://lily2727.github.io/tags/ayurvedha/</loc>
     <lastmod>2018-10-19T19:43:49+05:30</lastmod>
   </url>
   
@@ -118,7 +118,12 @@
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/linux%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://lily2727.github.io/posts/knowledge-accumulation/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lily2727.github.io/posts/linux-command/</loc>
     <priority>0</priority>
   </url>
   
@@ -128,37 +133,27 @@
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/%E7%9F%A5%E8%AF%86%E7%B4%AF%E7%A7%AF/</loc>
+    <loc>https://lily2727.github.io/posts/software-test-interview-question-1/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5/</loc>
+    <loc>https://lily2727.github.io/posts/software-test-interview-question-2/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/</loc>
+    <loc>https://lily2727.github.io/posts/software-test-interview-question-3/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%89/</loc>
+    <loc>https://lily2727.github.io/posts/software-test-interview-question-4/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lily2727.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E4%BA%8C/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://lily2727.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9B%9B/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://lily2727.github.io/posts/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</loc>
+    <loc>https://lily2727.github.io/posts/software-testing-concept/</loc>
     <priority>0</priority>
   </url>
   

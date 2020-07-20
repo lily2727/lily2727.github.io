@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Semily2727-blog</title>
+    <base href="https://lily2727.github.io">
+    <link rel="stylesheet" href="https://lily2727.github.io/css/styles.css">
+    <link rel="stylesheet" href="https://lily2727.github.io/css/font.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body><header>
+    <nav class="breadcrumb grape">
+	<h4><a href="/">Semily2727-blog</a></h4>
+	<div id="space"></div>
+        
+        <a href="/">home</a>
+        
+        <a href="/posts">posts</a>
+        
+    </nav>
+</header>
+
+<main id="single">
+    <div id="post" class="white">
+	<div class="container">
+	    <div id="title">
+                <h1></h1>
+                <time datetime="0001-01-01T00:00:00&#43;0000">0001-01-01</time>
+
+	    </div>
+            <section class="post-content">
+                <h1 id="red-hat组织">Red Hat组织</h1>
+<p>​	Red Hat（红帽）公司（NYSE：RHT）是一家开源解决方案供应商，也是标准普尔500指数成员。
+​	红帽公司为诸多重要IT技术如操作系统、存储、中间件、虚拟化和云计算提供关键任务的软件与服务。
+​	红帽的开放源码模式提供跨物理、虚拟和云端环境的企业运算解决方案，以帮助企业降低成本并提升效能、稳定性与安全性。
+​	红帽公司同时也为全球客户或通过领先合作伙伴为客户提供技术支持、培训和咨询服务。
+​	2018年10月29日，IBM宣布以340亿美元的价格收购Red Hat。</p>
+<h1 id="标准普尔500指数">标准普尔500指数</h1>
+<p>​	标准普尔是世界权威金融分析机构，由普尔先生(Mr Henry Varnum Poor)于1860年创立。
+​	标准普尔500指数英文简写为S&amp;P 500 Index，是记录美国500家上市公司的一个股票指数。
+​	这个股票指数由标准普尔公司创建并维护。
+​	标准·普尔500指数是由标准·普尔公司1957年开始编制的。
+​	最初的成份股由425种工业股票、15种铁路股票和60种公用事业股票组成。</p>
+<h1 id="apache">Apache</h1>
+<h2 id="apache-http-server简称apache">Apache HTTP Server（简称Apache）</h2>
+<p>​	Apache是世界使用排名第一的Web服务器软件。
+​	Apache软件基金会的一个开放源码的网页服务器
+​	它可以运行在几乎所有广泛使用的计算机平台上，由于其跨平台和安全性被广泛使用，是最流行的Web服务器端软件之一。
+​	它快速、可靠并且可通过简单的API扩充，将Perl/Python等解释器编译到服务器中。
+​	Apache HTTP服务器是一个模块化的服务器，源于NCSAhttpd服务器</p>
+<h2 id="ah-64武装直升机">AH-64武装直升机</h2>
+<h2 id="apache-licence">Apache Licence</h2>
+<p>​	著名的非盈利开源组织Apache采用的协议。</p>
+<h2 id="apache软件基金会apache-software-foundation简称为asf">Apache软件基金会（Apache Software Foundation，简称为ASF）</h2>
+<p>​	专门为运作一个开源软件项目的Apache 的团体提供支持的非盈利性组织，
+​	这个开源软件的项目就是 Apache 项目。
+​	在它所支持的 Apache 项目与子项目中，所发行的软件产品都遵循 Apache许可证（Apache License）。</p>
+<h1 id="jboss">JBoss</h1>
+<p>一个基于J2EE的开放源代码的应用服务器。</p>
+<h1 id="log4j的学习">log4j的学习</h1>
+<p><a href="https://blog.csdn.net/u013870094/article/details/79518028">笔记来源网站</a></p>
+<h2 id="什么是log4j">什么是log4j</h2>
+<p>Apache的开源项目，功能强大的日志组件，提供方便的日志记录。可到官网下载相关软件包。</p>
+<h2 id="入门实例">入门实例</h2>
+<h3 id="新建java工程">新建Java工程</h3>
+<p>导入包log4j-1.2.17.jar</p>
+<h3 id="src同级创建并设置log4jproperties">src同级创建并设置log4j.properties</h3>
+<pre><code>log4j.properties内容：
+设置
+log4j.rootLogger = debug,stdout,D,E
+
+输出信息到控制抬
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern = [%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n
+
+输出DEBUG 级别以上的日志到某个路径地址，示例为E盘下logs文件夹里的log文档
+log4j.appender.D = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.D.File = E://logs/log.log
+log4j.appender.D.Append = true
+log4j.appender.D.Threshold = DEBUG 
+log4j.appender.D.layout = org.apache.log4j.PatternLayout
+log4j.appender.D.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+
+输出ERROR 级别以上的日志到某个路径地址，示例为E盘下logs文件夹里的lerror文档
+log4j.appender.E = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.E.File =E://logs/error.log 
+log4j.appender.E.Append = true
+log4j.appender.E.Threshold = ERROR 
+log4j.appender.E.layout = org.apache.log4j.PatternLayout
+log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+设置
+log4j.rootLogger = debug,stdout,D,E
+
+输出信息到控制抬
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern = [%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n
+
+输出DEBUG 级别以上的日志到某个路径地址，示例为E盘下logs文件夹里的log文档
+log4j.appender.D = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.D.File = E://logs/log.log
+log4j.appender.D.Append = true
+log4j.appender.D.Threshold = DEBUG 
+log4j.appender.D.layout = org.apache.log4j.PatternLayout
+log4j.appender.D.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+
+输出ERROR 级别以上的日志到某个路径地址，示例为E盘下logs文件夹里的error文档
+log4j.appender.E = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.E.File =E://logs/error.log 
+log4j.appender.E.Append = true
+log4j.appender.E.Threshold = ERROR 
+log4j.appender.E.layout = org.apache.log4j.PatternLayout
+log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+</code></pre>
+<h3 id="创建普通java类测试日志">创建普通java类，测试日志。</h3>
+<p>测试内容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#f92672">package</span> config<span style="color:#f92672">;</span>
+		
+		<span style="color:#f92672">import</span> org.apache.log4j.Logger<span style="color:#f92672">;</span>
+
+		<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestLog4j</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Logger logger <span style="color:#f92672">=</span>Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>TestLog4j<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+			
+			<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[</span><span style="color:#f92672">]</span> args<span style="color:#f92672">)</span><span style="color:#f92672">{</span>
+				<span style="color:#75715e">//记录debug级别的信息
+</span><span style="color:#75715e"></span>				logger<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;this is debug message.&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+				<span style="color:#75715e">//记录info级别的信息
+</span><span style="color:#75715e"></span>				logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;this is info meesage.&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+				<span style="color:#75715e">//记录error级别的信息
+</span><span style="color:#75715e"></span>				logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;this is error message&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+</code></pre></div><p>输出内容：</p>
+<p>控制台的输出信息
+[DEBUG] 2020-03-13 03:22:12,327 method:config.TestLog4j.main(TestLog4j.java:15)</p>
+<p>this is debug message.
+[INFO ] 2020-03-13 03:22:12,330 method:config.TestLog4j.main(TestLog4j.java:17)</p>
+<p>this is info meesage.
+[ERROR] 2020-03-13 03:22:12,330 method:config.TestLog4j.main(TestLog4j.java:19)</p>
+<p>this is error message</p>
+<p>文件输出位置
+在配置文件的路径中，经验证，可发现日志信息已正确输出到文档中。</p>
+<h2 id="基本使用方法">基本使用方法</h2>
+<h3 id="三个重要组件">三个重要组件</h3>
+<p>日志信息的优先级,从高到低：ERROR WARN INFO DEBUG 分别用来指定这条信息的重要程度
+日志信息的输出目的地 指定了日志将打印到控制台还是文件中
+日志信息的输出格式 控制了日志信息的显示内容</p>
+<h1 id="crud">CRUD</h1>
+<p>​	crud是指在做计算处理时的增加(Create)、读取(Retrieve)、更新(Update)和删除(Delete)几个单词的首字母简写
+​	即增删改查的意思。</p>
+<h1 id="二八定律帕累托法则">二八定律（帕累托法则）</h1>
+<p>在任何一组东西中，最重要的只占其中一小部分，约20%，其余80%尽管是多数，却是次要的，因此又称二八定律。</p>
+<h1 id="bigdecimal">BigDecimal</h1>
+<h2 id="数学工具类">数学工具类</h2>
+<p>​	Java在java.math包中提供的API类BigDecimal，用来对超过16位有效位的数进行精确的运算。
+双精度浮点型变量double可以处理16位有效数，但在实际应用中，可能需要对更大或者更小的数进行运算和处理。
+​	一般情况下，对于那些不需要准确计算精度的数字，我们可以直接使用Float和Double处理，
+但是Double.valueOf(String) 和Float.valueOf(String)会丢失精度。
+​	所以开发中，如果我们需要精确计算的结果，则必须使用BigDecimal类来操作。
+​	BigDecimal所创建的是对象，故我们不能使用传统的+、-、*、/等算术运算符直接对其对象进行数学运算，而必须调用其相对应的方法。方法中的参数也必须是BigDecimal的对象。构造器是类的特殊方法，专门用来创建对象，特别是带有参数的对象。</p>
+<h2 id="bigdecimal常用构造函数">BigDecimal常用构造函数</h2>
+<p>BigDecimal(int)
+​	创建一个具有参数所指定整数值的对象
+​BigDecimal(double)
+​	创建一个具有参数所指定双精度值的对象
+​BigDecimal(long)
+​	创建一个具有参数所指定长整数值的对象
+​BigDecimal(String)
+​	创建一个具有参数所指定以字符串表示的数值的对象</p>
+<h2 id="总结">总结</h2>
+<p>在需要精确的小数计算时再使用BigDecimal，
+​BigDecimal的性能比double和float差，
+​在处理庞大，复杂的运算时尤为明显。
+​故一般精度的计算没必要使用BigDecimal。
+​尽量使用参数类型为String的构造函数。
+​BigDecimal都是不可变的（immutable）的，
+​在进行每一次四则运算时，都会产生一个新的对象 ，
+​所以在做加减乘除运算时要记得要保存操作后的值。</p>
+<h1 id="unicode">Unicode</h1>
+<p>计算机科学领域里的一项业界标准，包括字符集、编码方案等。
+Unicode 是为了解决传统的字符编码方案的局限而产生的，
+它为每种语言中的每个字符设定了统一并且唯一的二进制编码，
+以满足跨语言、跨平台进行文本转换、处理的要求。</p>
+<h1 id="ascii编码">ASCII编码</h1>
+<p>基于拉丁字母的一套电脑编码系统，
+主要用于显示现代英语和其他西欧语言。
+它是最通用的信息交换标准，
+并等同于国际标准ISO/IEC 646。</p>
+
+            </section>
+	</div>
+    </div>
+</main>
+<footer class="sand">
+</footer>
+<link rel="stylesheet" href="https://lily2727.github.io/css/solarized-light.css"/>
+<script src="https://lily2727.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
